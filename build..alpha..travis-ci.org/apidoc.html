@@ -1,0 +1,4909 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/alibaba/anyproxy#readme"
+
+    >anyproxy (v3.10.4)</a>
+</h1>
+<h4>A fully configurable proxy in NodeJS, which can handle HTTPS requests perfectly.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy">module anyproxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.generateRootCA">
+            function <span class="apidocSignatureSpan">anyproxy.</span>generateRootCA
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.isRootCAFileExists">
+            function <span class="apidocSignatureSpan">anyproxy.</span>isRootCAFileExists
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.proxyServer">
+            function <span class="apidocSignatureSpan">anyproxy.</span>proxyServer
+            <span class="apidocSignatureSpan">(option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.recorder">
+            function <span class="apidocSignatureSpan">anyproxy.</span>recorder
+            <span class="apidocSignatureSpan">(option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.setRules">
+            function <span class="apidocSignatureSpan">anyproxy.</span>setRules
+            <span class="apidocSignatureSpan">(newRule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.webInterface">
+            function <span class="apidocSignatureSpan">anyproxy.</span>webInterface
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.wsServer">
+            function <span class="apidocSignatureSpan">anyproxy.</span>wsServer
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>certGenerator</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>certMgr</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>requestHandler</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule__blank</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_adjust_response_time</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_allow_CORS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_default</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_intercept_some_https_requests</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_remove_cache_header</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_replace_request_option</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_replace_response_data</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_replace_response_status_code</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>rule_use_local_data</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>systemProxyMgr</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>util</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>wsServer.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.certGenerator">module anyproxy.certGenerator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certGenerator.generateCertsForHostname">
+            function <span class="apidocSignatureSpan">anyproxy.certGenerator.</span>generateCertsForHostname
+            <span class="apidocSignatureSpan">(domain, rootCAConfig)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certGenerator.generateRootCA">
+            function <span class="apidocSignatureSpan">anyproxy.certGenerator.</span>generateRootCA
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.certMgr">module anyproxy.certMgr</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.clearCerts">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>clearCerts
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.generateRootCA">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>generateRootCA
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.getCertificate">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getCertificate
+            <span class="apidocSignatureSpan">(host, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.getRootCAFilePath">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getRootCAFilePath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.getRootDirPath">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getRootDirPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.ifRootCATrusted">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>ifRootCATrusted
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.certMgr.isRootCAFileExists">
+            function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>isRootCAFileExists
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.recorder">module anyproxy.recorder</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.recorder.recorder">
+            function <span class="apidocSignatureSpan">anyproxy.</span>recorder
+            <span class="apidocSignatureSpan">(option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.recorder.super_">
+            function <span class="apidocSignatureSpan">anyproxy.recorder.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.requestHandler">module anyproxy.requestHandler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.requestHandler.connectReqHandler">
+            function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>connectReqHandler
+            <span class="apidocSignatureSpan">(req, socket, head)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.requestHandler.getRuleSummary">
+            function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>getRuleSummary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.requestHandler.setRules">
+            function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>setRules
+            <span class="apidocSignatureSpan">(newRule)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.requestHandler.userRequestHandler">
+            function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>userRequestHandler
+            <span class="apidocSignatureSpan">(req, userRes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>token</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule__blank">module anyproxy.rule__blank</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.dealLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>dealLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.pauseBeforeSendingResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>pauseBeforeSendingResponse
+            <span class="apidocSignatureSpan">(req, res)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceRequestData">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestData
+            <span class="apidocSignatureSpan">(req, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceRequestOption">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestOption
+            <span class="apidocSignatureSpan">(req, option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceRequestProtocol">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestProtocol
+            <span class="apidocSignatureSpan">(req, protocol)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceResponseHeader">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceResponseHeader
+            <span class="apidocSignatureSpan">(req, res, header)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceResponseStatusCode">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceResponseStatusCode
+            <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.replaceServerResDataAsync">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceServerResDataAsync
+            <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.shouldInterceptHttpsReq">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>shouldInterceptHttpsReq
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.shouldUseLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>shouldUseLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule__blank.summary">
+            function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>summary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_adjust_response_time">module anyproxy.rule_adjust_response_time</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_adjust_response_time.pauseBeforeSendingResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_adjust_response_time.</span>pauseBeforeSendingResponse
+            <span class="apidocSignatureSpan">(req, res)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_allow_CORS">module anyproxy.rule_allow_CORS</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_allow_CORS.dealLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>dealLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_allow_CORS.replaceResponseHeader">
+            function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>replaceResponseHeader
+            <span class="apidocSignatureSpan">(req, res, header)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_allow_CORS.shouldUseLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>shouldUseLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_default">module anyproxy.rule_default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default._getCustomMenu">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>_getCustomMenu
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default._plugIntoWebinterface">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>_plugIntoWebinterface
+            <span class="apidocSignatureSpan">(app, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.dealLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>dealLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.fetchTrafficData">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>fetchTrafficData
+            <span class="apidocSignatureSpan">(id, info)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.pauseBeforeSendingResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>pauseBeforeSendingResponse
+            <span class="apidocSignatureSpan">(req, res)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceRequestData">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestData
+            <span class="apidocSignatureSpan">(req, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceRequestOption">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestOption
+            <span class="apidocSignatureSpan">(req, option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceRequestProtocol">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestProtocol
+            <span class="apidocSignatureSpan">(req, protocol)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceResponseHeader">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceResponseHeader
+            <span class="apidocSignatureSpan">(req, res, header)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceResponseStatusCode">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceResponseStatusCode
+            <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.replaceServerResDataAsync">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceServerResDataAsync
+            <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.setInterceptFlag">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>setInterceptFlag
+            <span class="apidocSignatureSpan">(flag)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.shouldInterceptHttpsReq">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>shouldInterceptHttpsReq
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.shouldUseLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>shouldUseLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_default.summary">
+            function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>summary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">anyproxy.rule_default.</span>token</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_intercept_some_https_requests">module anyproxy.rule_intercept_some_https_requests</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_intercept_some_https_requests.replaceServerResDataAsync">
+            function <span class="apidocSignatureSpan">anyproxy.rule_intercept_some_https_requests.</span>replaceServerResDataAsync
+            <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_intercept_some_https_requests.shouldInterceptHttpsReq">
+            function <span class="apidocSignatureSpan">anyproxy.rule_intercept_some_https_requests.</span>shouldInterceptHttpsReq
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_remove_cache_header">module anyproxy.rule_remove_cache_header</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_remove_cache_header.replaceRequestOption">
+            function <span class="apidocSignatureSpan">anyproxy.rule_remove_cache_header.</span>replaceRequestOption
+            <span class="apidocSignatureSpan">(req, option)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_remove_cache_header.replaceResponseHeader">
+            function <span class="apidocSignatureSpan">anyproxy.rule_remove_cache_header.</span>replaceResponseHeader
+            <span class="apidocSignatureSpan">(req, res, header)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_replace_request_option">module anyproxy.rule_replace_request_option</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_replace_request_option.replaceRequestOption">
+            function <span class="apidocSignatureSpan">anyproxy.rule_replace_request_option.</span>replaceRequestOption
+            <span class="apidocSignatureSpan">(req, option)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_replace_response_data">module anyproxy.rule_replace_response_data</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_replace_response_data.replaceServerResDataAsync">
+            function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_data.</span>replaceServerResDataAsync
+            <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_replace_response_status_code">module anyproxy.rule_replace_response_status_code</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseHeader">
+            function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_status_code.</span>replaceResponseHeader
+            <span class="apidocSignatureSpan">(req, res, header)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseStatusCode">
+            function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_status_code.</span>replaceResponseStatusCode
+            <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.rule_use_local_data">module anyproxy.rule_use_local_data</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_use_local_data.dealLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>dealLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_use_local_data.shouldUseLocalResponse">
+            function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>shouldUseLocalResponse
+            <span class="apidocSignatureSpan">(req, reqBody)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.rule_use_local_data.summary">
+            function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>summary
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.systemProxyMgr">module anyproxy.systemProxyMgr</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.systemProxyMgr.disableGlobalProxy">
+            function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>disableGlobalProxy
+            <span class="apidocSignatureSpan">(proxyType)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.systemProxyMgr.enableGlobalProxy">
+            function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>enableGlobalProxy
+            <span class="apidocSignatureSpan">(ip, port, proxyType)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.systemProxyMgr.getNetworkType">
+            function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>getNetworkType
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.systemProxyMgr.getProxyState">
+            function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>getProxyState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.util">module anyproxy.util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.clearCacheDir">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>clearCacheDir
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.contentLength">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>contentLength
+            <span class="apidocSignatureSpan">(filepath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.contentType">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>contentType
+            <span class="apidocSignatureSpan">(filepath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.filewalker">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>filewalker
+            <span class="apidocSignatureSpan">(root, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.freshRequire">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>freshRequire
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.generateCacheDir">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>generateCacheDir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.getAnyProxyHome">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>getAnyProxyHome
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.getUserHome">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>getUserHome
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.lower_keys">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>lower_keys
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.merge">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>merge
+            <span class="apidocSignatureSpan">(baseObj, extendObj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.showRootInstallTip">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>showRootInstallTip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.simpleRender">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>simpleRender
+            <span class="apidocSignatureSpan">(str, object, regexp)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.util.upper_keys">
+            function <span class="apidocSignatureSpan">anyproxy.util.</span>upper_keys
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.webInterface">module anyproxy.webInterface</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.webInterface.webInterface">
+            function <span class="apidocSignatureSpan">anyproxy.</span>webInterface
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.webInterface.super_">
+            function <span class="apidocSignatureSpan">anyproxy.webInterface.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.wsServer">module anyproxy.wsServer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.wsServer.wsServer">
+            function <span class="apidocSignatureSpan">anyproxy.</span>wsServer
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.wsServer.prototype">module anyproxy.wsServer.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.wsServer.prototype.closeAll">
+            function <span class="apidocSignatureSpan">anyproxy.wsServer.prototype.</span>closeAll
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy" id="apidoc.module.anyproxy">module anyproxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.generateRootCA" id="apidoc.element.anyproxy.generateRootCA">
+        function <span class="apidocSignatureSpan">anyproxy.</span>generateRootCA
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateRootCA = function (cb) {
+    doGenerate(false);
+
+    function doGenerate(overwrite) {
+        const rootOptions = {
+            commonName: &#x27;AnyProxy&#x27;,
+            overwrite: !!overwrite
+        };
+
+        easyCert.generateRootCA(rootOptions, (error, keyPath, crtPath) =&#x3e; {
+            if (!error) {
+                const certDir = path.dirname(keyPath);
+                logUtil.printLog(color.cyan(&#x27;The cert is generated at &#x22;&#x27; + certDir + &#x27;&#x22;&#x27;));
+                if(isWin){
+                    exec(&#x22;start .&#x22;,{ cwd : certDir });
+                }else{
+                    exec(&#x22;open .&#x22;,{ cwd : certDir });
+                }
+            }
+
+            if (error === &#x27;ROOT_CA_EXISTED&#x27;) {
+                var rl = readline.createInterface({
+                    input : process.stdin,
+                    output: process.stdout
+                });
+
+                rl.question(&#x22;do you really want to generate a new one ?)(yes/NO)&#x22;, function(answer) {
+                    if(/yes/i.test(answer)){
+                        doGenerate(true);
+                    }else{
+                        console.log(&#x22;will not generate a new one&#x22;);
+
+                    }
+                    rl.close();
+                });
+
+                return;
+            }
+            cb(error, keyPath, crtPath);
+        });
+    }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+```javascript
+var proxy = require(&#x22;anyproxy&#x22;);
+
+//create cert when you want to use https features
+//please manually trust this rootCA when it is the first time you run it
+!proxy.isRootCAFileExists() &#x26;&#x26; proxy.<span class="apidocCodeKeywordSpan">generateRootCA</span>();
+
+var options = {
+type          : &#x22;http&#x22;,
+port          : 8001,
+hostname      : &#x22;localhost&#x22;,
+rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
+dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.isRootCAFileExists" id="apidoc.element.anyproxy.isRootCAFileExists">
+        function <span class="apidocSignatureSpan">anyproxy.</span>isRootCAFileExists
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isRootCAFileExists() {
+  return (fs.existsSync(rootCAcrtFilePath) &#x26;&#x26; fs.existsSync(rootCAkeyFilePath));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+```javascript
+var proxy = require(&#x22;anyproxy&#x22;);
+
+//create cert when you want to use https features
+//please manually trust this rootCA when it is the first time you run it
+!proxy.<span class="apidocCodeKeywordSpan">isRootCAFileExists</span>() &#x26;&#x26; proxy.generateRootCA();
+
+var options = {
+type          : &#x22;http&#x22;,
+port          : 8001,
+hostname      : &#x22;localhost&#x22;,
+rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
+dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.proxyServer" id="apidoc.element.anyproxy.proxyServer">
+        function <span class="apidocSignatureSpan">anyproxy.</span>proxyServer
+        <span class="apidocSignatureSpan">(option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function proxyServer(option){
+    option = option || {};
+
+    var self       = this,
+        proxyType           = /https/i.test(option.type || DEFAULT_TYPE) ? T_TYPE_HTTPS : T_TYPE_HTTP ,
+        proxyPort           = option.port     || DEFAULT_PORT,
+        proxyHost           = option.hostname || DEFAULT_HOST,
+        proxyRules          = option.rule     || default_rule,
+        proxyWebPort        = option.webPort       || DEFAULT_WEB_PORT,       //port for web interface
+        socketPort          = option.socketPort    || DEFAULT_WEBSOCKET_PORT, //port for websocket
+        proxyConfigPort     = option.webConfigPort || DEFAULT_CONFIG_PORT,    //port to ui config server
+        disableWebInterface = !!option.disableWebInterface,
+        ifSilent            = !!option.silent;
+
+    if(ifSilent){
+        logUtil.setPrintStatus(false);
+    }
+
+    // copy the rule to keep the original proxyRules independent
+    proxyRules = Object.assign({}, proxyRules);
+
+    var currentRule = requestHandler.setRules(proxyRules); //TODO : optimize calling for set rule
+
+    if(!!option.interceptHttps){
+        if (!certMgr.isRootCAFileExists()) {
+            util.showRootInstallTip();
+            process.exit(0);
+            return;
+        }
+
+        currentRule.setInterceptFlag(true);
+
+        //print a tip when using https features in Node &#x3c; v0.12
+        var nodeVersion = Number(process.version.match(/^v(\d+\.\d+)/)[1]);
+        if(nodeVersion &#x3c; 0.12){
+            logUtil.printLog(color.red(&#x22;node &#x3e;= v0.12 is required when trying to intercept HTTPS requests :(&#x22;), logUtil.T_ERR);
+        }
+
+        logUtil.printLog(color.blue(&#x22;The WebSocket will not work properly in the https intercept mode :(&#x22;), logUtil.T_TIP);
+    }
+
+    if(option.throttle){
+        logUtil.printLog(&#x22;throttle :&#x22; + option.throttle + &#x22;kb/s&#x22;);
+        const rate = parseInt(option.throttle);
+        if (rate &#x3c; 1) {
+            logUtil.printLog(color.red(&#x27;Invalid throttle rate value, should be positive integer\n&#x27;), logUtil.T_ERR);
+            process.exit(0);
+        }
+        global._throttle = new ThrottleGroup({rate: 1024 * parseFloat(option.throttle) }); // rate - byte/sec
+    }
+
+    self.httpProxyServer = null;
+
+    async.series(
+        [
+            //clear cache dir, prepare recorder
+            function(callback){
+                util.clearCacheDir(function(){
+                    if(option.dbFile){
+                        global.recorder = new Recorder({filename: option.dbFile});
+                    }else{
+                        global.recorder = new Recorder();
+                    }
+                    callback();
+                });
+            },
+
+            //creat proxy server
+            function(callback){
+                if(proxyType == T_TYPE_HTTPS){
+                    certMgr.getCertificate(proxyHost,function(err,keyContent,crtContent){
+                        if(err){
+                            callback(err);
+                        }else{
+                            self.httpProxyServer = https.createServer({
+                                key : keyContent,
+                                cert: crtContent
+                            },requestHandler.userRequestHandler);
+                            callback(null);
+                        }
+                    });
+                }else{
+                    self.httpProxyServer = http.createServer(requestHandler.userRequestHandler);
+                    callback(null);
+                }
+            },
+
+            //handle CONNECT request for https over http
+            function(callback){
+                self.httpProxyServer.on(&#x27;connect&#x27;,requestHandler.connectReqHandler);
+                callback(null);
+            },
+
+            //start proxy server
+            function(callback){
+                self.httpProxyServer.listen(proxyPort);
+                callback(null);
+            },
+
+            //start web socket service
+            function(callback){
+                self.ws = new wsServer({port : socketPort});
+                callback(null);
+            },
+
+            //start web interface ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    webPort       : 8002,  // optional, port for web interface
+    socketPort    : 8003,  // optional, internal port for web socket, replace this when it is conflict with your own service
+    throttle      : 10,    // optional, speed limit in kb/s
+    disableWebInterface : false, //optional, set it when you don&#x27;t want to use the web interface
+    setAsGlobalProxy : false, //set anyproxy as your system proxy
+    silent        : false //optional, do not print anything into terminal. do not set it when you are still debugging.
+};
+new proxy.<span class="apidocCodeKeywordSpan">proxyServer</span>(options);
+
+```
+
+Contact
+-----------------
+
+* Please feel free to [raise issue](https://github.com/alibaba/anyproxy/issues), or give us some advice. :)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.recorder" id="apidoc.element.anyproxy.recorder">
+        function <span class="apidocSignatureSpan">anyproxy.</span>recorder
+        <span class="apidocSignatureSpan">(option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Recorder(option){
+    var self = this,
+        id        = 1,
+        cachePath = proxyUtil.generateCacheDir(),
+        db;
+
+    option = option || {};
+    if(option.filename &#x26;&#x26; typeof option.filename == &#x22;string&#x22;){
+        try{
+            if(fs.existsSync(option.filename)){
+                fs.writeFileSync(option.filename,&#x22;&#x22;); //empty original file
+            }
+
+            db = new Datastore({
+                filename : option.filename,
+                autoload :true
+            });
+            db.persistence.setAutocompactionInterval(5001);
+            logUtil.printLog(&#x22;db file : &#x22; + option.filename);
+
+        }catch(e){
+            logUtil.printLog(e, logUtil.T_ERR);
+            logUtil.printLog(&#x22;Failed to load on-disk db file. Will use in-meomory db instead.&#x22;, logUtil.T_ERR);
+            db = new Datastore();
+        }
+
+    }else{
+        //in-memory db
+        db = new Datastore();
+    }
+
+    self.recordBodyMap = []; // id - body
+
+    self.emitUpdate = function(id,info){
+        if(info){
+            self.emit(&#x22;update&#x22;,info);
+        }else{
+            self.getSingleRecord(id,function(err,doc){
+                if(!err &#x26;&#x26; !!doc &#x26;&#x26; !!doc[0]){
+                    self.emit(&#x22;update&#x22;,doc[0]);
+                }
+            });
+        }
+    };
+
+    self.updateRecord = function(id,info){
+        if(id &#x3c; 0 ) return;
+
+        var finalInfo = normalizeInfo(id,info);
+
+        db.update({_id:id},finalInfo);
+        self.updateRecordBody(id,info);
+
+        self.emitUpdate(id,finalInfo);
+    };
+
+    self.updateExtInfo = function(id,extInfo){
+        db.update({_id:id},{ $set: { ext: extInfo } },{},function(err,nums){
+            if(!err){
+                self.emitUpdate(id);
+            }
+        });
+
+    }
+
+    self.appendRecord = function(info){
+        if(info.req.headers.anyproxy_web_req){ //request from web interface
+            return -1;
+        }
+
+        var thisId    = id++,
+            finalInfo = normalizeInfo(thisId,info);
+        db.insert(finalInfo);
+        self.updateRecordBody(id,info);
+
+        self.emitUpdate(id,finalInfo);
+        return thisId;
+    };
+
+    //update recordBody if exits
+
+    //TODO : trigger update callback
+    var BODY_FILE_PRFIX = &#x22;res_body_&#x22;;
+    self.updateRecordBody =function(id,info){
+        if(id == -1) return;
+
+        if(!id || !info.resBody) return;
+        //add to body map
+        //ignore image data
+        var bodyFile = path.join(cachePath,BODY_FILE_PRFIX + id);
+        fs.writeFile(bodyFile, info.resBody);
+    };
+
+    self.getBody = function(id,cb){
+        if(id &#x3c; 0){
+            cb &#x26;&#x26; cb(&#x22;&#x22;);
+        }
+
+        var bodyFile = path.join(cachePath,BODY_FILE_PRFIX + id);
+        fs.access(bodyFile, fs.F_OK | fs.R_OK ,function(err){
+            if(err){
+                cb &#x26;&#x26; cb(err);
+            }else{
+                fs.readFile(bodyFile,cb);
+            }
+        });
+    };
+
+    self.getDecodedBody = function(id,cb){
+        var result = {
+            type    : &#x22;unknown&#x22;,
+            mime    : &#x22;&#x22;,
+            content : &#x22;&#x22;
+        };
+        global.recorder.getSingleRecord(id,function(err,doc){
+            //check whether this record exists
+            if(!doc || !doc[0]){
+                cb(new Error(&#x22;failed to find record for this id&#x22;));
+                return;
+            }
+
+            self.getBody(id,function(err,bodyContent){
+                if(err){
+                    cb(err);
+                }else if(!bodyContent){
+                    cb(null,result);
+                }else{
+                    var record      = doc[0],
+                        resHeader   = record[&#x27;resHeader&#x27;] || {};
+                    try{
+                        var headerStr    = JSON.stringify(resHeader),
+                            charsetMatch = headerStr.match(/charset=&#x22;?([a-zA-Z0-9\-]+)&#x22;?/),
+                            imageMatch   = resHeader &#x26;&#x26; resHeader[&#x22;content-type&#x22;];
+
+                        if(charsetMatch &#x26;&#x26; charsetMatch.length){
+
+                            var currentCharset = charsetMatch[1].toLowerCase();
+                            if(currentCharset ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.setRules" id="apidoc.element.anyproxy.setRules">
+        function <span class="apidocSignatureSpan">anyproxy.</span>setRules
+        <span class="apidocSignatureSpan">(newRule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setRules(newRule){
+
+    if(!newRule){
+        return userRule;
+    }else{
+
+        if(!newRule.summary){
+            newRule.summary = function(){
+                return &#x22;this rule file does not have a summary&#x22;;
+            };
+        }
+
+        userRule = util.merge(userRule,newRule);
+
+        var functions = [];
+        if(&#x27;function&#x27; == typeof(userRule.init)){
+            functions.push(function(cb){
+                userRule.init(cb);
+            });
+        }
+        if(&#x27;function&#x27; == typeof(userRule.summary)){
+            functions.push(function(cb){
+                logUtil.printLog(userRule.summary());
+                cb(null);
+            });
+        }
+        async.series(functions,function(errors,result){
+            if(!errors){
+                logUtil.printLog(color.green(&#x27;Anyproxy rules initialize finished, have fun!&#x27;));
+            }
+        });
+
+        return userRule;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if(ifSilent){
+    logUtil.setPrintStatus(false);
+}
+
+// copy the rule to keep the original proxyRules independent
+proxyRules = Object.assign({}, proxyRules);
+
+var currentRule = requestHandler.<span class="apidocCodeKeywordSpan">setRules</span>(proxyRules); //TODO : optimize calling for
+set rule
+
+if(!!option.interceptHttps){
+    if (!certMgr.isRootCAFileExists()) {
+        util.showRootInstallTip();
+        process.exit(0);
+        return;
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.webInterface" id="apidoc.element.anyproxy.webInterface">
+        function <span class="apidocSignatureSpan">anyproxy.</span>webInterface
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function webInterface(config){
+    var port = config.port,
+        wsPort        = config.wsPort,
+        ipAddress     = config.ip,
+        userRule      = config.userRule,
+        ruleSummary   = &#x22;&#x22;,
+        customMenu    = [],
+        server;
+
+    try{
+        ruleSummary = userRule.summary();
+        customMenu  = userRule._getCustomMenu();
+    }catch(e){}
+
+    var self         = this,
+        myAbsAddress = &#x22;http://&#x22; + ipAddress + &#x22;:&#x22; + port +&#x22;/&#x22;,
+        crtFilePath  = certMgr.getRootCAFilePath(),
+        staticDir    = path.join(__dirname,&#x27;../web&#x27;);
+
+    var app = express();
+    app.use(compress()); //invoke gzip
+    app.use(function(req, res, next) {
+        res.setHeader(&#x22;note&#x22;, &#x22;THIS IS A REQUEST FROM ANYPROXY WEB INTERFACE&#x22;);
+        return next();
+    });
+
+    app.get(&#x22;/lastestLog&#x22;,function(req,res){
+        recorder.getRecords(null,120,function(err,docs){
+            if(err){
+                res.end(err.toString());
+            }else{
+                res.json(docs);
+            }
+        });
+    });
+
+    app.get(&#x22;/fetchBody&#x22;,function(req,res){
+        var query = req.query;
+        if(query &#x26;&#x26; query.id){
+            global.recorder.getDecodedBody(query.id, function(err, result){
+                if(err || !result || !result.content){
+                    res.json({});
+                }else if(result.type &#x26;&#x26; result.type == &#x22;image&#x22; &#x26;&#x26; result.mime){
+                    if(query.raw){
+                        //TODO : cache query result
+                        res.type(result.mime).end(result.content);
+                    }else{
+                        res.json({
+                            id      : query.id,
+                            type    : result.type,
+                            ref     : &#x22;/fetchBody?id=&#x22; + query.id + &#x22;&#x26;raw=true&#x22;
+                        });
+                    }
+                }else{
+                    res.json({
+                        id      : query.id,
+                        type    : result.type,
+                        content : result.content
+                    });
+                }
+            });
+        }else{
+            res.end({});
+        }
+    });
+
+    app.get(&#x22;/fetchCrtFile&#x22;,function(req,res){
+        if(crtFilePath){
+            res.setHeader(&#x22;Content-Type&#x22;,&#x22;application/x-x509-ca-cert&#x22;);
+            res.setHeader(&#x22;Content-Disposition&#x22;,&#x27;attachment; filename=&#x22;rootCA.crt&#x22;&#x27;);
+            res.end(fs.readFileSync(crtFilePath,{encoding:null}));
+        }else{
+            res.setHeader(&#x22;Content-Type&#x22;,&#x22;text/html&#x22;);
+            res.end(&#x22;can not file rootCA ,plase use &#x3c;strong&#x3e;anyproxy --root&#x3c;/strong&#x3e; to generate one&#x22;);
+        }
+    });
+
+    //make qr code
+    app.get(&#x22;/qr&#x22;,function(req,res){
+        var qr        = qrCode.qrcode(4, &#x27;M&#x27;),
+            targetUrl = myAbsAddress,
+            qrImageTag,
+            resDom;
+
+        qr.addData(targetUrl);
+        qr.make();
+        qrImageTag = qr.createImgTag(4);
+
+        resDom = &#x27;&#x3c;a href=&#x22;__url&#x22;&#x3e; __img &#x3c;br&#x3e; click or scan qr code to start client &#x3c;/a&#x3e;&#x27;.replace(/__url/,targetUrl).replace(/__img
+/,qrImageTag);
+        res.setHeader(&#x22;Content-Type&#x22;, &#x22;text/html&#x22;);
+        res.end(resDom);
+    });
+
+    app.get(&#x22;/qr_root&#x22;,function(req,res){
+        var qr        = qrCode.qrcode(4, &#x27;M&#x27;),
+            targetUrl = myAbsAddress + &#x22;fetchCrtFile&#x22;,
+            qrImageTag,
+            resDom;
+
+        qr.addData(targetUrl);
+        qr.make();
+        qrImageTag = qr.createImgTag(4);
+
+        resDom = &#x27;&#x3c;a href=&#x22;__url&#x22;&#x3e; __img &#x3c;br&#x3e; click or scan qr code to download rootCA.crt &#x3c;/a&#x3e;&#x27;.replace(/__url/,targetUrl).replace
+(/__img/,qrImageTag);
+        res.setHeader(&#x22;Content-Type&#x22;, &#x22;text/html&#x22;);
+        res.end(resDom);
+    });
+
+    app.use(function(req,res,next){
+        var indexTpl  = fs.readFileSync(path.join(staticDir,&#x22;/index.html&#x22;),{encoding:&#x22;utf8&#x22;}),
+            opt       = {
+                rule        : ruleSummary || &#x22;&#x22;,
+                customMenu  : customMenu || [],
+                wsPort      : wsPort,
+                ipAddress   : ipAddress || &#x22;127.0.0.1&#x22;
+            };
+
+        if( url.parse(req.url).pathname == &#x22;/&#x22;){
+            res.se ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.wsServer" id="apidoc.element.anyproxy.wsServer">
+        function <span class="apidocSignatureSpan">anyproxy.</span>wsServer
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wsServer(config){
+	//web socket interface
+	var self = this,
+        wss  = new WebSocketServer({port: config.port});
+	wss.broadcast = function(data) {
+        var key = data.id;
+        if(typeof data == &#x22;object&#x22;){
+            data = JSON.stringify(data);
+        }
+
+        for(var i in this.clients){
+            try{
+                this.clients[i].send(data);
+            }catch(e){
+                logUtil.printLog(&#x22;websocket failed to send data, &#x22; + e, logUtil.T_ERR);
+            }
+        }
+	};
+
+	wss.on(&#x22;connection&#x22;,function(ws){
+	    ws.on(&#x22;message&#x22;,function(msg){
+	        resToMsg(msg,function(res){
+	            res &#x26;&#x26; ws.send(JSON.stringify(res));
+	        });
+	    });
+	});
+
+    wss.on(&#x22;close&#x22;,function(){});
+
+	global.recorder.on(&#x22;update&#x22;,function(data){
+        try{
+    	    wss &#x26;&#x26; wss.broadcast({
+    	        type   : &#x22;update&#x22;,
+    	        content: data
+    	    });
+
+        }catch(e){
+            console.log(&#x22;ws error&#x22;);
+            console.log(e);
+        }
+	});
+
+    self.wss = wss;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.certGenerator" id="apidoc.module.anyproxy.certGenerator">module anyproxy.certGenerator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certGenerator.generateCertsForHostname" id="apidoc.element.anyproxy.certGenerator.generateCertsForHostname">
+        function <span class="apidocSignatureSpan">anyproxy.certGenerator.</span>generateCertsForHostname
+        <span class="apidocSignatureSpan">(domain, rootCAConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateCertsForHostname(domain, rootCAConfig){
+
+  //generate a serialNumber for domain
+  var md = forge.md.md5.create();
+  md.update(domain);
+
+  var keysAndCert = getKeysAndCert(md.digest().toHex());
+  keys = keysAndCert.keys;
+  cert = keysAndCert.cert;
+
+  var caCert    = forge.pki.certificateFromPem(rootCAConfig.cert);
+  var caKey     = forge.pki.privateKeyFromPem(rootCAConfig.key);
+
+  // issuer from CA
+  cert.setIssuer(caCert.subject.attributes);
+
+  var attrs = defaultAttrs.concat([
+    {
+      name: &#x27;commonName&#x27;,
+      value: domain
+    }
+  ]);
+  cert.setSubject(attrs);
+  cert.sign(caKey, forge.md.sha256.create());
+
+  return {
+    privateKey: forge.pki.privateKeyToPem(keys.privateKey),
+    publicKey: forge.pki.publicKeyToPem(keys.publicKey),
+    certificate: forge.pki.certificateToPem(cert)
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certGenerator.generateRootCA" id="apidoc.element.anyproxy.certGenerator.generateRootCA">
+        function <span class="apidocSignatureSpan">anyproxy.certGenerator.</span>generateRootCA
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateRootCA(){
+  var keysAndCert = getKeysAndCert();
+  keys = keysAndCert.keys;
+  cert = keysAndCert.cert;
+
+  var attrs = defaultAttrs.concat([
+    {
+      name: &#x27;commonName&#x27;,
+      value: &#x27;AnyProxy&#x27;
+    }
+  ]);
+  cert.setSubject(attrs);
+  cert.setIssuer(attrs);
+  cert.setExtensions([
+    { name: &#x27;basicConstraints&#x27;, cA: true }
+    // { name: &#x27;keyUsage&#x27;, keyCertSign: true, digitalSignature: true, nonRepudiation: true, keyEncipherment: true, dataEncipherment
+: true },
+    // { name: &#x27;extKeyUsage&#x27;, serverAuth: true, clientAuth: true, codeSigning: true, emailProtection: true, timeStamping: true },
+    // { name: &#x27;nsCertType&#x27;, client: true, server: true, email: true, objsign: true, sslCA: true, emailCA: true, objCA: true },
+    // { name: &#x27;subjectAltName&#x27;, altNames: [ { type: 6, /* URI */ value: &#x27;http://example.org/webid#me&#x27; }, { type: 7, /* IP */ ip
+: &#x27;127.0.0.1&#x27; } ] },
+    // { name: &#x27;subjectKeyIdentifier&#x27; }
+  ]);
+
+  cert.sign(keys.privateKey, forge.md.sha256.create());
+
+  return {
+    privateKey: forge.pki.privateKeyToPem(keys.privateKey),
+    publicKey: forge.pki.publicKeyToPem(keys.publicKey),
+    certificate: forge.pki.certificateToPem(cert)
+  };
+
+  return pem;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+```javascript
+var proxy = require(&#x22;anyproxy&#x22;);
+
+//create cert when you want to use https features
+//please manually trust this rootCA when it is the first time you run it
+!proxy.isRootCAFileExists() &#x26;&#x26; proxy.<span class="apidocCodeKeywordSpan">generateRootCA</span>();
+
+var options = {
+type          : &#x22;http&#x22;,
+port          : 8001,
+hostname      : &#x22;localhost&#x22;,
+rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
+dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.certMgr" id="apidoc.module.anyproxy.certMgr">module anyproxy.certMgr</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.clearCerts" id="apidoc.element.anyproxy.certMgr.clearCerts">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>clearCerts
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clearCerts(cb) {
+  util.deleteFolderContentsRecursive(certDir);
+  cb &#x26;&#x26; cb();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.generateRootCA" id="apidoc.element.anyproxy.certMgr.generateRootCA">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>generateRootCA
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateRootCA = function (cb) {
+    doGenerate(false);
+
+    function doGenerate(overwrite) {
+        const rootOptions = {
+            commonName: &#x27;AnyProxy&#x27;,
+            overwrite: !!overwrite
+        };
+
+        easyCert.generateRootCA(rootOptions, (error, keyPath, crtPath) =&#x3e; {
+            if (!error) {
+                const certDir = path.dirname(keyPath);
+                logUtil.printLog(color.cyan(&#x27;The cert is generated at &#x22;&#x27; + certDir + &#x27;&#x22;&#x27;));
+                if(isWin){
+                    exec(&#x22;start .&#x22;,{ cwd : certDir });
+                }else{
+                    exec(&#x22;open .&#x22;,{ cwd : certDir });
+                }
+            }
+
+            if (error === &#x27;ROOT_CA_EXISTED&#x27;) {
+                var rl = readline.createInterface({
+                    input : process.stdin,
+                    output: process.stdout
+                });
+
+                rl.question(&#x22;do you really want to generate a new one ?)(yes/NO)&#x22;, function(answer) {
+                    if(/yes/i.test(answer)){
+                        doGenerate(true);
+                    }else{
+                        console.log(&#x22;will not generate a new one&#x22;);
+
+                    }
+                    rl.close();
+                });
+
+                return;
+            }
+            cb(error, keyPath, crtPath);
+        });
+    }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+```javascript
+var proxy = require(&#x22;anyproxy&#x22;);
+
+//create cert when you want to use https features
+//please manually trust this rootCA when it is the first time you run it
+!proxy.isRootCAFileExists() &#x26;&#x26; proxy.<span class="apidocCodeKeywordSpan">generateRootCA</span>();
+
+var options = {
+type          : &#x22;http&#x22;,
+port          : 8001,
+hostname      : &#x22;localhost&#x22;,
+rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
+dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.getCertificate" id="apidoc.element.anyproxy.certMgr.getCertificate">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getCertificate
+        <span class="apidocSignatureSpan">(host, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCertificate = function (host, cb) {
+    easyCert.getCertificate(host, (error, keyContent, crtContent) =&#x3e; {
+        if (error === &#x27;ROOT_CA_NOT_EXISTS&#x27;) {
+            util.showRootInstallTip();
+            process.exit(0);
+            return;
+        }
+
+        cb(error, keyContent, crtContent);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        callback();
+    });
+},
+
+//creat proxy server
+function(callback){
+    if(proxyType == T_TYPE_HTTPS){
+        certMgr.<span class="apidocCodeKeywordSpan">getCertificate</span>(proxyHost,function(err,keyContent,crtContent){
+            if(err){
+                callback(err);
+            }else{
+                self.httpProxyServer = https.createServer({
+                    key : keyContent,
+                    cert: crtContent
+                },requestHandler.userRequestHandler);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.getRootCAFilePath" id="apidoc.element.anyproxy.certMgr.getRootCAFilePath">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getRootCAFilePath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRootCAFilePath() {
+  return isRootCAFileExists() ? rootCAcrtFilePath : &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+try{
+    ruleSummary = userRule.summary();
+    customMenu  = userRule._getCustomMenu();
+}catch(e){}
+
+var self         = this,
+    myAbsAddress = &#x22;http://&#x22; + ipAddress + &#x22;:&#x22; + port +&#x22;/&#x22;,
+    crtFilePath  = certMgr.<span class="apidocCodeKeywordSpan">getRootCAFilePath</span>(),
+    staticDir    = path.join(__dirname,&#x27;../web&#x27;);
+
+var app = express();
+app.use(compress()); //invoke gzip
+app.use(function(req, res, next) {
+    res.setHeader(&#x22;note&#x22;, &#x22;THIS IS A REQUEST FROM ANYPROXY WEB INTERFACE&#x22;);
+    return next();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.getRootDirPath" id="apidoc.element.anyproxy.certMgr.getRootDirPath">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>getRootDirPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRootDirPath() {
+  return rootDirPath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.ifRootCATrusted" id="apidoc.element.anyproxy.certMgr.ifRootCATrusted">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>ifRootCATrusted
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ifRootCATrusted(callback) {
+  if (!isRootCAFileExists()) {
+    callback &#x26;&#x26; callback(new Error(&#x27;ROOTCA_NOT_EXIST&#x27;));
+  } else if (/^win/.test(process.platform)) {
+    callback &#x26;&#x26; callback(new Error(&#x27;UNABLE_TO_DETECT_IN_WINDOWS&#x27;));
+  } else {
+    const HTTPS_RESPONSE = &#x27;HTTPS Server is ON&#x27;;
+    // local.asnyproxy.io --&#x3e; 127.0.0.1
+    getCertificate(&#x27;local.anyproxy.io&#x27;, (e, key, cert) =&#x3e; {
+      getPort()
+      .then((port) =&#x3e; {
+        if (e) {
+          callback &#x26;&#x26; callback(e);
+          return;
+        }
+        const server = https.createServer({
+          ca: fs.readFileSync(rootCAcrtFilePath),
+          key,
+          cert,
+        }, (req, res) =&#x3e; {
+          res.end(HTTPS_RESPONSE);
+        }).listen(port);
+
+        // do not use node.http to test the cert. Ref: https://github.com/nodejs/node/issues/4175
+        const testCmd = &#x27;curl https://local.anyproxy.io:&#x27; + port;
+        exec(testCmd, { timeout: 1000 }, (error, stdout, stderr) =&#x3e; {
+          server.close();
+          if (stdout &#x26;&#x26; stdout.indexOf(HTTPS_RESPONSE) &#x3e;= 0) {
+            callback &#x26;&#x26; callback(null, true);
+          } else {
+            callback &#x26;&#x26; callback(null, false);
+          }
+        });
+      })
+      .catch(callback);
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.certMgr.isRootCAFileExists" id="apidoc.element.anyproxy.certMgr.isRootCAFileExists">
+        function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>isRootCAFileExists
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isRootCAFileExists() {
+  return (fs.existsSync(rootCAcrtFilePath) &#x26;&#x26; fs.existsSync(rootCAkeyFilePath));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+```javascript
+var proxy = require(&#x22;anyproxy&#x22;);
+
+//create cert when you want to use https features
+//please manually trust this rootCA when it is the first time you run it
+!proxy.<span class="apidocCodeKeywordSpan">isRootCAFileExists</span>() &#x26;&#x26; proxy.generateRootCA();
+
+var options = {
+type          : &#x22;http&#x22;,
+port          : 8001,
+hostname      : &#x22;localhost&#x22;,
+rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
+dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.recorder" id="apidoc.module.anyproxy.recorder">module anyproxy.recorder</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.recorder.recorder" id="apidoc.element.anyproxy.recorder.recorder">
+        function <span class="apidocSignatureSpan">anyproxy.</span>recorder
+        <span class="apidocSignatureSpan">(option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Recorder(option){
+    var self = this,
+        id        = 1,
+        cachePath = proxyUtil.generateCacheDir(),
+        db;
+
+    option = option || {};
+    if(option.filename &#x26;&#x26; typeof option.filename == &#x22;string&#x22;){
+        try{
+            if(fs.existsSync(option.filename)){
+                fs.writeFileSync(option.filename,&#x22;&#x22;); //empty original file
+            }
+
+            db = new Datastore({
+                filename : option.filename,
+                autoload :true
+            });
+            db.persistence.setAutocompactionInterval(5001);
+            logUtil.printLog(&#x22;db file : &#x22; + option.filename);
+
+        }catch(e){
+            logUtil.printLog(e, logUtil.T_ERR);
+            logUtil.printLog(&#x22;Failed to load on-disk db file. Will use in-meomory db instead.&#x22;, logUtil.T_ERR);
+            db = new Datastore();
+        }
+
+    }else{
+        //in-memory db
+        db = new Datastore();
+    }
+
+    self.recordBodyMap = []; // id - body
+
+    self.emitUpdate = function(id,info){
+        if(info){
+            self.emit(&#x22;update&#x22;,info);
+        }else{
+            self.getSingleRecord(id,function(err,doc){
+                if(!err &#x26;&#x26; !!doc &#x26;&#x26; !!doc[0]){
+                    self.emit(&#x22;update&#x22;,doc[0]);
+                }
+            });
+        }
+    };
+
+    self.updateRecord = function(id,info){
+        if(id &#x3c; 0 ) return;
+
+        var finalInfo = normalizeInfo(id,info);
+
+        db.update({_id:id},finalInfo);
+        self.updateRecordBody(id,info);
+
+        self.emitUpdate(id,finalInfo);
+    };
+
+    self.updateExtInfo = function(id,extInfo){
+        db.update({_id:id},{ $set: { ext: extInfo } },{},function(err,nums){
+            if(!err){
+                self.emitUpdate(id);
+            }
+        });
+
+    }
+
+    self.appendRecord = function(info){
+        if(info.req.headers.anyproxy_web_req){ //request from web interface
+            return -1;
+        }
+
+        var thisId    = id++,
+            finalInfo = normalizeInfo(thisId,info);
+        db.insert(finalInfo);
+        self.updateRecordBody(id,info);
+
+        self.emitUpdate(id,finalInfo);
+        return thisId;
+    };
+
+    //update recordBody if exits
+
+    //TODO : trigger update callback
+    var BODY_FILE_PRFIX = &#x22;res_body_&#x22;;
+    self.updateRecordBody =function(id,info){
+        if(id == -1) return;
+
+        if(!id || !info.resBody) return;
+        //add to body map
+        //ignore image data
+        var bodyFile = path.join(cachePath,BODY_FILE_PRFIX + id);
+        fs.writeFile(bodyFile, info.resBody);
+    };
+
+    self.getBody = function(id,cb){
+        if(id &#x3c; 0){
+            cb &#x26;&#x26; cb(&#x22;&#x22;);
+        }
+
+        var bodyFile = path.join(cachePath,BODY_FILE_PRFIX + id);
+        fs.access(bodyFile, fs.F_OK | fs.R_OK ,function(err){
+            if(err){
+                cb &#x26;&#x26; cb(err);
+            }else{
+                fs.readFile(bodyFile,cb);
+            }
+        });
+    };
+
+    self.getDecodedBody = function(id,cb){
+        var result = {
+            type    : &#x22;unknown&#x22;,
+            mime    : &#x22;&#x22;,
+            content : &#x22;&#x22;
+        };
+        global.recorder.getSingleRecord(id,function(err,doc){
+            //check whether this record exists
+            if(!doc || !doc[0]){
+                cb(new Error(&#x22;failed to find record for this id&#x22;));
+                return;
+            }
+
+            self.getBody(id,function(err,bodyContent){
+                if(err){
+                    cb(err);
+                }else if(!bodyContent){
+                    cb(null,result);
+                }else{
+                    var record      = doc[0],
+                        resHeader   = record[&#x27;resHeader&#x27;] || {};
+                    try{
+                        var headerStr    = JSON.stringify(resHeader),
+                            charsetMatch = headerStr.match(/charset=&#x22;?([a-zA-Z0-9\-]+)&#x22;?/),
+                            imageMatch   = resHeader &#x26;&#x26; resHeader[&#x22;content-type&#x22;];
+
+                        if(charsetMatch &#x26;&#x26; charsetMatch.length){
+
+                            var currentCharset = charsetMatch[1].toLowerCase();
+                            if(currentCharset ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.recorder.super_" id="apidoc.element.anyproxy.recorder.super_">
+        function <span class="apidocSignatureSpan">anyproxy.recorder.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.requestHandler" id="apidoc.module.anyproxy.requestHandler">module anyproxy.requestHandler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.requestHandler.connectReqHandler" id="apidoc.element.anyproxy.requestHandler.connectReqHandler">
+        function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>connectReqHandler
+        <span class="apidocSignatureSpan">(req, socket, head)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function connectReqHandler(req, socket, head){
+    var host      = req.url.split(&#x22;:&#x22;)[0],
+        targetPort= req.url.split(&#x22;:&#x22;)[1],
+        resourceInfo,
+        resourceInfoId;
+
+    var shouldIntercept = userRule.shouldInterceptHttpsReq(req);
+
+    //bypass webSocket on webinterface
+    if(targetPort == 8003){
+        shouldIntercept = false; // TODO : a more general solution?
+    }
+
+    logUtil.printLog(color.green(&#x22;\nreceived https CONNECT request &#x22; + host));
+    if(shouldIntercept){
+        logUtil.printLog(&#x22;==&#x3e;will forward to local https server&#x22;);
+    }else{
+        logUtil.printLog(&#x22;==&#x3e;will bypass the man-in-the-middle proxy&#x22;);
+    }
+
+    //record
+    resourceInfo = {
+        host      : host,
+        method    : req.method,
+        path      : &#x22;&#x22;,
+        url       : &#x22;https://&#x22; + host,
+        req       : req,
+        startTime : new Date().getTime()
+    };
+    resourceInfoId = global.recorder.appendRecord(resourceInfo);
+
+    var proxyPort,
+        proxyHost,
+        internalHttpsPort,
+        httpsServerMgrInstance;
+
+    async.series([
+
+        //check if internal https server exists
+        function(callback){
+            if(!shouldIntercept){
+                callback();
+                return;
+            }else{
+                if(internalHttpsPort){
+                    callback();
+                }else{
+                    getPort(function(port){
+                        internalHttpsPort = port;
+                        httpsServerMgrInstance = new httpsServerMgr({
+                            port    :port,
+                            handler :userRequestHandler
+                        });
+                        callback();
+                    });
+                }
+            }
+        },
+
+        //determine the target server
+        function(callback){
+
+            if(shouldIntercept){
+                proxyPort = internalHttpsPort;
+                proxyHost = &#x22;127.0.0.1&#x22;;
+                callback();
+
+            }else{
+                proxyPort = (targetPort == 80)? 443 : targetPort;
+                proxyHost = host;
+
+                callback();
+            }
+
+        //connect
+        },function(callback){
+            try{
+                var conn = net.connect(proxyPort, proxyHost, function(){
+                    socket.write(&#x27;HTTP/&#x27; + req.httpVersion + &#x27; 200 OK\r\n\r\n&#x27;, &#x27;UTF-8&#x27;, function(){
+
+                        //throttle for direct-foward https
+                        if(global._throttle &#x26;&#x26; !shouldIntercept ){
+                            var readable = conn.pipe(global._throttle.throttle());
+                            readable.pipe(socket);
+                            socket.pipe(conn);
+                        }else{
+                            conn.pipe(socket);
+                            socket.pipe(conn);
+                        }
+
+                        callback();
+                    });
+                });
+
+                conn.on(&#x22;error&#x22;,function(e){
+                    logUtil.printLog(&#x22;err when connect to + &#x22; + host + &#x22; , &#x22; + e, logUtil.T_ERR);
+                });
+            }catch(e){
+                logUtil.printLog(&#x22;err when connect to remote https server (__host)&#x22;.replace(/__host/,host), logUtil.T_ERR);
+            }
+
+        //update record
+        },function(callback){
+            resourceInfo.endTime    = new Date().getTime();
+            resourceInfo.statusCode = &#x22;200&#x22;;
+            resourceInfo.resHeader  = {};
+            resourceInfo.resBody    = &#x22;&#x22;;
+            resourceInfo.length     = 0;
+
+            global.recorder &#x26;&#x26; global.recorder.updateRecord(resourceInfoId,resourceInfo);
+
+            callback();
+        }
+    ],function(err,result){
+        if(err){
+            logUtil.printLog(&#x22;err &#x22; + err, logUtil.T_ERR);
+            throw err;
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.requestHandler.getRuleSummary" id="apidoc.element.anyproxy.requestHandler.getRuleSummary">
+        function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>getRuleSummary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRuleSummary(){
+    return userRule.summary();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.requestHandler.setRules" id="apidoc.element.anyproxy.requestHandler.setRules">
+        function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>setRules
+        <span class="apidocSignatureSpan">(newRule)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setRules(newRule){
+
+    if(!newRule){
+        return userRule;
+    }else{
+
+        if(!newRule.summary){
+            newRule.summary = function(){
+                return &#x22;this rule file does not have a summary&#x22;;
+            };
+        }
+
+        userRule = util.merge(userRule,newRule);
+
+        var functions = [];
+        if(&#x27;function&#x27; == typeof(userRule.init)){
+            functions.push(function(cb){
+                userRule.init(cb);
+            });
+        }
+        if(&#x27;function&#x27; == typeof(userRule.summary)){
+            functions.push(function(cb){
+                logUtil.printLog(userRule.summary());
+                cb(null);
+            });
+        }
+        async.series(functions,function(errors,result){
+            if(!errors){
+                logUtil.printLog(color.green(&#x27;Anyproxy rules initialize finished, have fun!&#x27;));
+            }
+        });
+
+        return userRule;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if(ifSilent){
+    logUtil.setPrintStatus(false);
+}
+
+// copy the rule to keep the original proxyRules independent
+proxyRules = Object.assign({}, proxyRules);
+
+var currentRule = requestHandler.<span class="apidocCodeKeywordSpan">setRules</span>(proxyRules); //TODO : optimize calling for
+set rule
+
+if(!!option.interceptHttps){
+    if (!certMgr.isRootCAFileExists()) {
+        util.showRootInstallTip();
+        process.exit(0);
+        return;
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.requestHandler.userRequestHandler" id="apidoc.element.anyproxy.requestHandler.userRequestHandler">
+        function <span class="apidocSignatureSpan">anyproxy.requestHandler.</span>userRequestHandler
+        <span class="apidocSignatureSpan">(req, userRes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function userRequestHandler(req, userRes){
+<span class="apidocCodeCommentSpan">    /*
+    note
+        req.url is wired
+        in http  server : http://www.example.com/a/b/c
+        in https server : /a/b/c
+    */
+</span>
+    var host               = req.headers.host,
+        protocol           = (!!req.connection.encrypted &#x26;&#x26; !/^http:/.test(req.url)) ? &#x22;https&#x22; : &#x22;http&#x22;,
+        fullUrl            = protocol === &#x22;http&#x22; ? req.url : (protocol + &#x27;://&#x27; + host + req.url),
+        urlPattern         = url.parse(fullUrl),
+        path               = urlPattern.path,
+        resourceInfo,
+        resourceInfoId     = -1,
+        reqData;
+
+    // console.log(req.url);
+    // console.log(path);
+
+    //record
+    resourceInfo = {
+        host      : host,
+        method    : req.method,
+        path      : path,
+        protocol  : protocol,
+        url       : protocol + &#x22;://&#x22; + host + path,
+        req       : req,
+        startTime : new Date().getTime()
+    };
+    if(global.recorder){
+        resourceInfoId = global.recorder.appendRecord(resourceInfo);
+    }
+
+    logUtil.printLog(color.green(&#x22;\nreceived request to : &#x22; + host + path));
+
+    //get request body and route to local or remote
+    async.series([
+        fetchReqData,
+        routeReq
+    ],function(){
+        //mark some ext info
+        if(req.anyproxy_map_local){
+            global.recorder.updateExtInfo(resourceInfoId, {map : req.anyproxy_map_local});
+        }
+    });
+
+    //get request body
+    function fetchReqData(callback){
+        var postData = [];
+        req.on(&#x22;data&#x22;,function(chunk){
+            postData.push(chunk);
+        });
+        req.on(&#x22;end&#x22;,function(){
+            reqData = Buffer.concat(postData);
+            resourceInfo.reqBody = reqData.toString();
+            global.recorder &#x26;&#x26; global.recorder.updateRecord(resourceInfoId,resourceInfo);
+
+            callback();
+        });
+    }
+
+    //route to dealing function
+    function routeReq(callback){
+        if(userRule.shouldUseLocalResponse(req,reqData)){
+            logUtil.printLog(&#x22;==&#x3e;use local rules&#x22;);
+            dealWithLocalResponse(callback);
+        }else{
+            logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+            dealWithRemoteResonse(callback);
+        }
+    }
+
+    function dealWithLocalResponse(callback){
+        userRule.dealLocalResponse(req,reqData,function(statusCode,resHeader,resBody){
+
+            //update record info
+            resourceInfo.endTime = new Date().getTime();
+            resourceInfo.res     = { //construct a self-defined res object
+                statusCode : statusCode || &#x22;&#x22;,
+                headers    : resHeader  || {}
+            }
+            resourceInfo.resHeader  = resHeader || {};
+            resourceInfo.resBody    = resBody;
+            resourceInfo.length     = resBody ? resBody.length : 0;
+            resourceInfo.statusCode = statusCode;
+
+            global.recorder &#x26;&#x26; global.recorder.updateRecord(resourceInfoId,resourceInfo);
+
+            userRes.writeHead(statusCode,resHeader);
+            userRes.end(resBody);
+            callback &#x26;&#x26; callback();
+        });
+
+        return;
+    }
+
+    function dealWithRemoteResonse(callback){
+        var options;
+
+        //modify request protocol
+        protocol = userRule.replaceRequestProtocol(req,protocol) || protocol;
+
+        //modify request options
+        options = {
+            hostname : urlPattern.hostname || req.headers.host,
+            port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+            path     : path,
+            method   : req.method,
+            headers  : req.headers
+        };
+
+        options = userRule.replaceRequestOption(req,options) || options;
+        options.rejectUnauthorized = false;
+        try{
+            delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+        }catch(e){}
+
+        //update request data
+        reqData = userRule.replaceRequestData(req,reqData) || reqData;
+        options.headers = util.lower_keys(options.headers);
+        options.headers[&#x22;content-length&#x22;] = reqData.length; //rewrite content length info
+
+        options.h ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule__blank" id="apidoc.module.anyproxy.rule__blank">module anyproxy.rule__blank</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.dealLocalResponse" id="apidoc.element.anyproxy.rule__blank.dealLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>dealLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dealLocalResponse = function (req, reqBody, callback){
+        callback(statusCode,resHeader,responseData)
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }else{
+logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+dealWithRemoteResonse(callback);
+        }
+    }
+
+    function dealWithLocalResponse(callback){
+        userRule.<span class="apidocCodeKeywordSpan">dealLocalResponse</span>(req,reqData,function(statusCode,resHeader,resBody){
+
+//update record info
+resourceInfo.endTime = new Date().getTime();
+resourceInfo.res     = { //construct a self-defined res object
+    statusCode : statusCode || &#x22;&#x22;,
+    headers    : resHeader  || {}
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.pauseBeforeSendingResponse" id="apidoc.element.anyproxy.rule__blank.pauseBeforeSendingResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>pauseBeforeSendingResponse
+        <span class="apidocSignatureSpan">(req, res)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pauseBeforeSendingResponse = function (req, res){
+	var timeInMS = 1; //delay all requests for 1ms
+	return timeInMS;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        });
+    }else{
+        callback();
+    }
+
+//delay
+},function(callback){
+var pauseTimeInMS = userRule.<span class="apidocCodeKeywordSpan">pauseBeforeSendingResponse</span>(req,res);
+    if(pauseTimeInMS){
+        setTimeout(callback,pauseTimeInMS);
+    }else{
+        callback();
+    }
+
+//send response
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceRequestData" id="apidoc.element.anyproxy.rule__blank.replaceRequestData">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestData
+        <span class="apidocSignatureSpan">(req, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestData = function (req, data){
+    return data;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+options = userRule.replaceRequestOption(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.<span class="apidocCodeKeywordSpan">replaceRequestData</span>(req,reqData) || reqData;
+options.headers = util.lower_keys(options.headers);
+options.headers[&#x22;content-length&#x22;] = reqData.length; //rewrite content length info
+
+options.headers = util.upper_keys(options.headers);
+
+//send request
+var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceRequestOption" id="apidoc.element.anyproxy.rule__blank.replaceRequestOption">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestOption
+        <span class="apidocSignatureSpan">(req, option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestOption = function (req, option){
+    var newOption = option;
+    return newOption;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+    headers  : req.headers
+};
+
+options = userRule.<span class="apidocCodeKeywordSpan">replaceRequestOption</span>(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.replaceRequestData(req,reqData) || reqData;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceRequestProtocol" id="apidoc.element.anyproxy.rule__blank.replaceRequestProtocol">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceRequestProtocol
+        <span class="apidocSignatureSpan">(req, protocol)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestProtocol = function (req, protocol){
+	var newProtocol = protocol;
+	return newProtocol;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return;
+    }
+
+    function dealWithRemoteResonse(callback){
+var options;
+
+//modify request protocol
+protocol = userRule.<span class="apidocCodeKeywordSpan">replaceRequestProtocol</span>(req,protocol) || protocol;
+
+//modify request options
+options = {
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceResponseHeader" id="apidoc.element.anyproxy.rule__blank.replaceResponseHeader">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceResponseHeader
+        <span class="apidocSignatureSpan">(req, res, header)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseHeader = function (req, res, header){
+	var newHeader = header;
+	return newHeader;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.<span class="apidocCodeKeywordSpan">replaceResponseHeader</span>(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+if(ifServerGzipped){
+    delete resHeader[&#x27;content-encoding&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceResponseStatusCode" id="apidoc.element.anyproxy.rule__blank.replaceResponseStatusCode">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceResponseStatusCode
+        <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseStatusCode = function (req, res, statusCode){
+	var newStatusCode = statusCode;
+	return newStatusCode;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        options.headers = util.upper_keys(options.headers);
+
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.<span class="apidocCodeKeywordSpan">replaceResponseStatusCode</span>(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.replaceResponseHeader(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.replaceServerResDataAsync" id="apidoc.element.anyproxy.rule__blank.replaceServerResDataAsync">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>replaceServerResDataAsync
+        <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceServerResDataAsync = function (req, res, serverResData, callback){
+    callback(serverResData);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//get custom response
+},function(callback){
+    if(userRule.replaceServerResData){
+        logUtil.printLog(color.red(&#x22;replaceServerResData is deprecated, and will be unavilable soon. Use replaceServerResDataAsync
+ instead.&#x22;), logUtil.T_ERR);
+        serverResData = userRule.replaceServerResData(req,res,serverResData) || serverResData;
+        callback();
+    }else if(userRule.replaceServerResDataAsync){
+        userRule.<span class="apidocCodeKeywordSpan">replaceServerResDataAsync</span>(req,res,serverResData,function(newRes){
+            serverResData = newRes;
+            callback();
+        });
+    }else{
+        callback();
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.shouldInterceptHttpsReq" id="apidoc.element.anyproxy.rule__blank.shouldInterceptHttpsReq">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>shouldInterceptHttpsReq
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldInterceptHttpsReq = function (req){
+    return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function connectReqHandler(req, socket, head){
+var host      = req.url.split(&#x22;:&#x22;)[0],
+    targetPort= req.url.split(&#x22;:&#x22;)[1],
+    resourceInfo,
+    resourceInfoId;
+
+var shouldIntercept = userRule.<span class="apidocCodeKeywordSpan">shouldInterceptHttpsReq</span>(req);
+
+//bypass webSocket on webinterface
+if(targetPort == 8003){
+    shouldIntercept = false; // TODO : a more general solution?
+}
+
+logUtil.printLog(color.green(&#x22;\nreceived https CONNECT request &#x22; + host));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.shouldUseLocalResponse" id="apidoc.element.anyproxy.rule__blank.shouldUseLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>shouldUseLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldUseLocalResponse = function (req, reqBody){
+        return false;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        callback();
+    });
+}
+
+//route to dealing function
+function routeReq(callback){
+    if(userRule.<span class="apidocCodeKeywordSpan">shouldUseLocalResponse</span>(req,reqData)){
+        logUtil.printLog(&#x22;==&#x3e;use local rules&#x22;);
+        dealWithLocalResponse(callback);
+    }else{
+        logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+        dealWithRemoteResonse(callback);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule__blank.summary" id="apidoc.element.anyproxy.rule__blank.summary">
+        function <span class="apidocSignatureSpan">anyproxy.rule__blank.</span>summary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">summary = function (){
+    return &#x22;this is a blank rule for AnyProxy&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if(&#x27;function&#x27; == typeof(userRule.init)){
+    functions.push(function(cb){
+        userRule.init(cb);
+    });
+}
+if(&#x27;function&#x27; == typeof(userRule.summary)){
+    functions.push(function(cb){
+        logUtil.printLog(userRule.<span class="apidocCodeKeywordSpan">summary</span>());
+        cb(null);
+    });
+}
+async.series(functions,function(errors,result){
+    if(!errors){
+        logUtil.printLog(color.green(&#x27;Anyproxy rules initialize finished, have fun!&#x27;));
+    }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_adjust_response_time" id="apidoc.module.anyproxy.rule_adjust_response_time">module anyproxy.rule_adjust_response_time</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_adjust_response_time.pauseBeforeSendingResponse" id="apidoc.element.anyproxy.rule_adjust_response_time.pauseBeforeSendingResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_adjust_response_time.</span>pauseBeforeSendingResponse
+        <span class="apidocSignatureSpan">(req, res)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pauseBeforeSendingResponse = function (req, res){
+    //delay all the response for 1500ms
+    return 1500;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        });
+    }else{
+        callback();
+    }
+
+//delay
+},function(callback){
+var pauseTimeInMS = userRule.<span class="apidocCodeKeywordSpan">pauseBeforeSendingResponse</span>(req,res);
+    if(pauseTimeInMS){
+        setTimeout(callback,pauseTimeInMS);
+    }else{
+        callback();
+    }
+
+//send response
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_allow_CORS" id="apidoc.module.anyproxy.rule_allow_CORS">module anyproxy.rule_allow_CORS</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_allow_CORS.dealLocalResponse" id="apidoc.element.anyproxy.rule_allow_CORS.dealLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>dealLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dealLocalResponse = function (req, reqBody, callback){
+    if(req.method == &#x22;OPTIONS&#x22;){
+        callback(200,mergeCORSHeader(req.headers),&#x22;&#x22;);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }else{
+logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+dealWithRemoteResonse(callback);
+        }
+    }
+
+    function dealWithLocalResponse(callback){
+        userRule.<span class="apidocCodeKeywordSpan">dealLocalResponse</span>(req,reqData,function(statusCode,resHeader,resBody){
+
+//update record info
+resourceInfo.endTime = new Date().getTime();
+resourceInfo.res     = { //construct a self-defined res object
+    statusCode : statusCode || &#x22;&#x22;,
+    headers    : resHeader  || {}
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_allow_CORS.replaceResponseHeader" id="apidoc.element.anyproxy.rule_allow_CORS.replaceResponseHeader">
+        function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>replaceResponseHeader
+        <span class="apidocSignatureSpan">(req, res, header)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseHeader = function (req, res, header){
+    return mergeCORSHeader(req.headers, header);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.<span class="apidocCodeKeywordSpan">replaceResponseHeader</span>(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+if(ifServerGzipped){
+    delete resHeader[&#x27;content-encoding&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_allow_CORS.shouldUseLocalResponse" id="apidoc.element.anyproxy.rule_allow_CORS.shouldUseLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_allow_CORS.</span>shouldUseLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldUseLocalResponse = function (req, reqBody){
+    //intercept all options request
+    if(req.method == &#x22;OPTIONS&#x22;){
+        return true;
+    }else{
+        return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        callback();
+    });
+}
+
+//route to dealing function
+function routeReq(callback){
+    if(userRule.<span class="apidocCodeKeywordSpan">shouldUseLocalResponse</span>(req,reqData)){
+        logUtil.printLog(&#x22;==&#x3e;use local rules&#x22;);
+        dealWithLocalResponse(callback);
+    }else{
+        logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+        dealWithRemoteResonse(callback);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_default" id="apidoc.module.anyproxy.rule_default">module anyproxy.rule_default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default._getCustomMenu" id="apidoc.element.anyproxy.rule_default._getCustomMenu">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>_getCustomMenu
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_getCustomMenu = function (){
+    return [
+        // {
+        //     name:&#x22;test&#x22;,
+        //     icon:&#x22;uk-icon-lemon-o&#x22;,
+        //     url :&#x22;http://anyproxy.io&#x22;
+        // }
+    ];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    userRule      = config.userRule,
+    ruleSummary   = &#x22;&#x22;,
+    customMenu    = [],
+    server;
+
+try{
+    ruleSummary = userRule.summary();
+    customMenu  = userRule.<span class="apidocCodeKeywordSpan">_getCustomMenu</span>();
+}catch(e){}
+
+var self         = this,
+    myAbsAddress = &#x22;http://&#x22; + ipAddress + &#x22;:&#x22; + port +&#x22;/&#x22;,
+    crtFilePath  = certMgr.getRootCAFilePath(),
+    staticDir    = path.join(__dirname,&#x27;../web&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default._plugIntoWebinterface" id="apidoc.element.anyproxy.rule_default._plugIntoWebinterface">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>_plugIntoWebinterface
+        <span class="apidocSignatureSpan">(app, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_plugIntoWebinterface = function (app, cb){
+
+    app.get(&#x22;/filetree&#x22;,function(req,res){
+        try{
+            var root = req.query.root || utils.getUserHome() || &#x22;/&#x22;;
+            utils.filewalker(root,function(err, info){
+                res.json(info);
+            });
+        }catch(e){
+            res.end(e);
+        }
+    });
+
+    app.use(bodyParser.json());
+    app.get(&#x22;/getMapConfig&#x22;,function(req,res){
+        res.json(mapConfig);
+    });
+    app.post(&#x22;/setMapConfig&#x22;,function(req,res){
+        mapConfig = req.body;
+        res.json(mapConfig);
+
+        saveMapConfig(mapConfig);
+    });
+
+    cb();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+});
+
+app.use(express.static(staticDir));
+
+//plugin from rule file
+if(typeof userRule._plugIntoWebinterface == &#x22;function&#x22;){
+    userRule.<span class="apidocCodeKeywordSpan">_plugIntoWebinterface</span>(app,function(){
+        server = app.listen(port);
+    });
+}else{
+    server = app.listen(port);
+}
+
+self.app    = app;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.dealLocalResponse" id="apidoc.element.anyproxy.rule_default.dealLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>dealLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dealLocalResponse = function (req, reqBody, callback){
+    if(req.anyproxy_map_local){
+        fs.readFile(req.anyproxy_map_local,function(err,buffer){
+            if(err){
+                callback(200, {}, &#x22;[AnyProxy failed to load local file] &#x22; + err);
+            }else{
+                var header = {
+                    &#x27;Content-Type&#x27;: utils.contentType(req.anyproxy_map_local)
+                };
+                callback(200, header, buffer);
+            }
+        });
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }else{
+logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+dealWithRemoteResonse(callback);
+        }
+    }
+
+    function dealWithLocalResponse(callback){
+        userRule.<span class="apidocCodeKeywordSpan">dealLocalResponse</span>(req,reqData,function(statusCode,resHeader,resBody){
+
+//update record info
+resourceInfo.endTime = new Date().getTime();
+resourceInfo.res     = { //construct a self-defined res object
+    statusCode : statusCode || &#x22;&#x22;,
+    headers    : resHeader  || {}
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.fetchTrafficData" id="apidoc.element.anyproxy.rule_default.fetchTrafficData">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>fetchTrafficData
+        <span class="apidocSignatureSpan">(id, info)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fetchTrafficData = function (id, info){}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        global.recorder &#x26;&#x26; global.recorder.updateRecord(resourceInfoId,resourceInfo);
+
+        callback();
+
+    //push trafic data to rule file
+    },function(callback){
+        userRule.fetchTrafficData &#x26;&#x26; userRule.<span class="apidocCodeKeywordSpan">fetchTrafficData</span>(resourceInfoId
+,resourceInfo);
+        callback();
+
+    }
+
+],function(err,result){
+    callback &#x26;&#x26; callback();
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.pauseBeforeSendingResponse" id="apidoc.element.anyproxy.rule_default.pauseBeforeSendingResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>pauseBeforeSendingResponse
+        <span class="apidocSignatureSpan">(req, res)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pauseBeforeSendingResponse = function (req, res){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        });
+    }else{
+        callback();
+    }
+
+//delay
+},function(callback){
+var pauseTimeInMS = userRule.<span class="apidocCodeKeywordSpan">pauseBeforeSendingResponse</span>(req,res);
+    if(pauseTimeInMS){
+        setTimeout(callback,pauseTimeInMS);
+    }else{
+        callback();
+    }
+
+//send response
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceRequestData" id="apidoc.element.anyproxy.rule_default.replaceRequestData">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestData
+        <span class="apidocSignatureSpan">(req, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestData = function (req, data){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+options = userRule.replaceRequestOption(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.<span class="apidocCodeKeywordSpan">replaceRequestData</span>(req,reqData) || reqData;
+options.headers = util.lower_keys(options.headers);
+options.headers[&#x22;content-length&#x22;] = reqData.length; //rewrite content length info
+
+options.headers = util.upper_keys(options.headers);
+
+//send request
+var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceRequestOption" id="apidoc.element.anyproxy.rule_default.replaceRequestOption">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestOption
+        <span class="apidocSignatureSpan">(req, option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestOption = function (req, option){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+    headers  : req.headers
+};
+
+options = userRule.<span class="apidocCodeKeywordSpan">replaceRequestOption</span>(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.replaceRequestData(req,reqData) || reqData;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceRequestProtocol" id="apidoc.element.anyproxy.rule_default.replaceRequestProtocol">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceRequestProtocol
+        <span class="apidocSignatureSpan">(req, protocol)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestProtocol = function (req, protocol){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return;
+    }
+
+    function dealWithRemoteResonse(callback){
+var options;
+
+//modify request protocol
+protocol = userRule.<span class="apidocCodeKeywordSpan">replaceRequestProtocol</span>(req,protocol) || protocol;
+
+//modify request options
+options = {
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceResponseHeader" id="apidoc.element.anyproxy.rule_default.replaceResponseHeader">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceResponseHeader
+        <span class="apidocSignatureSpan">(req, res, header)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseHeader = function (req, res, header){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.<span class="apidocCodeKeywordSpan">replaceResponseHeader</span>(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+if(ifServerGzipped){
+    delete resHeader[&#x27;content-encoding&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceResponseStatusCode" id="apidoc.element.anyproxy.rule_default.replaceResponseStatusCode">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceResponseStatusCode
+        <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseStatusCode = function (req, res, statusCode){
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        options.headers = util.upper_keys(options.headers);
+
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.<span class="apidocCodeKeywordSpan">replaceResponseStatusCode</span>(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.replaceResponseHeader(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.replaceServerResDataAsync" id="apidoc.element.anyproxy.rule_default.replaceServerResDataAsync">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>replaceServerResDataAsync
+        <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceServerResDataAsync = function (req, res, serverResData, callback){
+    callback(serverResData);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//get custom response
+},function(callback){
+    if(userRule.replaceServerResData){
+        logUtil.printLog(color.red(&#x22;replaceServerResData is deprecated, and will be unavilable soon. Use replaceServerResDataAsync
+ instead.&#x22;), logUtil.T_ERR);
+        serverResData = userRule.replaceServerResData(req,res,serverResData) || serverResData;
+        callback();
+    }else if(userRule.replaceServerResDataAsync){
+        userRule.<span class="apidocCodeKeywordSpan">replaceServerResDataAsync</span>(req,res,serverResData,function(newRes){
+            serverResData = newRes;
+            callback();
+        });
+    }else{
+        callback();
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.setInterceptFlag" id="apidoc.element.anyproxy.rule_default.setInterceptFlag">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>setInterceptFlag
+        <span class="apidocSignatureSpan">(flag)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setInterceptFlag = function (flag){
+    interceptFlag = flag &#x26;&#x26; isRootCAFileExists;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if(!!option.interceptHttps){
+if (!certMgr.isRootCAFileExists()) {
+    util.showRootInstallTip();
+    process.exit(0);
+    return;
+}
+
+currentRule.<span class="apidocCodeKeywordSpan">setInterceptFlag</span>(true);
+
+//print a tip when using https features in Node &#x3c; v0.12
+var nodeVersion = Number(process.version.match(/^v(\d+\.\d+)/)[1]);
+if(nodeVersion &#x3c; 0.12){
+    logUtil.printLog(color.red(&#x22;node &#x3e;= v0.12 is required when trying to intercept HTTPS requests :(&#x22;), logUtil.T_ERR
+);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.shouldInterceptHttpsReq" id="apidoc.element.anyproxy.rule_default.shouldInterceptHttpsReq">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>shouldInterceptHttpsReq
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldInterceptHttpsReq = function (req){
+    return interceptFlag;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function connectReqHandler(req, socket, head){
+var host      = req.url.split(&#x22;:&#x22;)[0],
+    targetPort= req.url.split(&#x22;:&#x22;)[1],
+    resourceInfo,
+    resourceInfoId;
+
+var shouldIntercept = userRule.<span class="apidocCodeKeywordSpan">shouldInterceptHttpsReq</span>(req);
+
+//bypass webSocket on webinterface
+if(targetPort == 8003){
+    shouldIntercept = false; // TODO : a more general solution?
+}
+
+logUtil.printLog(color.green(&#x22;\nreceived https CONNECT request &#x22; + host));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.shouldUseLocalResponse" id="apidoc.element.anyproxy.rule_default.shouldUseLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>shouldUseLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldUseLocalResponse = function (req, reqBody){
+    //intercept all options request
+    var simpleUrl = (req.headers.host || &#x22;&#x22;) + (req.url || &#x22;&#x22;);
+    mapConfig.map(function(item){
+        var key = item.keyword;
+        if(simpleUrl.indexOf(key) &#x3e;= 0){
+            req.anyproxy_map_local = item.local;
+            return false;
+        }
+    });
+
+
+    return !!req.anyproxy_map_local;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        callback();
+    });
+}
+
+//route to dealing function
+function routeReq(callback){
+    if(userRule.<span class="apidocCodeKeywordSpan">shouldUseLocalResponse</span>(req,reqData)){
+        logUtil.printLog(&#x22;==&#x3e;use local rules&#x22;);
+        dealWithLocalResponse(callback);
+    }else{
+        logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+        dealWithRemoteResonse(callback);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_default.summary" id="apidoc.element.anyproxy.rule_default.summary">
+        function <span class="apidocSignatureSpan">anyproxy.rule_default.</span>summary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">summary = function (){
+    var tip = &#x22;the default rule for AnyProxy.&#x22;;
+    if(!isRootCAFileExists){
+        tip += &#x22;\nRoot CA does not exist, will not intercept any https requests.&#x22;;
+    }
+    return tip;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if(&#x27;function&#x27; == typeof(userRule.init)){
+    functions.push(function(cb){
+        userRule.init(cb);
+    });
+}
+if(&#x27;function&#x27; == typeof(userRule.summary)){
+    functions.push(function(cb){
+        logUtil.printLog(userRule.<span class="apidocCodeKeywordSpan">summary</span>());
+        cb(null);
+    });
+}
+async.series(functions,function(errors,result){
+    if(!errors){
+        logUtil.printLog(color.green(&#x27;Anyproxy rules initialize finished, have fun!&#x27;));
+    }
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_intercept_some_https_requests" id="apidoc.module.anyproxy.rule_intercept_some_https_requests">module anyproxy.rule_intercept_some_https_requests</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_intercept_some_https_requests.replaceServerResDataAsync" id="apidoc.element.anyproxy.rule_intercept_some_https_requests.replaceServerResDataAsync">
+        function <span class="apidocSignatureSpan">anyproxy.rule_intercept_some_https_requests.</span>replaceServerResDataAsync
+        <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceServerResDataAsync = function (req, res, serverResData, callback){
+    //add &#x22;hello github&#x22; to all github pages
+    if(req.headers.host == &#x22;github.com&#x22;){
+        serverResData += &#x22;hello github&#x22;;
+    }
+    callback(serverResData);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//get custom response
+},function(callback){
+    if(userRule.replaceServerResData){
+        logUtil.printLog(color.red(&#x22;replaceServerResData is deprecated, and will be unavilable soon. Use replaceServerResDataAsync
+ instead.&#x22;), logUtil.T_ERR);
+        serverResData = userRule.replaceServerResData(req,res,serverResData) || serverResData;
+        callback();
+    }else if(userRule.replaceServerResDataAsync){
+        userRule.<span class="apidocCodeKeywordSpan">replaceServerResDataAsync</span>(req,res,serverResData,function(newRes){
+            serverResData = newRes;
+            callback();
+        });
+    }else{
+        callback();
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_intercept_some_https_requests.shouldInterceptHttpsReq" id="apidoc.element.anyproxy.rule_intercept_some_https_requests.shouldInterceptHttpsReq">
+        function <span class="apidocSignatureSpan">anyproxy.rule_intercept_some_https_requests.</span>shouldInterceptHttpsReq
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldInterceptHttpsReq = function (req){
+    //intercept https://github.com/
+    //otherwise, all the https traffic will not go through this proxy
+
+    // return true;
+    if(req.headers.host == &#x22;github.com&#x22;){
+        return true;
+    }else{
+        return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function connectReqHandler(req, socket, head){
+var host      = req.url.split(&#x22;:&#x22;)[0],
+    targetPort= req.url.split(&#x22;:&#x22;)[1],
+    resourceInfo,
+    resourceInfoId;
+
+var shouldIntercept = userRule.<span class="apidocCodeKeywordSpan">shouldInterceptHttpsReq</span>(req);
+
+//bypass webSocket on webinterface
+if(targetPort == 8003){
+    shouldIntercept = false; // TODO : a more general solution?
+}
+
+logUtil.printLog(color.green(&#x22;\nreceived https CONNECT request &#x22; + host));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_remove_cache_header" id="apidoc.module.anyproxy.rule_remove_cache_header">module anyproxy.rule_remove_cache_header</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_remove_cache_header.replaceRequestOption" id="apidoc.element.anyproxy.rule_remove_cache_header.replaceRequestOption">
+        function <span class="apidocSignatureSpan">anyproxy.rule_remove_cache_header.</span>replaceRequestOption
+        <span class="apidocSignatureSpan">(req, option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestOption = function (req, option){
+	    var newOption = option;
+	    delete newOption.headers[&#x27;if-none-match&#x27;];
+	    delete newOption.headers[&#x27;if-modified-since&#x27;];
+
+	    return newOption;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+    headers  : req.headers
+};
+
+options = userRule.<span class="apidocCodeKeywordSpan">replaceRequestOption</span>(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.replaceRequestData(req,reqData) || reqData;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_remove_cache_header.replaceResponseHeader" id="apidoc.element.anyproxy.rule_remove_cache_header.replaceResponseHeader">
+        function <span class="apidocSignatureSpan">anyproxy.rule_remove_cache_header.</span>replaceResponseHeader
+        <span class="apidocSignatureSpan">(req, res, header)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseHeader = function (req, res, header){
+    header = header || {};
+    header[&#x22;Cache-Control&#x22;]                    = &#x22;no-cache, no-store, must-revalidate&#x22;;
+    header[&#x22;Pragma&#x22;]                           = &#x22;no-cache&#x22;;
+    header[&#x22;Expires&#x22;]                          = 0;
+
+    return header;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.<span class="apidocCodeKeywordSpan">replaceResponseHeader</span>(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+if(ifServerGzipped){
+    delete resHeader[&#x27;content-encoding&#x27;];
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_replace_request_option" id="apidoc.module.anyproxy.rule_replace_request_option">module anyproxy.rule_replace_request_option</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_replace_request_option.replaceRequestOption" id="apidoc.element.anyproxy.rule_replace_request_option.replaceRequestOption">
+        function <span class="apidocSignatureSpan">anyproxy.rule_replace_request_option.</span>replaceRequestOption
+        <span class="apidocSignatureSpan">(req, option)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceRequestOption = function (req, option){
+    //replace request towards http://www.taobao.com
+    //                     to http://www.taobao.com/about/
+
+<span class="apidocCodeCommentSpan">    /*
+    option scheme:
+    {
+        hostname : &#x22;www.taobao.com&#x22;
+        port     : 80
+        path     : &#x22;/&#x22;
+        method   : &#x22;GET&#x22;
+        headers  : {cookie:&#x22;&#x22;}
+    }
+    */
+</span>    if(option.hostname == &#x22;www.taobao.com&#x22; &#x26;&#x26; option.path == &#x22;/&#x22;){
+        option.path = &#x22;/about/&#x22;;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hostname : urlPattern.hostname || req.headers.host,
+    port     : urlPattern.port || req.port || (/https/.test(protocol) ? 443 : 80),
+    path     : path,
+    method   : req.method,
+    headers  : req.headers
+};
+
+options = userRule.<span class="apidocCodeKeywordSpan">replaceRequestOption</span>(req,options) || options;
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.replaceRequestData(req,reqData) || reqData;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_replace_response_data" id="apidoc.module.anyproxy.rule_replace_response_data">module anyproxy.rule_replace_response_data</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_replace_response_data.replaceServerResDataAsync" id="apidoc.element.anyproxy.rule_replace_response_data.replaceServerResDataAsync">
+        function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_data.</span>replaceServerResDataAsync
+        <span class="apidocSignatureSpan">(req, res, serverResData, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceServerResDataAsync = function (req, res, serverResData, callback){
+    //append &#x22;hello world&#x22; to all web pages
+
+    //for those non-unicode response , serverResData.toString() should not be your first choice.
+    //this issue may help you understanding how to modify an non-unicode response: https://github.com/alibaba/anyproxy/issues/20
+    if(/html/i.test(res.headers[&#x27;content-type&#x27;])){
+        var newDataStr = serverResData.toString();
+        newDataStr += &#x22;hello world!&#x22;;
+        callback(newDataStr);
+    }else{
+        callback(serverResData);
+    }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//get custom response
+},function(callback){
+    if(userRule.replaceServerResData){
+        logUtil.printLog(color.red(&#x22;replaceServerResData is deprecated, and will be unavilable soon. Use replaceServerResDataAsync
+ instead.&#x22;), logUtil.T_ERR);
+        serverResData = userRule.replaceServerResData(req,res,serverResData) || serverResData;
+        callback();
+    }else if(userRule.replaceServerResDataAsync){
+        userRule.<span class="apidocCodeKeywordSpan">replaceServerResDataAsync</span>(req,res,serverResData,function(newRes){
+            serverResData = newRes;
+            callback();
+        });
+    }else{
+        callback();
+    }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_replace_response_status_code" id="apidoc.module.anyproxy.rule_replace_response_status_code">module anyproxy.rule_replace_response_status_code</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseHeader" id="apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseHeader">
+        function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_status_code.</span>replaceResponseHeader
+        <span class="apidocSignatureSpan">(req, res, header)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseHeader = function (req, res, header){
+    if(req.headers.host == &#x22;www.taobao.com&#x22;){
+        header.location = &#x22;http://www.etao.com&#x22;;
+    }
+
+    return header;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.<span class="apidocCodeKeywordSpan">replaceResponseHeader</span>(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+if(ifServerGzipped){
+    delete resHeader[&#x27;content-encoding&#x27;];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseStatusCode" id="apidoc.element.anyproxy.rule_replace_response_status_code.replaceResponseStatusCode">
+        function <span class="apidocSignatureSpan">anyproxy.rule_replace_response_status_code.</span>replaceResponseStatusCode
+        <span class="apidocSignatureSpan">(req, res, statusCode)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">replaceResponseStatusCode = function (req, res, statusCode){
+    //redirect requests toward http://www.taobao.com/*
+    //                      to http://www.etao.com
+    //using 302
+
+    if(req.headers.host == &#x22;www.taobao.com&#x22;){
+        statusCode = 302;
+    }
+
+    return statusCode;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        options.headers = util.upper_keys(options.headers);
+
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.<span class="apidocCodeKeywordSpan">replaceResponseStatusCode</span>(req,res,statusCode) || statusCode;
+
+var resHeader = userRule.replaceResponseHeader(req,res,res.headers) || res.headers;
+resHeader = util.lower_keys(resHeader);
+
+// remove gzip related header, and ungzip the content
+// note there are other compression types like deflate
+var ifServerGzipped =  /gzip/i.test(resHeader[&#x27;content-encoding&#x27;]);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.rule_use_local_data" id="apidoc.module.anyproxy.rule_use_local_data">module anyproxy.rule_use_local_data</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_use_local_data.dealLocalResponse" id="apidoc.element.anyproxy.rule_use_local_data.dealLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>dealLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dealLocalResponse = function (req, reqBody, callback){
+    if(req.replaceLocalFile){
+        callback(200, {&#x22;content-type&#x22;:&#x22;image/png&#x22;}, fs.readFileSync(LOCAL_IMAGE) );
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }else{
+logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+dealWithRemoteResonse(callback);
+        }
+    }
+
+    function dealWithLocalResponse(callback){
+        userRule.<span class="apidocCodeKeywordSpan">dealLocalResponse</span>(req,reqData,function(statusCode,resHeader,resBody){
+
+//update record info
+resourceInfo.endTime = new Date().getTime();
+resourceInfo.res     = { //construct a self-defined res object
+    statusCode : statusCode || &#x22;&#x22;,
+    headers    : resHeader  || {}
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_use_local_data.shouldUseLocalResponse" id="apidoc.element.anyproxy.rule_use_local_data.shouldUseLocalResponse">
+        function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>shouldUseLocalResponse
+        <span class="apidocSignatureSpan">(req, reqBody)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shouldUseLocalResponse = function (req, reqBody){
+    if(/\.(png|gif|jpg|jpeg)$/.test(req.url)){
+        req.replaceLocalFile = true;
+        return true;
+    }else{
+        return false;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+        callback();
+    });
+}
+
+//route to dealing function
+function routeReq(callback){
+    if(userRule.<span class="apidocCodeKeywordSpan">shouldUseLocalResponse</span>(req,reqData)){
+        logUtil.printLog(&#x22;==&#x3e;use local rules&#x22;);
+        dealWithLocalResponse(callback);
+    }else{
+        logUtil.printLog(&#x22;==&#x3e;will forward to real server by proxy&#x22;);
+        dealWithRemoteResonse(callback);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.rule_use_local_data.summary" id="apidoc.element.anyproxy.rule_use_local_data.summary">
+        function <span class="apidocSignatureSpan">anyproxy.rule_use_local_data.</span>summary
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">summary = function (){
+    return &#x22;replace all the images with local one&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if(&#x27;function&#x27; == typeof(userRule.init)){
+    functions.push(function(cb){
+        userRule.init(cb);
+    });
+}
+if(&#x27;function&#x27; == typeof(userRule.summary)){
+    functions.push(function(cb){
+        logUtil.printLog(userRule.<span class="apidocCodeKeywordSpan">summary</span>());
+        cb(null);
+    });
+}
+async.series(functions,function(errors,result){
+    if(!errors){
+        logUtil.printLog(color.green(&#x27;Anyproxy rules initialize finished, have fun!&#x27;));
+    }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.systemProxyMgr" id="apidoc.module.anyproxy.systemProxyMgr">module anyproxy.systemProxyMgr</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.systemProxyMgr.disableGlobalProxy" id="apidoc.element.anyproxy.systemProxyMgr.disableGlobalProxy">
+        function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>disableGlobalProxy
+        <span class="apidocSignatureSpan">(proxyType)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disableGlobalProxy = function (proxyType) {
+   proxyType = proxyType || &#x27;http&#x27;;
+
+   var networkType = macProxyManager.networkType || macProxyManager.getNetworkType();
+
+   return /^http$/i.test(proxyType) ?
+
+      // set http proxy
+      execSync(
+         &#x27;networksetup -setwebproxystate ${networkType} off&#x27;
+            .replace(&#x22;${networkType}&#x22;, networkType)) :
+
+      // set https proxy
+      execSync(
+         &#x27;networksetup -setsecurewebproxystate ${networkType} off&#x27;
+            .replace(&#x22;${networkType}&#x22;, networkType));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+            //server status manager
+            function(callback){
+                process.on(&#x22;exit&#x22;,function(code){
+logUtil.printLog(&#x27;AnyProxy is about to exit with code: &#x27; + code, logUtil.T_ERR);
+
+if (option.setAsGlobalProxy) {
+    console.log(&#x27;resigning global proxy...&#x27;);
+    var result = SystemProxyMgr.<span class="apidocCodeKeywordSpan">disableGlobalProxy</span>(proxyType == T_TYPE_HTTP ? &#x22;Http
+&#x22; : &#x22;Https&#x22;);
+
+    if (result.status) {
+        console.log(color.red(result.stdout));
+    } else{
+        console.log(&#x27;global proxy resigned.&#x27;);
+    }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.systemProxyMgr.enableGlobalProxy" id="apidoc.element.anyproxy.systemProxyMgr.enableGlobalProxy">
+        function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>enableGlobalProxy
+        <span class="apidocSignatureSpan">(ip, port, proxyType)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enableGlobalProxy = function (ip, port, proxyType) {
+
+   if (!ip || !port) {
+      console.log(&#x27;failed to set global proxy server.\n ip and port are required.&#x27;);
+      return;
+   };
+
+   proxyType = proxyType || &#x27;http&#x27;;
+
+   var networkType = macProxyManager.networkType || macProxyManager.getNetworkType();
+
+   return /^http$/i.test(proxyType) ?
+
+      // set http proxy
+      execSync(
+         &#x27;networksetup -setwebproxy ${networkType} ${ip} ${port}&#x27;
+            .replace(&#x22;${networkType}&#x22;, networkType)
+            .replace(&#x22;${ip}&#x22;, ip)
+            .replace(&#x22;${port}&#x22;, port)) :
+
+      // set https proxy
+      execSync(&#x27;networksetup -setsecurewebproxy ${networkType} ${ip} ${port}&#x27;
+        .replace(&#x22;${networkType}&#x22;, networkType)
+        .replace(&#x22;${ip}&#x22;, ip)
+        .replace(&#x22;${port}&#x22;, port));
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//set global proxy
+function(callback) {
+    if (option.setAsGlobalProxy) {
+        console.log(&#x27;setting global proxy for you...&#x27;);
+        if(!/^win/.test(process.platform) &#x26;&#x26; !process.env.SUDO_UID){
+            console.log(&#x27;sudo password may be required.&#x27;);
+        }
+        var result = SystemProxyMgr.<span class="apidocCodeKeywordSpan">enableGlobalProxy</span>(ip.address(), proxyPort, proxyType
+ == T_TYPE_HTTP ? &#x22;Http&#x22; : &#x22;Https&#x22;);
+        if (result.status) {
+            callback(result.stdout);
+        } else {
+            if(/^win/.test(process.platform)){
+                console.log(&#x27;AnyProxy is now the default proxy for your system. It may take up to 1min to take effect.&#x27
+;);
+            } else{
+                console.log(&#x27;AnyProxy is now the default proxy for your system.&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.systemProxyMgr.getNetworkType" id="apidoc.element.anyproxy.systemProxyMgr.getNetworkType">
+        function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>getNetworkType
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getNetworkType = function () {
+
+   for (var i = 0; i &#x3c; networkTypes.length; i++) {
+
+      var
+         type = networkTypes[i],
+         result = execSync(&#x27;networksetup -getwebproxy &#x27; + type);
+
+      if (result.status === 0) {
+         macProxyManager.networkType = type;
+         return type;
+      }
+   }
+
+   throw new Error(&#x27;Unknown network type&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   if (!ip || !port) {
+console.log(&#x27;failed to set global proxy server.\n ip and port are required.&#x27;);
+return;
+   };
+
+   proxyType = proxyType || &#x27;http&#x27;;
+
+   var networkType = macProxyManager.networkType || macProxyManager.<span class="apidocCodeKeywordSpan">getNetworkType</span>();
+
+   return /^http$/i.test(proxyType) ?
+
+// set http proxy
+execSync(
+   &#x27;networksetup -setwebproxy ${networkType} ${ip} ${port}&#x27;
+      .replace(&#x22;${networkType}&#x22;, networkType)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.systemProxyMgr.getProxyState" id="apidoc.element.anyproxy.systemProxyMgr.getProxyState">
+        function <span class="apidocSignatureSpan">anyproxy.systemProxyMgr.</span>getProxyState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getProxyState = function () {
+   var networkType = macProxyManager.networkType || macProxyManager.getNetworkType();
+   var result = execSync(&#x27;networksetup -getwebproxy ${networkType}&#x27;.replace(&#x27;${networkType}&#x27;, networkType));
+
+   return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.util" id="apidoc.module.anyproxy.util">module anyproxy.util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.clearCacheDir" id="apidoc.element.anyproxy.util.clearCacheDir">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>clearCacheDir
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clearCacheDir = function (cb){
+    var home  = util.getAnyProxyHome(),
+        isWin = /^win/.test(process.platform);
+
+    var dirNameWildCard = CACHE_DIR_PREFIX + &#x22;*&#x22;;
+    if(isWin){
+        exec(&#x22;for /D %f in (&#x22; + dirNameWildCard + &#x22;) do rmdir %f /s /q&#x22;,{cwd : home},cb);
+    }else{
+        exec(&#x22;rm -rf &#x22; + dirNameWildCard + &#x22;&#x22;,{cwd : home},cb);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+self.httpProxyServer = null;
+
+async.series(
+    [
+        //clear cache dir, prepare recorder
+        function(callback){
+            util.<span class="apidocCodeKeywordSpan">clearCacheDir</span>(function(){
+                if(option.dbFile){
+                    global.recorder = new Recorder({filename: option.dbFile});
+                }else{
+                    global.recorder = new Recorder();
+                }
+                callback();
+            });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.contentLength" id="apidoc.element.anyproxy.util.contentLength">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>contentLength
+        <span class="apidocSignatureSpan">(filepath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">contentLength = function (filepath) {
+    try {
+        var stat = fs.statSync(filepath);
+        return stat.size;
+    } catch (e) {
+        logUtil.printLog(color.red(&#x22;\nfailed to ready local file : &#x22; + filepath));
+        logUtil.printLog(color.red(e));
+        return 0;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.contentType" id="apidoc.element.anyproxy.util.contentType">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>contentType
+        <span class="apidocSignatureSpan">(filepath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">contentType = function (filepath) {
+    return mime.contentType(path.extname(filepath));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+dealLocalResponse : function(req,reqBody,callback){
+    if(req.anyproxy_map_local){
+        fs.readFile(req.anyproxy_map_local,function(err,buffer){
+            if(err){
+                callback(200, {}, &#x22;[AnyProxy failed to load local file] &#x22; + err);
+            }else{
+                var header = {
+                    &#x27;Content-Type&#x27;: utils.<span class="apidocCodeKeywordSpan">contentType</span>(req.anyproxy_map_local
+)
+                };
+                callback(200, header, buffer);
+            }
+        });
+    }
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.filewalker" id="apidoc.element.anyproxy.util.filewalker">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>filewalker
+        <span class="apidocSignatureSpan">(root, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filewalker = function (root, cb){
+    root = root || process.cwd();
+
+    var ret = {
+        directory :[],
+        file      :[]
+    };
+
+    fs.readdir(root,function(err, list){
+        if(list &#x26;&#x26; list.length){
+            list.map(function(item){
+                var fullPath = path.join(root,item),
+                    stat     = fs.lstatSync(fullPath);
+
+                if(stat.isFile()){
+                    ret.file.push({
+                        name     : item,
+                        fullPath : fullPath
+                    });
+
+                }else if(stat.isDirectory()){
+                    ret.directory.push({
+                        name     : item,
+                        fullPath : fullPath
+                    });
+                }
+            });
+        }
+
+        cb &#x26;&#x26; cb.apply(null,[null,ret]);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    },
+
+    _plugIntoWebinterface: function(app,cb){
+
+app.get(&#x22;/filetree&#x22;,function(req,res){
+    try{
+        var root = req.query.root || utils.getUserHome() || &#x22;/&#x22;;
+        utils.<span class="apidocCodeKeywordSpan">filewalker</span>(root,function(err, info){
+            res.json(info);
+        });
+    }catch(e){
+        res.end(e);
+    }
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.freshRequire" id="apidoc.element.anyproxy.util.freshRequire">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>freshRequire
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">freshRequire = function (path) {
+    delete require.cache[require.resolve(path)];
+    return require(path);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    DEFAULT_PORT           = 8001,
+    DEFAULT_WEB_PORT       = 8002, // port for web interface
+    DEFAULT_WEBSOCKET_PORT = 8003, // internal web socket for web interface, not for end users
+    DEFAULT_CONFIG_PORT    = 8088,
+    DEFAULT_HOST           = &#x22;localhost&#x22;,
+    DEFAULT_TYPE           = T_TYPE_HTTP;
+
+var default_rule = util.<span class="apidocCodeKeywordSpan">freshRequire</span>(&#x27;./rule_default&#x27;);
+var requestHandler = util.freshRequire(&#x27;./requestHandler&#x27;);
+
+//option
+//option.type     : &#x27;http&#x27;(default) or &#x27;https&#x27;
+//option.port     : 8001(default)
+//option.hostname : localhost(default)
+//option.rule          : ruleModule
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.generateCacheDir" id="apidoc.element.anyproxy.util.generateCacheDir">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>generateCacheDir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generateCacheDir = function (){
+    var rand      = Math.floor(Math.random() * 1000000),
+        cachePath = path.join(util.getAnyProxyHome(),&#x22;./&#x22; + CACHE_DIR_PREFIX + rand);
+
+    fs.mkdirSync(cachePath, &#x27;0777&#x27;);
+    return cachePath;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+proxyUtil = require(&#x22;./util&#x22;),
+logUtil   = require(&#x22;./log&#x22;);
+
+//option.filename
+function Recorder(option){
+var self = this,
+    id        = 1,
+    cachePath = proxyUtil.<span class="apidocCodeKeywordSpan">generateCacheDir</span>(),
+    db;
+
+option = option || {};
+if(option.filename &#x26;&#x26; typeof option.filename == &#x22;string&#x22;){
+    try{
+        if(fs.existsSync(option.filename)){
+            fs.writeFileSync(option.filename,&#x22;&#x22;); //empty original file
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.getAnyProxyHome" id="apidoc.element.anyproxy.util.getAnyProxyHome">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>getAnyProxyHome
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAnyProxyHome = function (){
+    var home = path.join(util.getUserHome(),&#x22;/.anyproxy/&#x22;);
+
+    if(!fs.existsSync(home)){
+        try{
+            fs.mkdirSync(home, &#x27;0777&#x27;);
+        }catch(e){
+            return null;
+        }
+    }
+
+    return home;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    interceptFlag      = false;
+
+//e.g. [ { keyword: &#x27;aaa&#x27;, local: &#x27;/Users/Stella/061739.pdf&#x27; } ]
+var mapConfig = [],
+    configFile = &#x22;mapConfig.json&#x22;;
+function saveMapConfig(content,cb){
+    new Promise(function(resolve,reject){
+var anyproxyHome = utils.<span class="apidocCodeKeywordSpan">getAnyProxyHome</span>(),
+    mapCfgPath   = path.join(anyproxyHome,configFile);
+
+if(typeof content == &#x22;object&#x22;){
+    content = JSON.stringify(content);
+}
+resolve({
+    path    :mapCfgPath,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.getUserHome" id="apidoc.element.anyproxy.util.getUserHome">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>getUserHome
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getUserHome(){
+    return process.env.HOME || process.env.USERPROFILE;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var EasyCert = require(&#x27;node-easy-cert&#x27;);
+var exec = require(&#x27;child_process&#x27;).exec;
+var path = require(&#x27;path&#x27;);
+var readline = require(&#x27;readline&#x27;);
+
+var isWin = /^win/.test(process.platform);
+var options = {
+    rootDirPath: util.<span class="apidocCodeKeywordSpan">getUserHome</span>() + &#x27;/.anyproxy_certs&#x27;,
+    defaultCertAttrs: [
+        { name: &#x27;countryName&#x27;, value: &#x27;CN&#x27; },
+        { name: &#x27;organizationName&#x27;, value: &#x27;AnyProxy&#x27; },
+        { shortName: &#x27;ST&#x27;, value: &#x27;SH&#x27; },
+        { shortName: &#x27;OU&#x27;, value: &#x27;AnyProxy SSL Proxy&#x27; }
+    ]
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.lower_keys" id="apidoc.element.anyproxy.util.lower_keys">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>lower_keys
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lower_keys = function (obj){
+    for(var key in obj){
+        var val = obj[key];
+        delete obj[key];
+
+        obj[key.toLowerCase()] = val;
+    }
+
+    return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+options.rejectUnauthorized = false;
+try{
+    delete options.headers[&#x27;accept-encoding&#x27;]; //avoid gzipped response
+}catch(e){}
+
+//update request data
+reqData = userRule.replaceRequestData(req,reqData) || reqData;
+options.headers = util.<span class="apidocCodeKeywordSpan">lower_keys</span>(options.headers);
+options.headers[&#x22;content-length&#x22;] = reqData.length; //rewrite content length info
+
+options.headers = util.upper_keys(options.headers);
+
+//send request
+var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.merge" id="apidoc.element.anyproxy.util.merge">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>merge
+        <span class="apidocSignatureSpan">(baseObj, extendObj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">merge = function (baseObj, extendObj){
+	for(var key in extendObj){
+		baseObj[key] = extendObj[key];
+	}
+
+	return baseObj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    { name: &#x27;organizationName&#x27;, value: &#x27;AnyProxy&#x27; },
+    { shortName: &#x27;ST&#x27;, value: &#x27;SH&#x27; },
+    { shortName: &#x27;OU&#x27;, value: &#x27;AnyProxy SSL Proxy&#x27; }
+]
+};
+
+var easyCert = new EasyCert(options);
+var crtMgr = util.<span class="apidocCodeKeywordSpan">merge</span>({}, easyCert);
+
+// catch specified error, such as ROOT_CA_NOT_EXISTS
+crtMgr.getCertificate = function (host, cb) {
+easyCert.getCertificate(host, (error, keyContent, crtContent) =&#x3e; {
+    if (error === &#x27;ROOT_CA_NOT_EXISTS&#x27;) {
+        util.showRootInstallTip();
+        process.exit(0);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.showRootInstallTip" id="apidoc.element.anyproxy.util.showRootInstallTip">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>showRootInstallTip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">showRootInstallTip = function () {
+    logUtil.printLog(color.red(&#x22;can not find rootCA.crt or rootCA.key&#x22;), logUtil.T_ERR);
+    logUtil.printLog(color.red(&#x22;you may generate one by the following methods&#x22;), logUtil.T_ERR);
+    logUtil.printLog(color.red(&#x22;\twhen using globally : anyproxy --root&#x22;), logUtil.T_ERR);
+    logUtil.printLog(color.red(&#x22;\twhen using as a module : require(\&#x22;anyproxy\&#x22;).generateRootCA();&#x22;), logUtil.T_ERR);
+    logUtil.printLog(color.red(&#x22;\tmore info : https://github.com/alibaba/anyproxy/wiki/How-to-config-https-proxy&#x22;), logUtil.T_ERR
+);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    // copy the rule to keep the original proxyRules independent
+    proxyRules = Object.assign({}, proxyRules);
+
+    var currentRule = requestHandler.setRules(proxyRules); //TODO : optimize calling for set rule
+
+    if(!!option.interceptHttps){
+if (!certMgr.isRootCAFileExists()) {
+    util.<span class="apidocCodeKeywordSpan">showRootInstallTip</span>();
+    process.exit(0);
+    return;
+}
+
+currentRule.setInterceptFlag(true);
+
+//print a tip when using https features in Node &#x3c; v0.12
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.simpleRender" id="apidoc.element.anyproxy.util.simpleRender">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>simpleRender
+        <span class="apidocSignatureSpan">(str, object, regexp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">simpleRender = function (str, object, regexp){
+    return String(str).replace(regexp || (/\{\{([^{}]+)\}\}/g), function(match, name){
+        if (match.charAt(0) == &#x27;\\&#x27;) return match.slice(1);
+        return (object[name] != null) ? object[name] : &#x27;&#x27;;
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.util.upper_keys" id="apidoc.element.anyproxy.util.upper_keys">
+        function <span class="apidocSignatureSpan">anyproxy.util.</span>upper_keys
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">upper_keys = function (obj) {
+    var upperObject = {};
+    for(var key in obj) {
+        var upperKey = changeCase.headerCase(key);
+        upperObject[upperKey] = obj[key];
+    }
+
+    return upperObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        }catch(e){}
+
+        //update request data
+        reqData = userRule.replaceRequestData(req,reqData) || reqData;
+        options.headers = util.lower_keys(options.headers);
+        options.headers[&#x22;content-length&#x22;] = reqData.length; //rewrite content length info
+
+        options.headers = util.<span class="apidocCodeKeywordSpan">upper_keys</span>(options.headers);
+
+        //send request
+        var proxyReq = ( /https/.test(protocol) ? https : http).request(options, function(res) {
+
+//deal response header
+var statusCode = res.statusCode;
+statusCode = userRule.replaceResponseStatusCode(req,res,statusCode) || statusCode;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.webInterface" id="apidoc.module.anyproxy.webInterface">module anyproxy.webInterface</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.webInterface.webInterface" id="apidoc.element.anyproxy.webInterface.webInterface">
+        function <span class="apidocSignatureSpan">anyproxy.</span>webInterface
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function webInterface(config){
+    var port = config.port,
+        wsPort        = config.wsPort,
+        ipAddress     = config.ip,
+        userRule      = config.userRule,
+        ruleSummary   = &#x22;&#x22;,
+        customMenu    = [],
+        server;
+
+    try{
+        ruleSummary = userRule.summary();
+        customMenu  = userRule._getCustomMenu();
+    }catch(e){}
+
+    var self         = this,
+        myAbsAddress = &#x22;http://&#x22; + ipAddress + &#x22;:&#x22; + port +&#x22;/&#x22;,
+        crtFilePath  = certMgr.getRootCAFilePath(),
+        staticDir    = path.join(__dirname,&#x27;../web&#x27;);
+
+    var app = express();
+    app.use(compress()); //invoke gzip
+    app.use(function(req, res, next) {
+        res.setHeader(&#x22;note&#x22;, &#x22;THIS IS A REQUEST FROM ANYPROXY WEB INTERFACE&#x22;);
+        return next();
+    });
+
+    app.get(&#x22;/lastestLog&#x22;,function(req,res){
+        recorder.getRecords(null,120,function(err,docs){
+            if(err){
+                res.end(err.toString());
+            }else{
+                res.json(docs);
+            }
+        });
+    });
+
+    app.get(&#x22;/fetchBody&#x22;,function(req,res){
+        var query = req.query;
+        if(query &#x26;&#x26; query.id){
+            global.recorder.getDecodedBody(query.id, function(err, result){
+                if(err || !result || !result.content){
+                    res.json({});
+                }else if(result.type &#x26;&#x26; result.type == &#x22;image&#x22; &#x26;&#x26; result.mime){
+                    if(query.raw){
+                        //TODO : cache query result
+                        res.type(result.mime).end(result.content);
+                    }else{
+                        res.json({
+                            id      : query.id,
+                            type    : result.type,
+                            ref     : &#x22;/fetchBody?id=&#x22; + query.id + &#x22;&#x26;raw=true&#x22;
+                        });
+                    }
+                }else{
+                    res.json({
+                        id      : query.id,
+                        type    : result.type,
+                        content : result.content
+                    });
+                }
+            });
+        }else{
+            res.end({});
+        }
+    });
+
+    app.get(&#x22;/fetchCrtFile&#x22;,function(req,res){
+        if(crtFilePath){
+            res.setHeader(&#x22;Content-Type&#x22;,&#x22;application/x-x509-ca-cert&#x22;);
+            res.setHeader(&#x22;Content-Disposition&#x22;,&#x27;attachment; filename=&#x22;rootCA.crt&#x22;&#x27;);
+            res.end(fs.readFileSync(crtFilePath,{encoding:null}));
+        }else{
+            res.setHeader(&#x22;Content-Type&#x22;,&#x22;text/html&#x22;);
+            res.end(&#x22;can not file rootCA ,plase use &#x3c;strong&#x3e;anyproxy --root&#x3c;/strong&#x3e; to generate one&#x22;);
+        }
+    });
+
+    //make qr code
+    app.get(&#x22;/qr&#x22;,function(req,res){
+        var qr        = qrCode.qrcode(4, &#x27;M&#x27;),
+            targetUrl = myAbsAddress,
+            qrImageTag,
+            resDom;
+
+        qr.addData(targetUrl);
+        qr.make();
+        qrImageTag = qr.createImgTag(4);
+
+        resDom = &#x27;&#x3c;a href=&#x22;__url&#x22;&#x3e; __img &#x3c;br&#x3e; click or scan qr code to start client &#x3c;/a&#x3e;&#x27;.replace(/__url/,targetUrl).replace(/__img
+/,qrImageTag);
+        res.setHeader(&#x22;Content-Type&#x22;, &#x22;text/html&#x22;);
+        res.end(resDom);
+    });
+
+    app.get(&#x22;/qr_root&#x22;,function(req,res){
+        var qr        = qrCode.qrcode(4, &#x27;M&#x27;),
+            targetUrl = myAbsAddress + &#x22;fetchCrtFile&#x22;,
+            qrImageTag,
+            resDom;
+
+        qr.addData(targetUrl);
+        qr.make();
+        qrImageTag = qr.createImgTag(4);
+
+        resDom = &#x27;&#x3c;a href=&#x22;__url&#x22;&#x3e; __img &#x3c;br&#x3e; click or scan qr code to download rootCA.crt &#x3c;/a&#x3e;&#x27;.replace(/__url/,targetUrl).replace
+(/__img/,qrImageTag);
+        res.setHeader(&#x22;Content-Type&#x22;, &#x22;text/html&#x22;);
+        res.end(resDom);
+    });
+
+    app.use(function(req,res,next){
+        var indexTpl  = fs.readFileSync(path.join(staticDir,&#x22;/index.html&#x22;),{encoding:&#x22;utf8&#x22;}),
+            opt       = {
+                rule        : ruleSummary || &#x22;&#x22;,
+                customMenu  : customMenu || [],
+                wsPort      : wsPort,
+                ipAddress   : ipAddress || &#x22;127.0.0.1&#x22;
+            };
+
+        if( url.parse(req.url).pathname == &#x22;/&#x22;){
+            res.se ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.webInterface.super_" id="apidoc.element.anyproxy.webInterface.super_">
+        function <span class="apidocSignatureSpan">anyproxy.webInterface.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.wsServer" id="apidoc.module.anyproxy.wsServer">module anyproxy.wsServer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.wsServer.wsServer" id="apidoc.element.anyproxy.wsServer.wsServer">
+        function <span class="apidocSignatureSpan">anyproxy.</span>wsServer
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wsServer(config){
+	//web socket interface
+	var self = this,
+        wss  = new WebSocketServer({port: config.port});
+	wss.broadcast = function(data) {
+        var key = data.id;
+        if(typeof data == &#x22;object&#x22;){
+            data = JSON.stringify(data);
+        }
+
+        for(var i in this.clients){
+            try{
+                this.clients[i].send(data);
+            }catch(e){
+                logUtil.printLog(&#x22;websocket failed to send data, &#x22; + e, logUtil.T_ERR);
+            }
+        }
+	};
+
+	wss.on(&#x22;connection&#x22;,function(ws){
+	    ws.on(&#x22;message&#x22;,function(msg){
+	        resToMsg(msg,function(res){
+	            res &#x26;&#x26; ws.send(JSON.stringify(res));
+	        });
+	    });
+	});
+
+    wss.on(&#x22;close&#x22;,function(){});
+
+	global.recorder.on(&#x22;update&#x22;,function(data){
+        try{
+    	    wss &#x26;&#x26; wss.broadcast({
+    	        type   : &#x22;update&#x22;,
+    	        content: data
+    	    });
+
+        }catch(e){
+            console.log(&#x22;ws error&#x22;);
+            console.log(e);
+        }
+	});
+
+    self.wss = wss;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.wsServer.prototype" id="apidoc.module.anyproxy.wsServer.prototype">module anyproxy.wsServer.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.wsServer.prototype.closeAll" id="apidoc.element.anyproxy.wsServer.prototype.closeAll">
+        function <span class="apidocSignatureSpan">anyproxy.wsServer.prototype.</span>closeAll
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">closeAll = function (){
+    var self = this;
+    self.wss.close();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                logUtil.printLog(err, logUtil.T_ERR);
+            }
+        }
+    );
+
+    self.close = function(){
+        self.httpProxyServer &#x26;&#x26; self.httpProxyServer.close();
+        self.ws &#x26;&#x26; self.ws.<span class="apidocCodeKeywordSpan">closeAll</span>();
+        self.webServerInstance &#x26;&#x26; self.webServerInstance.server &#x26;&#x26; self.webServerInstance.server.close();
+        logUtil.printLog(&#x22;server closed :&#x22; + proxyHost + &#x22;:&#x22; + proxyPort);
+    }
+}
+
+module.exports.proxyServer        = proxyServer;
+module.exports.generateRootCA     = certMgr.generateRootCA;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
