@@ -1,114 +1,114 @@
 <svg height="1774" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="1774" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-08 08:33:53 +0000  8708539 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-08 08:33:53 +0000     3033 bytes  CHANGELOG</tspan>
-<tspan x="10" y="58">  2.  2017-04-08 08:33:53 +0000    11357 bytes  LICENSE</tspan>
-<tspan x="10" y="74">  3.  2017-04-08 08:33:53 +0000     6460 bytes  README.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-08 08:33:53 +0000     3827 bytes  bin.js</tspan>
-<tspan x="10" y="106">  5.  2017-04-08 08:33:53 +0000      255 bytes  jasmine.json</tspan>
-<tspan x="10" y="122">  6.  2017-04-08 08:33:53 +0000     1511 bytes  lib/asyncTaskMgr.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-08 08:33:53 +0000     2945 bytes  lib/certGenerator.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-08 08:33:53 +0000     2431 bytes  lib/certMgr.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-08 08:33:53 +0000      388 bytes  lib/getPort.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-08 08:33:53 +0000     2525 bytes  lib/httpsServerMgr.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-08 08:33:53 +0000      335 bytes  lib/log.js</tspan>
-<tspan x="10" y="218"> 12.  2017-04-08 08:33:53 +0000     7014 bytes  lib/recorder.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-08 08:33:53 +0000    14803 bytes  lib/requestHandler.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-08 08:33:53 +0000     4893 bytes  lib/rule_default.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-08 08:33:53 +0000     4636 bytes  lib/systemProxyMgr.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-08 08:33:53 +0000     4397 bytes  lib/util.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-08 08:33:53 +0000     5152 bytes  lib/webInterface.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-08 08:33:53 +0000     2254 bytes  lib/wsServer.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-08 08:33:53 +0000     2543 bytes  package.json</tspan>
-<tspan x="10" y="346"> 20.  2017-04-08 08:33:53 +0000    10358 bytes  proxy.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-08 08:33:53 +0000     1279 bytes  rule_sample/README.md</tspan>
-<tspan x="10" y="378"> 22.  2017-04-08 08:33:53 +0000     4224 bytes  rule_sample/rule__blank.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-08 08:33:53 +0000      163 bytes  rule_sample/rule_adjust_response_time.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-08 08:33:53 +0000     1280 bytes  rule_sample/rule_allow_CORS.js</tspan>
-<tspan x="10" y="426"> 25.  2017-04-08 08:33:53 +0000      615 bytes  rule_sample/rule_intercept_some_https_requests.j\</tspan>
+<tspan x="10" y="26">  0.  2017-04-20 20:09:28 +0000  8707460 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-20 20:09:28 +0000     3033 bytes  CHANGELOG</tspan>
+<tspan x="10" y="58">  2.  2017-04-20 20:09:28 +0000    11357 bytes  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-20 20:09:28 +0000     6460 bytes  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-20 20:09:28 +0000     3827 bytes  bin.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-20 20:09:28 +0000      255 bytes  jasmine.json</tspan>
+<tspan x="10" y="122">  6.  2017-04-20 20:09:28 +0000     1511 bytes  lib/asyncTaskMgr.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-20 20:09:28 +0000     2945 bytes  lib/certGenerator.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-20 20:09:28 +0000     2431 bytes  lib/certMgr.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-20 20:09:28 +0000      388 bytes  lib/getPort.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-20 20:09:28 +0000     2525 bytes  lib/httpsServerMgr.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-20 20:09:28 +0000      335 bytes  lib/log.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-20 20:09:28 +0000     7014 bytes  lib/recorder.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-20 20:09:28 +0000    14803 bytes  lib/requestHandler.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-20 20:09:28 +0000     4893 bytes  lib/rule_default.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-20 20:09:28 +0000     4636 bytes  lib/systemProxyMgr.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-20 20:09:28 +0000     4397 bytes  lib/util.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-20 20:09:28 +0000     5152 bytes  lib/webInterface.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-20 20:09:28 +0000     2254 bytes  lib/wsServer.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-20 20:09:28 +0000     1464 bytes  package.json</tspan>
+<tspan x="10" y="346"> 20.  2017-04-20 20:09:28 +0000    10358 bytes  proxy.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-20 20:09:28 +0000     1279 bytes  rule_sample/README.md</tspan>
+<tspan x="10" y="378"> 22.  2017-04-20 20:09:28 +0000     4224 bytes  rule_sample/rule__blank.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-20 20:09:28 +0000      163 bytes  rule_sample/rule_adjust_response_time.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-20 20:09:28 +0000     1280 bytes  rule_sample/rule_allow_CORS.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-20 20:09:28 +0000      615 bytes  rule_sample/rule_intercept_some_https_requests.j\</tspan>
 <tspan x="10" y="442">s</tspan>
-<tspan x="10" y="458"> 26.  2017-04-08 08:33:53 +0000      569 bytes  rule_sample/rule_remove_cache_header.js</tspan>
-<tspan x="10" y="474"> 27.  2017-04-08 08:33:53 +0000      555 bytes  rule_sample/rule_replace_request_option.js</tspan>
-<tspan x="10" y="490"> 28.  2017-04-08 08:33:53 +0000      651 bytes  rule_sample/rule_replace_response_data.js</tspan>
-<tspan x="10" y="506"> 29.  2017-04-08 08:33:53 +0000      557 bytes  rule_sample/rule_replace_response_status_code.js</tspan>
-<tspan x="10" y="522"> 30.  2017-04-08 08:33:53 +0000      620 bytes  rule_sample/rule_reverse_proxy.js</tspan>
-<tspan x="10" y="538"> 31.  2017-04-08 08:33:53 +0000      684 bytes  rule_sample/rule_use_local_data.js</tspan>
-<tspan x="10" y="554"> 32.  2017-04-08 08:33:53 +0000       76 bytes  test/ab_local.sh</tspan>
-<tspan x="10" y="570"> 33.  2017-04-08 08:33:53 +0000       81 bytes  test/ab_taobao.sh</tspan>
-<tspan x="10" y="586"> 34.  2017-04-08 08:33:53 +0000      969 bytes  test/data/headers.js</tspan>
-<tspan x="10" y="602"> 35.  2017-04-08 08:33:53 +0000       29 bytes  test/data/test.css</tspan>
-<tspan x="10" y="618"> 36.  2017-04-08 08:33:53 +0000     5320 bytes  test/data/test.eot</tspan>
-<tspan x="10" y="634"> 37.  2017-04-08 08:33:53 +0000       96 bytes  test/data/test.js</tspan>
-<tspan x="10" y="650"> 38.  2017-04-08 08:33:53 +0000       50 bytes  test/data/test.json</tspan>
-<tspan x="10" y="666"> 39.  2017-04-08 08:33:53 +0000   105758 bytes  test/data/test.png</tspan>
-<tspan x="10" y="682"> 40.  2017-04-08 08:33:53 +0000     1071 bytes  test/data/test.svg</tspan>
-<tspan x="10" y="698"> 41.  2017-04-08 08:33:53 +0000     5152 bytes  test/data/test.ttf</tspan>
-<tspan x="10" y="714"> 42.  2017-04-08 08:33:53 +0000    45982 bytes  test/data/test.webp</tspan>
-<tspan x="10" y="730"> 43.  2017-04-08 08:33:53 +0000     2960 bytes  test/data/test.woff</tspan>
-<tspan x="10" y="746"> 44.  2017-04-08 08:33:53 +0000     2400 bytes  test/data/test.woff2</tspan>
-<tspan x="10" y="762"> 45.  2017-04-08 08:33:53 +0000      944 bytes  test/large_post.js</tspan>
-<tspan x="10" y="778"> 46.  2017-04-08 08:33:53 +0000    20131 bytes  test/no_rule_spec.js</tspan>
-<tspan x="10" y="794"> 47.  2017-04-08 08:33:53 +0000     4937 bytes  test/no_rule_websocket_spec.js</tspan>
-<tspan x="10" y="810"> 48.  2017-04-08 08:33:53 +0000     1814 bytes  test/rule_shouldUseLocalResponse_spec.js</tspan>
-<tspan x="10" y="826"> 49.  2017-04-08 08:33:53 +0000     8425 bytes  test/server/server.js</tspan>
-<tspan x="10" y="842"> 50.  2017-04-08 08:33:53 +0000       53 bytes  test/server/startServer.js</tspan>
-<tspan x="10" y="858"> 51.  2017-04-08 08:33:53 +0000     1735 bytes  test/test.js</tspan>
-<tspan x="10" y="874"> 52.  2017-04-08 08:33:53 +0000      241 bytes  test/test.sh</tspan>
-<tspan x="10" y="890"> 53.  2017-04-08 08:33:53 +0000      495 bytes  test/test_rules/shouldUseLocalResponseRule.js</tspan>
-<tspan x="10" y="906"> 54.  2017-04-08 08:33:53 +0000     4828 bytes  test/util/CommonUtil.js</tspan>
-<tspan x="10" y="922"> 55.  2017-04-08 08:33:53 +0000     6440 bytes  test/util/HttpUtil.js</tspan>
-<tspan x="10" y="938"> 56.  2017-04-08 08:33:53 +0000     2058 bytes  test/util/ProxyServerUtil.js</tspan>
-<tspan x="10" y="954"> 57.  2017-04-08 08:33:53 +0000    25332 bytes  web/404.html</tspan>
-<tspan x="10" y="970"> 58.  2017-04-08 08:33:53 +0000       44 bytes  web/build.sh</tspan>
-<tspan x="10" y="986"> 59.  2017-04-08 08:33:53 +0000     2025 bytes  web/build/anyproxy_wsUtil.js</tspan>
-<tspan x="10" y="1002"> 60.  2017-04-08 08:33:53 +0000      573 bytes  web/build/detail.js</tspan>
-<tspan x="10" y="1018"> 61.  2017-04-08 08:33:53 +0000     3622 bytes  web/build/detailPanel.js</tspan>
-<tspan x="10" y="1034"> 62.  2017-04-08 08:33:53 +0000     1355 bytes  web/build/event.js</tspan>
-<tspan x="10" y="1050"> 63.  2017-04-08 08:33:53 +0000     1319 bytes  web/build/filter.js</tspan>
-<tspan x="10" y="1066"> 64.  2017-04-08 08:33:53 +0000     6436 bytes  web/build/index.js</tspan>
-<tspan x="10" y="1082"> 65.  2017-04-08 08:33:53 +0000     3511 bytes  web/build/mapForm.js</tspan>
-<tspan x="10" y="1098"> 66.  2017-04-08 08:33:53 +0000     1923 bytes  web/build/mapList.js</tspan>
-<tspan x="10" y="1114"> 67.  2017-04-08 08:33:53 +0000      900 bytes  web/build/mapPanel.js</tspan>
-<tspan x="10" y="1130"> 68.  2017-04-08 08:33:53 +0000     2177 bytes  web/build/popup.js</tspan>
-<tspan x="10" y="1146"> 69.  2017-04-08 08:33:53 +0000   660536 bytes  web/build/react.js</tspan>
-<tspan x="10" y="1162"> 70.  2017-04-08 08:33:53 +0000     2013 bytes  web/build/recordPanel.js</tspan>
-<tspan x="10" y="1178"> 71.  2017-04-08 08:33:53 +0000     2399 bytes  web/build/recordRow.js</tspan>
-<tspan x="10" y="1194"> 72.  2017-04-08 08:33:53 +0000      488 bytes  web/build/wsIndicator.js</tspan>
-<tspan x="10" y="1210"> 73.  2017-04-08 08:33:53 +0000     3121 bytes  web/css/jstree_style/32px.png</tspan>
-<tspan x="10" y="1226"> 74.  2017-04-08 08:33:53 +0000     1880 bytes  web/css/jstree_style/40px.png</tspan>
-<tspan x="10" y="1242"> 75.  2017-04-08 08:33:53 +0000    29112 bytes  web/css/jstree_style/style.css</tspan>
-<tspan x="10" y="1258"> 76.  2017-04-08 08:33:53 +0000    24847 bytes  web/css/jstree_style/style.min.css</tspan>
-<tspan x="10" y="1274"> 77.  2017-04-08 08:33:53 +0000     1720 bytes  web/css/jstree_style/throbber.gif</tspan>
-<tspan x="10" y="1290"> 78.  2017-04-08 08:33:53 +0000     4886 bytes  web/css/page.css</tspan>
-<tspan x="10" y="1306"> 79.  2017-04-08 08:33:53 +0000    84797 bytes  web/css/uikit.gradient.min.css</tspan>
-<tspan x="10" y="1322"> 80.  2017-04-08 08:33:53 +0000    12056 bytes  web/dist/805eb4590f3da8611765.worker.js</tspan>
-<tspan x="10" y="1338"> 81.  2017-04-08 08:33:53 +0000   689067 bytes  web/dist/main.css</tspan>
-<tspan x="10" y="1354"> 82.  2017-04-08 08:33:53 +0000  4506403 bytes  web/dist/main.js</tspan>
-<tspan x="10" y="1370"> 83.  2017-04-08 08:33:53 +0000     9928 bytes  web/favico.png</tspan>
-<tspan x="10" y="1386"> 84.  2017-04-08 08:33:53 +0000    85908 bytes  web/fonts/FontAwesome.otf</tspan>
-<tspan x="10" y="1402"> 85.  2017-04-08 08:33:53 +0000    56006 bytes  web/fonts/fontawesome-webfont.eot</tspan>
-<tspan x="10" y="1418"> 86.  2017-04-08 08:33:53 +0000   112160 bytes  web/fonts/fontawesome-webfont.ttf</tspan>
-<tspan x="10" y="1434"> 87.  2017-04-08 08:33:53 +0000    65452 bytes  web/fonts/fontawesome-webfont.woff</tspan>
-<tspan x="10" y="1450"> 88.  2017-04-08 08:33:53 +0000     2017 bytes  web/index.html</tspan>
-<tspan x="10" y="1466"> 89.  2017-04-08 08:33:53 +0000     2145 bytes  web/lib/anyproxy_wsUtil.js</tspan>
-<tspan x="10" y="1482"> 90.  2017-04-08 08:33:53 +0000     1355 bytes  web/lib/event.js</tspan>
-<tspan x="10" y="1498"> 91.  2017-04-08 08:33:53 +0000    84345 bytes  web/lib/jquery.js</tspan>
-<tspan x="10" y="1514"> 92.  2017-04-08 08:33:53 +0000   266413 bytes  web/lib/jstree.js</tspan>
-<tspan x="10" y="1530"> 93.  2017-04-08 08:33:53 +0000   600572 bytes  web/lib/react.js</tspan>
-<tspan x="10" y="1546"> 94.  2017-04-08 08:33:53 +0000  1001531 bytes  web/page.js</tspan>
-<tspan x="10" y="1562"> 95.  2017-04-08 08:33:53 +0000     2989 bytes  web/src/detailPanel.js</tspan>
-<tspan x="10" y="1578"> 96.  2017-04-08 08:33:53 +0000     1073 bytes  web/src/filter.js</tspan>
-<tspan x="10" y="1594"> 97.  2017-04-08 08:33:53 +0000     6203 bytes  web/src/index.js</tspan>
-<tspan x="10" y="1610"> 98.  2017-04-08 08:33:53 +0000     3161 bytes  web/src/mapForm.js</tspan>
-<tspan x="10" y="1626"> 99.  2017-04-08 08:33:53 +0000     1760 bytes  web/src/mapList.js</tspan>
-<tspan x="10" y="1642">100.  2017-04-08 08:33:53 +0000      759 bytes  web/src/mapPanel.js</tspan>
-<tspan x="10" y="1658">101.  2017-04-08 08:33:53 +0000     2008 bytes  web/src/popup.js</tspan>
-<tspan x="10" y="1674">102.  2017-04-08 08:33:53 +0000     1712 bytes  web/src/recordPanel.js</tspan>
-<tspan x="10" y="1690">103.  2017-04-08 08:33:53 +0000     2108 bytes  web/src/recordRow.js</tspan>
-<tspan x="10" y="1706">104.  2017-04-08 08:33:53 +0000      433 bytes  web/src/wsIndicator.js</tspan>
-<tspan x="10" y="1722">105.  2017-04-08 08:33:53 +0000       61 bytes  web/watch.sh</tspan>
-<tspan x="10" y="1738">106.  2017-04-08 08:33:53 +0000      141 bytes  web/webpack.config.js</tspan>
-<tspan x="10" y="1754">107.  2017-04-08 08:33:53 +0000     1398 bytes  web/websocket_sample.html</tspan>
+<tspan x="10" y="458"> 26.  2017-04-20 20:09:28 +0000      569 bytes  rule_sample/rule_remove_cache_header.js</tspan>
+<tspan x="10" y="474"> 27.  2017-04-20 20:09:28 +0000      555 bytes  rule_sample/rule_replace_request_option.js</tspan>
+<tspan x="10" y="490"> 28.  2017-04-20 20:09:28 +0000      651 bytes  rule_sample/rule_replace_response_data.js</tspan>
+<tspan x="10" y="506"> 29.  2017-04-20 20:09:28 +0000      557 bytes  rule_sample/rule_replace_response_status_code.js</tspan>
+<tspan x="10" y="522"> 30.  2017-04-20 20:09:28 +0000      620 bytes  rule_sample/rule_reverse_proxy.js</tspan>
+<tspan x="10" y="538"> 31.  2017-04-20 20:09:28 +0000      684 bytes  rule_sample/rule_use_local_data.js</tspan>
+<tspan x="10" y="554"> 32.  2017-04-20 20:09:28 +0000       76 bytes  test/ab_local.sh</tspan>
+<tspan x="10" y="570"> 33.  2017-04-20 20:09:28 +0000       81 bytes  test/ab_taobao.sh</tspan>
+<tspan x="10" y="586"> 34.  2017-04-20 20:09:28 +0000      969 bytes  test/data/headers.js</tspan>
+<tspan x="10" y="602"> 35.  2017-04-20 20:09:28 +0000       29 bytes  test/data/test.css</tspan>
+<tspan x="10" y="618"> 36.  2017-04-20 20:09:28 +0000     5320 bytes  test/data/test.eot</tspan>
+<tspan x="10" y="634"> 37.  2017-04-20 20:09:28 +0000       96 bytes  test/data/test.js</tspan>
+<tspan x="10" y="650"> 38.  2017-04-20 20:09:28 +0000       50 bytes  test/data/test.json</tspan>
+<tspan x="10" y="666"> 39.  2017-04-20 20:09:28 +0000   105758 bytes  test/data/test.png</tspan>
+<tspan x="10" y="682"> 40.  2017-04-20 20:09:28 +0000     1071 bytes  test/data/test.svg</tspan>
+<tspan x="10" y="698"> 41.  2017-04-20 20:09:28 +0000     5152 bytes  test/data/test.ttf</tspan>
+<tspan x="10" y="714"> 42.  2017-04-20 20:09:28 +0000    45982 bytes  test/data/test.webp</tspan>
+<tspan x="10" y="730"> 43.  2017-04-20 20:09:28 +0000     2960 bytes  test/data/test.woff</tspan>
+<tspan x="10" y="746"> 44.  2017-04-20 20:09:28 +0000     2400 bytes  test/data/test.woff2</tspan>
+<tspan x="10" y="762"> 45.  2017-04-20 20:09:28 +0000      944 bytes  test/large_post.js</tspan>
+<tspan x="10" y="778"> 46.  2017-04-20 20:09:28 +0000    20131 bytes  test/no_rule_spec.js</tspan>
+<tspan x="10" y="794"> 47.  2017-04-20 20:09:28 +0000     4937 bytes  test/no_rule_websocket_spec.js</tspan>
+<tspan x="10" y="810"> 48.  2017-04-20 20:09:28 +0000     1814 bytes  test/rule_shouldUseLocalResponse_spec.js</tspan>
+<tspan x="10" y="826"> 49.  2017-04-20 20:09:28 +0000     8425 bytes  test/server/server.js</tspan>
+<tspan x="10" y="842"> 50.  2017-04-20 20:09:28 +0000       53 bytes  test/server/startServer.js</tspan>
+<tspan x="10" y="858"> 51.  2017-04-20 20:09:28 +0000     1735 bytes  test/test.js</tspan>
+<tspan x="10" y="874"> 52.  2017-04-20 20:09:28 +0000      241 bytes  test/test.sh</tspan>
+<tspan x="10" y="890"> 53.  2017-04-20 20:09:28 +0000      495 bytes  test/test_rules/shouldUseLocalResponseRule.js</tspan>
+<tspan x="10" y="906"> 54.  2017-04-20 20:09:28 +0000     4828 bytes  test/util/CommonUtil.js</tspan>
+<tspan x="10" y="922"> 55.  2017-04-20 20:09:28 +0000     6440 bytes  test/util/HttpUtil.js</tspan>
+<tspan x="10" y="938"> 56.  2017-04-20 20:09:28 +0000     2058 bytes  test/util/ProxyServerUtil.js</tspan>
+<tspan x="10" y="954"> 57.  2017-04-20 20:09:28 +0000    25332 bytes  web/404.html</tspan>
+<tspan x="10" y="970"> 58.  2017-04-20 20:09:28 +0000       44 bytes  web/build.sh</tspan>
+<tspan x="10" y="986"> 59.  2017-04-20 20:09:28 +0000     2025 bytes  web/build/anyproxy_wsUtil.js</tspan>
+<tspan x="10" y="1002"> 60.  2017-04-20 20:09:28 +0000      573 bytes  web/build/detail.js</tspan>
+<tspan x="10" y="1018"> 61.  2017-04-20 20:09:28 +0000     3622 bytes  web/build/detailPanel.js</tspan>
+<tspan x="10" y="1034"> 62.  2017-04-20 20:09:28 +0000     1355 bytes  web/build/event.js</tspan>
+<tspan x="10" y="1050"> 63.  2017-04-20 20:09:28 +0000     1319 bytes  web/build/filter.js</tspan>
+<tspan x="10" y="1066"> 64.  2017-04-20 20:09:28 +0000     6436 bytes  web/build/index.js</tspan>
+<tspan x="10" y="1082"> 65.  2017-04-20 20:09:28 +0000     3511 bytes  web/build/mapForm.js</tspan>
+<tspan x="10" y="1098"> 66.  2017-04-20 20:09:28 +0000     1923 bytes  web/build/mapList.js</tspan>
+<tspan x="10" y="1114"> 67.  2017-04-20 20:09:28 +0000      900 bytes  web/build/mapPanel.js</tspan>
+<tspan x="10" y="1130"> 68.  2017-04-20 20:09:28 +0000     2177 bytes  web/build/popup.js</tspan>
+<tspan x="10" y="1146"> 69.  2017-04-20 20:09:28 +0000   660536 bytes  web/build/react.js</tspan>
+<tspan x="10" y="1162"> 70.  2017-04-20 20:09:28 +0000     2013 bytes  web/build/recordPanel.js</tspan>
+<tspan x="10" y="1178"> 71.  2017-04-20 20:09:28 +0000     2399 bytes  web/build/recordRow.js</tspan>
+<tspan x="10" y="1194"> 72.  2017-04-20 20:09:28 +0000      488 bytes  web/build/wsIndicator.js</tspan>
+<tspan x="10" y="1210"> 73.  2017-04-20 20:09:28 +0000     3121 bytes  web/css/jstree_style/32px.png</tspan>
+<tspan x="10" y="1226"> 74.  2017-04-20 20:09:28 +0000     1880 bytes  web/css/jstree_style/40px.png</tspan>
+<tspan x="10" y="1242"> 75.  2017-04-20 20:09:28 +0000    29112 bytes  web/css/jstree_style/style.css</tspan>
+<tspan x="10" y="1258"> 76.  2017-04-20 20:09:28 +0000    24847 bytes  web/css/jstree_style/style.min.css</tspan>
+<tspan x="10" y="1274"> 77.  2017-04-20 20:09:28 +0000     1720 bytes  web/css/jstree_style/throbber.gif</tspan>
+<tspan x="10" y="1290"> 78.  2017-04-20 20:09:28 +0000     4886 bytes  web/css/page.css</tspan>
+<tspan x="10" y="1306"> 79.  2017-04-20 20:09:28 +0000    84797 bytes  web/css/uikit.gradient.min.css</tspan>
+<tspan x="10" y="1322"> 80.  2017-04-20 20:09:28 +0000    12056 bytes  web/dist/805eb4590f3da8611765.worker.js</tspan>
+<tspan x="10" y="1338"> 81.  2017-04-20 20:09:28 +0000   689067 bytes  web/dist/main.css</tspan>
+<tspan x="10" y="1354"> 82.  2017-04-20 20:09:28 +0000  4506403 bytes  web/dist/main.js</tspan>
+<tspan x="10" y="1370"> 83.  2017-04-20 20:09:28 +0000     9928 bytes  web/favico.png</tspan>
+<tspan x="10" y="1386"> 84.  2017-04-20 20:09:28 +0000    85908 bytes  web/fonts/FontAwesome.otf</tspan>
+<tspan x="10" y="1402"> 85.  2017-04-20 20:09:28 +0000    56006 bytes  web/fonts/fontawesome-webfont.eot</tspan>
+<tspan x="10" y="1418"> 86.  2017-04-20 20:09:28 +0000   112160 bytes  web/fonts/fontawesome-webfont.ttf</tspan>
+<tspan x="10" y="1434"> 87.  2017-04-20 20:09:28 +0000    65452 bytes  web/fonts/fontawesome-webfont.woff</tspan>
+<tspan x="10" y="1450"> 88.  2017-04-20 20:09:28 +0000     2017 bytes  web/index.html</tspan>
+<tspan x="10" y="1466"> 89.  2017-04-20 20:09:28 +0000     2145 bytes  web/lib/anyproxy_wsUtil.js</tspan>
+<tspan x="10" y="1482"> 90.  2017-04-20 20:09:28 +0000     1355 bytes  web/lib/event.js</tspan>
+<tspan x="10" y="1498"> 91.  2017-04-20 20:09:28 +0000    84345 bytes  web/lib/jquery.js</tspan>
+<tspan x="10" y="1514"> 92.  2017-04-20 20:09:28 +0000   266413 bytes  web/lib/jstree.js</tspan>
+<tspan x="10" y="1530"> 93.  2017-04-20 20:09:28 +0000   600572 bytes  web/lib/react.js</tspan>
+<tspan x="10" y="1546"> 94.  2017-04-20 20:09:28 +0000  1001531 bytes  web/page.js</tspan>
+<tspan x="10" y="1562"> 95.  2017-04-20 20:09:28 +0000     2989 bytes  web/src/detailPanel.js</tspan>
+<tspan x="10" y="1578"> 96.  2017-04-20 20:09:28 +0000     1073 bytes  web/src/filter.js</tspan>
+<tspan x="10" y="1594"> 97.  2017-04-20 20:09:28 +0000     6203 bytes  web/src/index.js</tspan>
+<tspan x="10" y="1610"> 98.  2017-04-20 20:09:28 +0000     3161 bytes  web/src/mapForm.js</tspan>
+<tspan x="10" y="1626"> 99.  2017-04-20 20:09:28 +0000     1760 bytes  web/src/mapList.js</tspan>
+<tspan x="10" y="1642">100.  2017-04-20 20:09:28 +0000      759 bytes  web/src/mapPanel.js</tspan>
+<tspan x="10" y="1658">101.  2017-04-20 20:09:28 +0000     2008 bytes  web/src/popup.js</tspan>
+<tspan x="10" y="1674">102.  2017-04-20 20:09:28 +0000     1712 bytes  web/src/recordPanel.js</tspan>
+<tspan x="10" y="1690">103.  2017-04-20 20:09:28 +0000     2108 bytes  web/src/recordRow.js</tspan>
+<tspan x="10" y="1706">104.  2017-04-20 20:09:28 +0000      433 bytes  web/src/wsIndicator.js</tspan>
+<tspan x="10" y="1722">105.  2017-04-20 20:09:28 +0000       61 bytes  web/watch.sh</tspan>
+<tspan x="10" y="1738">106.  2017-04-20 20:09:28 +0000      141 bytes  web/webpack.config.js</tspan>
+<tspan x="10" y="1754">107.  2017-04-20 20:09:28 +0000     1398 bytes  web/websocket_sample.html</tspan>
 </text>
 </svg>

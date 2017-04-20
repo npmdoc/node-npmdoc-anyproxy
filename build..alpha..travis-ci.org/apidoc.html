@@ -49,8 +49,6 @@
 <h1>api documentation for
     <a
 
-        href="https://github.com/alibaba/anyproxy#readme"
-
     >anyproxy (v3.10.4)</a>
 </h1>
 <h4>A fully configurable proxy in NodeJS, which can handle HTTPS requests perfectly.</h4>
@@ -60,6 +58,24 @@
 ><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy">module anyproxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.anyproxy_wsUtil">
+            function <span class="apidocSignatureSpan">anyproxy.</span>anyproxy_wsUtil
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event">
+            function <span class="apidocSignatureSpan">anyproxy.</span>event
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -126,6 +142,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>anyproxy_wsUtil.prototype</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>certGenerator</span>
 
         </li>
@@ -133,6 +155,18 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>certMgr</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>event.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.</span>react</span>
 
         </li>
 
@@ -222,6 +256,41 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.anyproxy_wsUtil">module anyproxy.anyproxy_wsUtil</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.anyproxy_wsUtil.anyproxy_wsUtil">
+            function <span class="apidocSignatureSpan">anyproxy.</span>anyproxy_wsUtil
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.anyproxy_wsUtil.prototype">module anyproxy.anyproxy_wsUtil.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.anyproxy_wsUtil.prototype.reqBody">
+            function <span class="apidocSignatureSpan">anyproxy.anyproxy_wsUtil.prototype.</span>reqBody
+            <span class="apidocSignatureSpan">(id, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.anyproxy_wsUtil.prototype.send">
+            function <span class="apidocSignatureSpan">anyproxy.anyproxy_wsUtil.prototype.</span>send
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.certGenerator">module anyproxy.certGenerator</a><ol>
 
         <li>
@@ -306,6 +375,240 @@
             function <span class="apidocSignatureSpan">anyproxy.certMgr.</span>isRootCAFileExists
             <span class="apidocSignatureSpan">()</span>
             </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.event">module anyproxy.event</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event.event">
+            function <span class="apidocSignatureSpan">anyproxy.</span>event
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.event.prototype">module anyproxy.event.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event.prototype.addListener">
+            function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>addListener
+            <span class="apidocSignatureSpan">(event, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event.prototype.dispatchEvent">
+            function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>dispatchEvent
+            <span class="apidocSignatureSpan">(event, params)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event.prototype.initialize">
+            function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>initialize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.event.prototype.removeListener">
+            function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>removeListener
+            <span class="apidocSignatureSpan">(event, fn)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.anyproxy.react">module anyproxy.react</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.Component">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>Component
+            <span class="apidocSignatureSpan">(props, context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.__spread">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>__spread
+            <span class="apidocSignatureSpan">(target, sources)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.cloneElement">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>cloneElement
+            <span class="apidocSignatureSpan">(element, props, children)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.constructAndRenderComponent">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>constructAndRenderComponent
+            <span class="apidocSignatureSpan">(constructor, props, container)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.constructAndRenderComponentByID">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>constructAndRenderComponentByID
+            <span class="apidocSignatureSpan">(constructor, props, id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.createClass">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>createClass
+            <span class="apidocSignatureSpan">(spec)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.createElement">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>createElement
+            <span class="apidocSignatureSpan">(type, props, children)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.createFactory">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>createFactory
+            <span class="apidocSignatureSpan">(type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.createMixin">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>createMixin
+            <span class="apidocSignatureSpan">(mixin)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.findDOMNode">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>findDOMNode
+            <span class="apidocSignatureSpan">(componentOrElement)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.initializeTouchEvents">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>initializeTouchEvents
+            <span class="apidocSignatureSpan">(shouldUseTouch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.isValidElement">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>isValidElement
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.render">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.renderToStaticMarkup">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>renderToStaticMarkup
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.renderToString">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>renderToString
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.unmountComponentAtNode">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>unmountComponentAtNode
+            <span class="apidocSignatureSpan">(container)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.anyproxy.react.withContext">
+            function <span class="apidocSignatureSpan">anyproxy.react.</span>withContext
+            <span class="apidocSignatureSpan">(newContext, scopedCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.react.</span>Children</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.react.</span>DOM</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">anyproxy.react.</span>PropTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">anyproxy.react.</span>version</span>
 
         </li>
 
@@ -1010,6 +1313,86 @@
 
 
     <h2>
+        <a href="#apidoc.element.anyproxy.anyproxy_wsUtil" id="apidoc.element.anyproxy.anyproxy_wsUtil">
+        function <span class="apidocSignatureSpan">anyproxy.</span>anyproxy_wsUtil
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function anyproxy_wsUtil(config){
+	config = config || {};
+	if(!WebSocket){
+		throw (new Error(&#x22;webSocket is not available on this browser&#x22;));
+	}
+
+	var self = this;
+	var baseUrl    = config.baseUrl || &#x22;127.0.0.1&#x22;,
+		socketPort = config.port || 8003,
+		dataSocket;
+
+	function initSocket(){
+		self.bodyCbMap = {};
+		dataSocket = new WebSocket(&#x22;ws://&#x22; + baseUrl + &#x22;:&#x22; + socketPort);
+		dataSocket.onmessage = function(event){
+			config.onGetData &#x26;&#x26; config.onGetData.call(self,event.data);
+
+			try{
+				var data    = JSON.parse(event.data),
+					type    = data.type,
+					content = data.content,
+					reqRef  = data.reqRef;
+			}catch(e){
+				config.onError &#x26;&#x26; config.onError.call(self, new Error(&#x22;failed to parse socket data - &#x22; + e.toString()) );
+			}
+
+			if(type == &#x22;update&#x22;){
+				config.onGetUpdate &#x26;&#x26; config.onGetUpdate.call(self, content);
+
+			}else if(type == &#x22;body&#x22;){
+				config.onGetBody &#x26;&#x26; config.onGetBody.call(self, content, reqRef);
+
+				if(data.reqRef &#x26;&#x26; self.bodyCbMap[reqRef]){
+					self.bodyCbMap[reqRef].call(self,content);
+				}
+			}
+		}
+
+		dataSocket.onopen = function(e){
+			config.onOpen &#x26;&#x26; config.onOpen.call(self,e);
+		}
+		dataSocket.onclose = function(e){
+			config.onClose &#x26;&#x26; config.onClose.call(self,e);
+		}
+		dataSocket.onerror = function(e){
+			config.onError &#x26;&#x26; config.onError.call(self,e);
+		}
+
+		self.dataSocket = dataSocket;
+	}
+
+	initSocket();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event" id="apidoc.element.anyproxy.event">
+        function <span class="apidocSignatureSpan">anyproxy.</span>event
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">event = function () {
+    this.initialize();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.anyproxy.generateRootCA" id="apidoc.element.anyproxy.generateRootCA">
         function <span class="apidocSignatureSpan">anyproxy.</span>generateRootCA
         <span class="apidocSignatureSpan">(cb)</span>
@@ -1679,6 +2062,147 @@ if(!!option.interceptHttps){
 
 
 
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.anyproxy_wsUtil" id="apidoc.module.anyproxy.anyproxy_wsUtil">module anyproxy.anyproxy_wsUtil</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.anyproxy_wsUtil.anyproxy_wsUtil" id="apidoc.element.anyproxy.anyproxy_wsUtil.anyproxy_wsUtil">
+        function <span class="apidocSignatureSpan">anyproxy.</span>anyproxy_wsUtil
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function anyproxy_wsUtil(config){
+	config = config || {};
+	if(!WebSocket){
+		throw (new Error(&#x22;webSocket is not available on this browser&#x22;));
+	}
+
+	var self = this;
+	var baseUrl    = config.baseUrl || &#x22;127.0.0.1&#x22;,
+		socketPort = config.port || 8003,
+		dataSocket;
+
+	function initSocket(){
+		self.bodyCbMap = {};
+		dataSocket = new WebSocket(&#x22;ws://&#x22; + baseUrl + &#x22;:&#x22; + socketPort);
+		dataSocket.onmessage = function(event){
+			config.onGetData &#x26;&#x26; config.onGetData.call(self,event.data);
+
+			try{
+				var data    = JSON.parse(event.data),
+					type    = data.type,
+					content = data.content,
+					reqRef  = data.reqRef;
+			}catch(e){
+				config.onError &#x26;&#x26; config.onError.call(self, new Error(&#x22;failed to parse socket data - &#x22; + e.toString()) );
+			}
+
+			if(type == &#x22;update&#x22;){
+				config.onGetUpdate &#x26;&#x26; config.onGetUpdate.call(self, content);
+
+			}else if(type == &#x22;body&#x22;){
+				config.onGetBody &#x26;&#x26; config.onGetBody.call(self, content, reqRef);
+
+				if(data.reqRef &#x26;&#x26; self.bodyCbMap[reqRef]){
+					self.bodyCbMap[reqRef].call(self,content);
+				}
+			}
+		}
+
+		dataSocket.onopen = function(e){
+			config.onOpen &#x26;&#x26; config.onOpen.call(self,e);
+		}
+		dataSocket.onclose = function(e){
+			config.onClose &#x26;&#x26; config.onClose.call(self,e);
+		}
+		dataSocket.onerror = function(e){
+			config.onError &#x26;&#x26; config.onError.call(self,e);
+		}
+
+		self.dataSocket = dataSocket;
+	}
+
+	initSocket();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.anyproxy_wsUtil.prototype" id="apidoc.module.anyproxy.anyproxy_wsUtil.prototype">module anyproxy.anyproxy_wsUtil.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.anyproxy_wsUtil.prototype.reqBody" id="apidoc.element.anyproxy.anyproxy_wsUtil.prototype.reqBody">
+        function <span class="apidocSignatureSpan">anyproxy.anyproxy_wsUtil.prototype.</span>reqBody
+        <span class="apidocSignatureSpan">(id, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reqBody = function (id, callback){
+	if(!id) return;
+
+	var payload = {
+		type   : &#x22;reqBody&#x22;,
+		id     : id
+	};
+	if(callback){
+		var reqRef = &#x22;r_&#x22; + Math.random()*100 + &#x22;_&#x22; + (new Date().getTime());
+		payload.reqRef = reqRef;
+		this.bodyCbMap[reqRef] = callback;
+	}
+	this.send(payload);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.anyproxy_wsUtil.prototype.send" id="apidoc.element.anyproxy.anyproxy_wsUtil.prototype.send">
+        function <span class="apidocSignatureSpan">anyproxy.anyproxy_wsUtil.prototype.</span>send
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (data){
+	if(typeof data == &#x22;object&#x22;){
+		data = JSON.stringify(data);
+	}
+	this.dataSocket.send(data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        var key = data.id;
+        if(typeof data == &#x22;object&#x22;){
+            data = JSON.stringify(data);
+        }
+
+        for(var i in this.clients){
+            try{
+                this.clients[i].<span class="apidocCodeKeywordSpan">send</span>(data);
+            }catch(e){
+                logUtil.printLog(&#x22;websocket failed to send data, &#x22; + e, logUtil.T_ERR);
+            }
+        }
+	};
+
+	wss.on(&#x22;connection&#x22;,function(ws){
+...</pre></li>
+    </ul>
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -1806,7 +2330,23 @@ dbFile        : null,  // optional, save request data to a specified file, will 
   util.deleteFolderContentsRecursive(certDir);
   cb &#x26;&#x26; cb();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.option(&#x27;-s, --silent&#x27;, &#x27;do not print anything into terminal&#x27;)
+.option(&#x27;-c, --clear&#x27;, &#x27;clear all the tmp certificates&#x27;)
+.option(&#x27;-o, --global&#x27;, &#x27;set as global proxy for system&#x27;)
+.option(&#x27;install&#x27;, &#x27;[alpha] install node modules&#x27;)
+.parse(process.argv);
+
+if(program.clear){
+require(&#x22;./lib/certMgr&#x22;).<span class="apidocCodeKeywordSpan">clearCerts</span>(function(){
+    console.log( color.green(&#x22;all certs cleared&#x22;) );
+    process.exit(0);
+});
+
+}else if(program.root){
+require(&#x22;./lib/certMgr&#x22;).generateRootCA(function(){
+    process.exit(0);
+...</pre></li>
     </ul>
 
 
@@ -2045,6 +2585,915 @@ rule          : require(&#x22;path/to/my/ruleModule.js&#x22;),
 dbFile        : null,  // optional, save request data to a specified file, will use in-memory db if not specified
 ...</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.event" id="apidoc.module.anyproxy.event">module anyproxy.event</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event.event" id="apidoc.element.anyproxy.event.event">
+        function <span class="apidocSignatureSpan">anyproxy.</span>event
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">event = function () {
+    this.initialize();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.event.prototype" id="apidoc.module.anyproxy.event.prototype">module anyproxy.event.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event.prototype.addListener" id="apidoc.element.anyproxy.event.prototype.addListener">
+        function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>addListener
+        <span class="apidocSignatureSpan">(event, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addListener = function (event, fn) {
+    if (!this.listeners[event]) {
+        this.listeners[event] = [];
+    }
+    if (fn instanceof Function) {
+        this.listeners[event].push(fn);
+    }
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event.prototype.dispatchEvent" id="apidoc.element.anyproxy.event.prototype.dispatchEvent">
+        function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>dispatchEvent
+        <span class="apidocSignatureSpan">(event, params)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dispatchEvent = function (event, params) {
+    // loop through listeners array
+    for (var index = 0, l = this.listeners[event].length; index &#x3c; l; index++) {
+        // execute matching &#x27;event&#x27; - loop through all indices and
+        // when ev is found, execute
+        this.listeners[event][index].call(window, params);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event.prototype.initialize" id="apidoc.element.anyproxy.event.prototype.initialize">
+        function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>initialize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function () {
+    //declare listeners as an object
+    this.listeners = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+//Ref : http://jsfiddle.net/JxYca/3/
+var EventManager = function() {
+this.<span class="apidocCodeKeywordSpan">initialize</span>();
+};
+EventManager.prototype = {
+initialize: function() {
+    //declare listeners as an object
+    this.listeners = {};
+},
+// public methods
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.event.prototype.removeListener" id="apidoc.element.anyproxy.event.prototype.removeListener">
+        function <span class="apidocSignatureSpan">anyproxy.event.prototype.</span>removeListener
+        <span class="apidocSignatureSpan">(event, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeListener = function (event, fn) {
+    // split array 1 item after our listener
+    // shorten to remove it
+    // join the two arrays back together
+    if (this.listeners[event]) {
+        for (var i = 0, l = this.listners[event].length; i &#x3c; l; i++) {
+            if (this.listners[event][i] === fn) {
+                this.listners[event].slice(i, 1);
+                break;
+            }
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.anyproxy.react" id="apidoc.module.anyproxy.react">module anyproxy.react</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.Component" id="apidoc.element.anyproxy.react.Component">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>Component
+        <span class="apidocSignatureSpan">(props, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactComponent(props, context) {
+  this.props = props;
+  this.context = context;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.__spread" id="apidoc.element.anyproxy.react.__spread">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>__spread
+        <span class="apidocSignatureSpan">(target, sources)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assign(target, sources) {
+  if (target == null) {
+    throw new TypeError(&#x27;Object.assign target cannot be null or undefined&#x27;);
+  }
+
+  var to = Object(target);
+  var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+  for (var nextIndex = 1; nextIndex &#x3c; arguments.length; nextIndex++) {
+    var nextSource = arguments[nextIndex];
+    if (nextSource == null) {
+      continue;
+    }
+
+    var from = Object(nextSource);
+
+    // We don&#x27;t currently support accessors nor proxies. Therefore this
+    // copy cannot throw. If we ever supported this then we must handle
+    // exceptions and side-effects. We don&#x27;t support symbols so they won&#x27;t
+    // be transferred.
+
+    for (var key in from) {
+      if (hasOwnProperty.call(from, key)) {
+        to[key] = from[key];
+      }
+    }
+  }
+
+  return to;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.cloneElement" id="apidoc.element.anyproxy.react.cloneElement">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>cloneElement
+        <span class="apidocSignatureSpan">(element, props, children)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cloneElement = function (element, props, children) {
+  var newElement = ReactElement.cloneElement.apply(this, arguments);
+  for (var i = 2; i &#x3c; arguments.length; i++) {
+    validateChildKeys(arguments[i], newElement.type);
+  }
+  validatePropTypes(newElement);
+  return newElement;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.constructAndRenderComponent" id="apidoc.element.anyproxy.react.constructAndRenderComponent">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>constructAndRenderComponent
+        <span class="apidocSignatureSpan">(constructor, props, container)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructAndRenderComponent = function (constructor, props, container) {
+  var element = ReactElement.createElement(constructor, props);
+  return ReactMount.render(element, container);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+constructAndRenderComponentByID: function(constructor, props, id) {
+  var domNode = document.getElementById(id);
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    domNode,
+    &#x27;Tried to get element with id of &#x22;%s&#x22; but it is not present on the page.&#x27;,
+    id
+  ) : invariant(domNode));
+  return ReactMount.<span class="apidocCodeKeywordSpan">constructAndRenderComponent</span>(constructor, props, domNode);
+},
+
+/**
+ * Registers a container node into which React components will be rendered.
+ * This also creates the &#x22;reactRoot&#x22; ID that will be assigned to the element
+ * rendered within.
+ *
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.constructAndRenderComponentByID" id="apidoc.element.anyproxy.react.constructAndRenderComponentByID">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>constructAndRenderComponentByID
+        <span class="apidocSignatureSpan">(constructor, props, id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructAndRenderComponentByID = function (constructor, props, id) {
+  var domNode = document.getElementById(id);
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    domNode,
+    &#x27;Tried to get element with id of &#x22;%s&#x22; but it is not present on the page.&#x27;,
+    id
+  ) : invariant(domNode));
+  return ReactMount.constructAndRenderComponent(constructor, props, domNode);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.createClass" id="apidoc.element.anyproxy.react.createClass">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>createClass
+        <span class="apidocSignatureSpan">(spec)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createClass = function (spec) {
+  var Constructor = function(props, context) {
+    // This constructor is overridden by mocks. The argument is used
+    // by mocks to assert on what gets mounted.
+
+    if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+      (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+        this instanceof Constructor,
+        &#x27;Something is calling a React component directly. Use a factory or &#x27; +
+        &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;
+      ) : null);
+    }
+
+    // Wire up auto-binding
+    if (this.__reactAutoBindMap) {
+      bindAutoBindMethods(this);
+    }
+
+    this.props = props;
+    this.context = context;
+    this.state = null;
+
+    // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+    // getInitialState and componentWillMount methods for initialization.
+
+    var initialState = this.getInitialState ? this.getInitialState() : null;
+    if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+      // We allow auto-mocks to proceed as if they&#x27;re returning null.
+      if (typeof initialState === &#x27;undefined&#x27; &#x26;&#x26;
+          this.getInitialState._isMockFunction) {
+        // This is probably bad practice. Consider warning here and
+        // deprecating this convenience.
+        initialState = null;
+      }
+    }
+    (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+      typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState),
+      &#x27;%s.getInitialState(): must return an object or null&#x27;,
+      Constructor.displayName || &#x27;ReactCompositeComponent&#x27;
+    ) : invariant(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState)));
+
+    this.state = initialState;
+  };
+  Constructor.prototype = new ReactClassComponent();
+  Constructor.prototype.constructor = Constructor;
+
+  injectedMixins.forEach(
+    mixSpecIntoComponent.bind(null, Constructor)
+  );
+
+  mixSpecIntoComponent(Constructor, spec);
+
+  // Initialize the defaultProps property after all mixins have been merged
+  if (Constructor.getDefaultProps) {
+    Constructor.defaultProps = Constructor.getDefaultProps();
+  }
+
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    // This is a tag to indicate that the use of these method names is ok,
+    // since it&#x27;s used with createClass. If it&#x27;s not, then it&#x27;s likely a
+    // mistake so we&#x27;ll warn you to use the static property, property
+    // initializer or constructor respectively.
+    if (Constructor.getDefaultProps) {
+      Constructor.getDefaultProps.isReactClassApproved = {};
+    }
+    if (Constructor.prototype.getInitialState) {
+      Constructor.prototype.getInitialState.isReactClassApproved = {};
+    }
+  }
+
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    Constructor.prototype.render,
+    &#x27;createClass(...): Class specification must implement a `render` method.&#x27;
+  ) : invariant(Constructor.prototype.render));
+
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+      !Constructor.prototype.componentShouldUpdate,
+      &#x27;%s has a method called &#x27; +
+      &#x27;componentShouldUpdate(). Did you mean shouldComponentUpdate()? &#x27; +
+      &#x27;The name is phrased as a question because the function is &#x27; +
+      &#x27;expected to return a value.&#x27;,
+      spec.displayName || &#x27;A component&#x27;
+    ) : null);
+  }
+
+  // Reduce time spent doing lookups by setting these on the prototype.
+  for (var methodName in ReactClassInterface) {
+    if (!Constructor.prototype[methodName]) {
+      Constructor.prototype[methodName] = null;
+    }
+  }
+
+  // Legacy hook
+  Constructor.type = Constructor;
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    try {
+      Object.defineProperty(Constructor, &#x27;type&#x27;, typeDeprecationDescriptor);
+    } catch (x) {
+      // IE will fail on defineProperty (es5-shim/sham too)
+    }
+  }
+
+  return Constructor;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Composite components are higher-level components that compose other composite
+* or native components.
+*
+* To create a new type of `ReactClass`, pass a specification of
+* your new class to `React.createClass`. The only requirement of your class
+* specification is that you implement a `render` method.
+*
+*   var MyComponent = React.<span class="apidocCodeKeywordSpan">createClass</span>({
+*     render: function() {
+*       return &#x3c;div&#x3e;Hello World&#x3c;/div&#x3e;;
+*     }
+*   });
+*
+* The class specification supports a specific protocol of methods that have
+* special meaning (e.g. `render`). See `ReactClassInterface` for
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.createElement" id="apidoc.element.anyproxy.react.createElement">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>createElement
+        <span class="apidocSignatureSpan">(type, props, children)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createElement = function (type, props, children) {
+  // We warn in this case but don&#x27;t throw. We expect the element creation to
+  // succeed and there will likely be errors in render.
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+    type != null,
+    &#x27;React.createElement: type should not be null or undefined. It should &#x27; +
+      &#x27;be a string (for DOM elements) or a ReactClass (for composite &#x27; +
+      &#x27;components).&#x27;
+  ) : null);
+
+  var element = ReactElement.createElement.apply(this, arguments);
+
+  // The result can be nullish if a mock or a custom function is used.
+  // TODO: Drop this when these are no longer allowed as the type argument.
+  if (element == null) {
+    return element;
+  }
+
+  for (var i = 2; i &#x3c; arguments.length; i++) {
+    validateChildKeys(arguments[i], type);
+  }
+
+  validatePropTypes(element);
+
+  return element;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+
+
+
+
+/*! jQuery v2.1.4 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
+!function(a,b){&#x22;object&#x22;==typeof module&#x26;&#x26;&#x22;object&#x22;==typeof module.exports?module.exports=a.document?
+b(a,!0):function(a){if(!a.document)throw new Error(&#x22;jQuery requires a window with a document&#x22;);return b(a)}:b(a)}(&#x22
+;undefined&#x22;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j
+=h.hasOwnProperty,k={},l=a.document,m=&#x22;2.1.4&#x22;,n=function(a,b){return new n.fn.init(a,b)},o=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,p=/^-ms-/,q=/-([\da-z])/gi,r=function(a,b){return b.toUpperCase()};n.fn=n.prototype={jquery:m,constructor:n,selector:&#x22;&#x22;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0&#x3e;a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=n.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return n.each(this,a,b)},map:function(a){return this.pushStack(n.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0&#x3e;a?b:0);return this.pushStack(c&#x3e;=0&#x26;&#x26;b&#x3e;c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},n.extend=n.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#x22;boolean&#x22;==typeof g&#x26;&#x26;(j=g,g=arguments[h]||{},h++),&#x22;object&#x22;==typeof g||n.isFunction(g)||(g={}),h===i&#x26;&#x26;(g=this,h--);i&#x3e;h;h++)if(null!=(a=arguments[h]))for(b in a)c=g[b],d=a[b],g!==d&#x26;&#x26;(j&#x26;&#x26;d&#x26;&#x26;(n.isPlainObject(d)||(e=n.isArray(d)))?(e?(e=!1,f=c&#x26;&#x26;n.isArray(c)?c:[]):f=c&#x26;&#x26;n.isPlainObject(c)?c:{},g[b]=n.extend(j,f,d)):void 0!==d&#x26;&#x26;(g[b]=d));return g},n.extend({expando:&#x22;jQuery&#x22;+(m+Math.random()).replace(/\D/g,&#x22;&#x22;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#x22;function&#x22;===n.type(a)},isArray:Array.isArray,isWindow:function(a){return null!=a&#x26;&#x26;a===a.window},isNumeric:function(a){return!n.isArray(a)&#x26;&#x26;a-parseFloat(a)+1&#x3e;=0},isPlainObject:function(a){return&#x22;object&#x22;!==n.type(a)||a.nodeType||n.isWindow(a)?!1:a.constructor&#x26;&#x26;!j.call(a.constructor.prototype,&#x22;isPrototypeOf&#x22;)?!1:!0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},type:function(a){return null==a?a+&#x22;&#x22;:&#x22;object&#x22;==typeof a||&#x22;function&#x22;==typeof a?h[i.call(a)]||&#x22;object&#x22;:typeof a},globalEval:function(a){var b,c=eval;a=n.trim(a),a&#x26;&#x26;(1===a.indexOf(&#x22;use strict&#x22;)?(b=l.<span class="apidocCodeKeywordSpan">createElement</span>(&#x22;script&#x22;),b.text=a,l.head.appendChild(b).parentNode.removeChild(b)):c(a))},camelCase:function(a){return a.replace(p,&#x22;ms-&#x22;).replace(q,r)},nodeName:function(a,b){return a.nodeName&#x26;&#x26;a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=s(a);if(c){if(g){for(;f&#x3e;e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f&#x3e;e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?&#x22;&#x22;:(a+&#x22;&#x22;).replace(o,&#x22;&#x22;)},makeArray:function(a,b){var c=b||[];return null!=a&#x26;&#x26;(s(Object(a))?n.merge(c,&#x22;string&#x22;==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){return null==b?-1:g.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;c&#x3e;d;d++)a[e++]=b[d];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g&#x3e;f;f++)d=!b(a[f],f),d!==h&#x26;&#x26;e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=s(a),i=[];if(h)for(;g&#x3e;f;f++)d=b(a[f],f,c),null!=d&#x26;&#x26;i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&#x26;&#x26;i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return&#x22;string&#x22;==typeof b&#x26;&#x26;(c=a[b],b=a,a=c),n.isFunction(a)?(e=d.call(arguments,2),f=function(){return a.apply(b||this,e.concat(d.call(arguments)))},f.guid=a.guid=a.guid||n.guid++,f):void 0},now:Date.now,support:k}),n.each(&#x22;Boolean Number String Function Array Date RegExp Object Error&#x22;.split(&#x22; &#x22;),function(a,b){h[&#x22;[object &#x22;+b+&#x22;]&#x22;]=b.toLowerCase()});function s(a){var b=&#x22;length&#x22;in a&#x26;&#x26;a.length,c=n.type(a);return&#x22;function&#x22;===c||n.isWindow(a)?!1:1===a.nodeType&#x26;&#x26;b?!0:&#x22;array&#x22;===c||0===b||&#x22;number&#x22;==typeof b&#x26;&#x26;b&#x3e;0&#x26;&#x26;b-1 in a}var t=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u=&#x22;sizzle&#x22;+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&#x26;&#x26;(l=!0),0},C=1&#x3c;&#x3c;31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d&#x3e;c;c++)if(a[c]===b)return c;return-1},K=&#x22;checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped&#x22;,L=&#x22;[\\x20\\t\\r\\n\\f]&#x22;,M=&#x22;(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+&#x22;,N=M.replace(&#x22;w&#x22;,&#x22;w#&#x22;),O=&#x22;\\[&#x22;+L+&#x22;*(&#x22;+M+&#x22;)(?:&#x22;+L+&#x22;*([*^$|!~]?=)&#x22;+L+&#x22;*(?:&#x27;((?:\\\\.|[^\\\\&#x27;])*)&#x27;|\&#x22;((?:\\\\.|[^\\\\\&#x22;])*)\&#x22;|(&#x22;+N+&#x22;))|)&#x22;+L+&#x22;*\\]&#x22;,P=&#x22;:(&#x22;+M+&#x22;)(?:\\(((&#x27;((?:\\\\.|[^\\\\&#x27;])*)&#x27;|\&#x22;((?:\\\\.|[^\\\\\&#x22;])*)\&#x22;)|((?:\\\\.|[^\\\\()[\\]]|&#x22;+O+&#x22;)*)|.*)\\)|)&#x22;,Q=new RegExp(L+&#x22;+&#x22;,&#x22;g&#x22;),R=new RegExp(&#x22;^&#x22;+L+&#x22;+|((?:^|[^\\\\])(?:\\\\.)*)&#x22;+L+&#x22;+$&#x22;,&#x22;g&#x22;),S=new RegExp(&#x22;^&#x22;+L+&#x22;*,&#x22;+L+&#x22;*&#x22;),T=new RegExp(&#x22;^&#x22;+L+&#x22;*([&#x3e;+~]|&#x22;+L+&#x22;)&#x22;+L+&#x22;*&#x22;),U=new RegExp(&#x22;=&#x22;+L+&#x22;*([^\\]&#x27;\&#x22;]*?)&#x22;+L+&#x22;*\\]&#x22;,&#x22;g&#x22;),V=new RegExp(P),W=new RegExp(&#x22;^&#x22;+N+&#x22;$&#x22;),X={ID:new RegExp(&#x22;^#(&#x22;+M+&#x22;)&#x22;),CLASS:new RegExp(&#x22;^\\.(&#x22;+M+&#x22;)&#x22;),TAG:new RegExp(&#x22;^(&#x22;+M.replace(&#x22;w&#x22;,&#x22;w*&#x22;)+&#x22;)&#x22;),ATTR:new RegExp(&#x22;^&#x22;+O),PSEUDO:new RegExp(&#x22;^&#x22;+P),CHILD:new RegExp(&#x22;^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(&#x22;+L+&#x22;*(even|odd|(([+-]|)(\\d*)n|)&#x22;+L+&#x22;*(?:([+-]|)&#x22;+L+&#x22;*(\\d+)|))&#x22;+L+&#x22;*\\)|)&#x22;,&#x22;i&#x22;),bool:new RegExp(&#x22;^(?:&#x22;+K+&#x22;)$&#x22;,&#x22;i&#x22;),needsContext:new RegExp(&#x22;^&#x22;+L+&#x22;*[&#x3e;+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(&#x22;+L+&#x22;*((?:-\\d)?\\d*)&#x22;+L+&#x22;*\\)|)(?=[^-]|$)&#x22;,&#x22;i&#x22;)},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/&#x27;|\\/g,ca=new RegExp(&#x22;\\\\([\\da-f]{1,6}&#x22;+L+&#x22;?|(&#x22;+L+&#x22;)|.)&#x22;,&#x22;ig&#x22;),da=function(a,b,c){var d=&#x22;0x&#x22;+b-65536;return d!==d||c?b:0&#x3e;d?String.fromCharCode(d+65536):String.fromCharCode(d&#x3e;&#x3e;10|55296,1023&#x26;d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&#x26;&#x26;m(b),b=b||n,d=d||[],k=b.nodeType,&#x22;string&#x22;!=typeof a||!a||1!==k&#x26;&#x26;9!==k&#x26;&#x26;11!==k)return d;if(!e&#x26;&#x26;p){if(11!==k&#x26;&#x26;(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&#x26;&#x26;(h=b.ownerDocument.getElementById(j))&#x26;&#x26;t(b,h)&#x26;&#x26;h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&#x26;&#x26;c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&#x26;&#x26;(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&#x26;&#x26;a,1===k&#x26;&#x26;&#x22;object&#x22;!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute(&#x22;id&#x22;))?s=r.replace(ba,&#x22;\\$&#x26;&#x22;):b.setAttribute(&#x22;id&#x22;,s),s=&#x22;[id=&#x27;&#x22;+s+&#x22;&#x27;] &#x22;,l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&#x26;&#x26;pa(b.parentNode)||b,x=o.join(&#x22;,&#x22;)}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute(&#x22;id&#x22;)}}}return i(a.replace(R,&#x22;$1&#x22;),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+&#x22; &#x22;)&#x3e;d.cacheLength&#x26;&#x26;delete b[a.shift()],b[c+&#x22; &#x22;]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement(&#x22;div&#x22;);try{return!!a(b)}catch(c){return!1}finally{b.parentNode&#x26;&#x26;b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split(&#x22;|&#x22;),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&#x26;&#x26;a,d=c&#x26;&#x26;1===a.nodeType&#x26;&#x26;1===b.nodeType&#x26;&#x26;(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return&#x22;input&#x22;===c&#x26;&#x26;b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return(&#x22;input&#x22;===c||&#x22;button&#x22;===c)&#x26;&#x26;b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&#x26;&#x26;(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&#x26;&#x26;&#x22;undefined&#x22;!=typeof a.getElementsByTagName&#x26;&#x26;a}c=ga.support={},f=ga.isXML=function(a){var b=a&#x26;&#x26;(a.ownerDocument||a).documentElement;return b?&#x22;HTML&#x22;!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&#x26;&#x26;9===g.nodeType&#x26;&#x26;g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&#x26;&#x26;e!==e.top&#x26;&#x26;(e.addEventListener?e.addEventListener(&#x22;unload&#x22;,ea,!1):e.attachEvent&#x26;&#x26;e.attachEvent(&#x22;onunload&#x22;,ea)),p=!f(g),c.attributes=ja(function(a){return a.className=&#x22;i&#x22;,!a.getAttribute(&#x22;className&#x22;)}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment(&#x22;&#x22;)),!a.getElementsByTagName(&#x22;*&#x22;).length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if(&#x22;undefined&#x22;!=typeof b.getElementById&#x26;&#x26;p){var c=b.getElementById(a);return c&#x26;&#x26;c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute(&#x22;id&#x22;)===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c=&#x22;undefined&#x22;!=typeof a.getAttributeNode&#x26;&#x26;a.getAttributeNode(&#x22;id&#x22;);return c&#x26;&#x26;c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return&#x22;undefined&#x22;!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if(&#x22;*&#x22;===a){while(c=f[e++])1===c.nodeType&#x26;&#x26;d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&#x26;&#x26;function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&#x26;&#x26;(ja(function(a){o.appendChild(a).innerHTML=&#x22;&#x3c;a id=&#x27;&#x22;+u+&#x22;&#x27;&#x3e;&#x3c;/a&#x3e;&#x3c;select id=&#x27;&#x22;+u+&#x22;-\f]&#x27; msallowcapture=&#x27;&#x27;&#x3e;&#x3c;option selected=&#x27;&#x27;&#x3e;&#x3c;/option&#x3e;&#x3c;/select&#x3e;&#x22;,a.querySelectorAll(&#x22;[msallowcapture^=&#x27;&#x27;]&#x22;).length&#x26;&#x26;q.push(&#x22;[*^$]=&#x22;+L+&#x22;*(?:&#x27;&#x27;|\&#x22;\&#x22;)&#x22;),a.querySelectorAll(&#x22;[selected]&#x22;).length||q.push(&#x22;\\[&#x22;+L+&#x22;*(?:value|&#x22;+K+&#x22;)&#x22;),a.querySelectorAll(&#x22;[id~=&#x22;+u+&#x22;-]&#x22;).length||q.push(&#x22;~=&#x22;),a.querySelectorAll(&#x22;:checked&#x22;).length||q.push(&#x22;:checked&#x22;),a.querySelectorAll(&#x22;a#&#x22;+u+&#x22;+*&#x22;).length||q.push(&#x22;.#.+[+~]&#x22;)}),ja(function(a){var b=g.createElement(&#x22;input&#x22;);b.setAttribute(&#x22;type&#x22;,&#x22;hidden&#x22;),a.appendChild(b).setAttribute(&#x22;name&#x22;,&#x22;D&#x22;),a.querySelectorAll(&#x22;[name=d]&#x22;).length&#x26;&#x26;q.push(&#x22;name&#x22;+L+&#x22;*[*^$|!~]?=&#x22;),a.querySelectorAll(&#x22;:enabled&#x22;).length||q.push(&#x22;:enabled&#x22;,&#x22;:disabled&#x22;),a.querySelectorAll(&#x22;*,:x&#x22;),q.push(&#x22;,.*:&#x22;)})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&#x26;&#x26;ja(function(a){c.disconnectedMatch=s.call(a,&#x22;div&#x22;),s.call(a,&#x22;[s!=&#x27;&#x27;]:x&#x22;),r.push(&#x22;!=&#x22;,P)}),q=q.length&#x26;&#x26;new RegExp(q.join(&#x22;|&#x22;)),r=r.length&#x26;&#x26;new RegExp(r.join(&#x22;|&#x22;)),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&#x26;&#x26;b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&#x26;&#x26;16&#x26;a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&#x26;d||!c.sortDetached&#x26;&#x26;b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&#x26;&#x26;t(v,a)?-1:b===g||b.ownerDocument===v&#x26;&#x26;t(v,b)?1:k?J(k,a)-J(k,b):0:4&#x26;d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&#x26;&#x26;m(a),b=b.replace(U,&#x22;=&#x27;$1&#x27;]&#x22;),!(!c.matchesSelector||!p||r&#x26;&#x26;r.test(b)||q&#x26;&#x26;q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&#x26;&#x26;11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length&#x3e;0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&#x26;&#x26;m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&#x26;&#x26;m(a);var e=d.attrHandle[b.toLowerCase()],f=e&#x26;&#x26;D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&#x26;&#x26;f.specified?f.value:null},ga.error=function(a){throw new Error(&#x22;Syntax error, unrecognized expression: &#x22;+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&#x26;&#x26;a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&#x26;&#x26;(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c=&#x22;&#x22;,d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if(&#x22;string&#x22;==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{&#x22;&#x3e;&#x22;:{dir:&#x22;parentNode&#x22;,first:!0},&#x22; &#x22;:{dir:&#x22;parentNode&#x22;},&#x22;+&#x22;:{dir:&#x22;previousSibling&#x22;,first:!0},&#x22;~&#x22;:{dir:&#x22;previousSibling&#x22;}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||&#x22;&#x22;).replace(ca,da),&#x22;~=&#x22;===a[2]&#x26;&#x26;(a[3]=&#x22; &#x22;+a[3]+&#x22; &#x22;),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),&#x22;nth&#x22;===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*(&#x22;even&#x22;===a[3]||&#x22;odd&#x22;===a[3])),a[5]=+(a[7]+a[8]||&#x22;odd&#x22;===a[3])):a[3]&#x26;&#x26;ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&#x26;&#x26;a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||&#x22;&#x22;:c&#x26;&#x26;V.test(c)&#x26;&#x26;(b=g(c,!0))&#x26;&#x26;(b=c.indexOf(&#x22;)&#x22;,c.length-b)-c.length)&#x26;&#x26;(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return&#x22;*&#x22;===a?function(){return!0}:function(a){return a.nodeName&#x26;&#x26;a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+&#x22; &#x22;];return b||(b=new RegExp(&#x22;(^|&#x22;+L+&#x22;)&#x22;+a+&#x22;(&#x22;+L+&#x22;|$)&#x22;))&#x26;&#x26;y(a,function(a){return b.test(&#x22;string&#x22;==typeof a.className&#x26;&#x26;a.className||&#x22;undefined&#x22;!=typeof a.getAttribute&#x26;&#x26;a.getAttribute(&#x22;class&#x22;)||&#x22;&#x22;)})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?&#x22;!=&#x22;===b:b?(e+=&#x22;&#x22;,&#x22;=&#x22;===b?e===c:&#x22;!=&#x22;===b?e!==c:&#x22;^=&#x22;===b?c&#x26;&#x26;0===e.indexOf(c):&#x22;*=&#x22;===b?c&#x26;&#x26;e.indexOf(c)&#x3e;-1:&#x22;$=&#x22;===b?c&#x26;&#x26;e.slice(-c.length)===c:&#x22;~=&#x22;===b?(&#x22; &#x22;+e.replace(Q,&#x22; &#x22;)+&#x22; &#x22;).indexOf(c)&#x3e;-1:&#x22;|=&#x22;===b?e===c||e.slice(0,c.length+1)===c+&#x22;-&#x22;:!1):!0}},CHILD:function(a,b,c,d,e){var f=&#x22;nth&#x22;!==a.slice(0,3),g=&#x22;last&#x22;!==a.slice(-4),h=&#x22;of-type&#x22;===b;return 1===d&#x26;&#x26;0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?&#x22;nextSibling&#x22;:&#x22;previousSibling&#x22;,q=b.parentNode,r=h&#x26;&#x26;b.nodeName.toLowerCase(),s=!i&#x26;&#x26;!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p=&#x22;only&#x22;===a&#x26;&#x26;!o&#x26;&#x26;&#x22;nextSibling&#x22;}return!0}if(o=[g?q.firstChild:q.lastChild],g&#x26;&#x26;s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&#x26;&#x26;j[1],m=j[0]===w&#x26;&#x26;j[2],l=n&#x26;&#x26;q.childNodes[n];while(l=++n&#x26;&#x26;l&#x26;&#x26;l[p]||(m=n=0)||o.pop())if(1===l.nodeType&#x26;&#x26;++m&#x26;&#x26;l===b){k[a]=[w,n,m];break}}else if(s&#x26;&#x26;(j=(b[u]||(b[u]={}))[a])&#x26;&#x26;j[0]===w)m=j[1];else while(l=++n&#x26;&#x26;l&#x26;&#x26;l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&#x26;&#x26;++m&#x26;&#x26;(s&#x26;&#x26;((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&#x26;&#x26;m/d&#x3e;=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error(&#x22;unsupported pseudo: &#x22;+a);return e[u]?e(b):e.length&#x3e;1?(c=[a,a,&#x22;&#x22;,b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,&#x22;$1&#x22;));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&#x26;&#x26;(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length&#x3e;0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)&#x3e;-1}}),lang:ia(function(a){return W.test(a||&#x22;&#x22;)||ga.error(&#x22;unsupported lang: &#x22;+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute(&#x22;xml:lang&#x22;)||b.getAttribute(&#x22;lang&#x22;))return c=c.toLowerCase(),c===a||0===c.indexOf(a+&#x22;-&#x22;);while((b=b.parentNode)&#x26;&#x26;1===b.nodeType);return!1}}),target:function(b){var c=a.location&#x26;&#x26;a.location.hash;return c&#x26;&#x26;c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&#x26;&#x26;(!n.hasFocus||n.hasFocus())&#x26;&#x26;!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return&#x22;input&#x22;===b&#x26;&#x26;!!a.checked||&#x22;option&#x22;===b&#x26;&#x26;!!a.selected},selected:function(a){return a.parentNode&#x26;&#x26;a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType&#x3c;6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return&#x22;input&#x22;===b&#x26;&#x26;&#x22;button&#x22;===a.type||&#x22;button&#x22;===b},text:function(a){var b;return&#x22;input&#x22;===a.nodeName.toLowerCase()&#x26;&#x26;&#x22;text&#x22;===a.type&#x26;&#x26;(null==(b=a.getAttribute(&#x22;type&#x22;))||&#x22;text&#x22;===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0&#x3e;c?c+b:c]}),even:oa(function(a,b){for(var c=0;b&#x3e;c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b&#x3e;c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0&#x3e;c?c+b:c;--d&#x3e;=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0&#x3e;c?c+b:c;++d&#x3c;b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+&#x22; &#x22;];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&#x26;&#x26;(e&#x26;&#x26;(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&#x26;&#x26;(c=e.shift(),f.push({value:c,type:e[0].replace(R,&#x22; &#x22;)}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&#x26;&#x26;!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d=&#x22;&#x22;;c&#x3e;b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&#x26;&#x26;&#x22;parentNode&#x22;===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&#x26;&#x26;a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&#x26;&#x26;h[0]===w&#x26;&#x26;h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length&#x3e;1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e&#x3e;d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i&#x3e;h;h++)(f=a[h])&#x26;&#x26;(!c||c(f,d,e))&#x26;&#x26;(g.push(f),j&#x26;&#x26;b.push(h));return g}function wa(a,b,c,d,e,f){return d&#x26;&#x26;!d[u]&#x26;&#x26;(d=wa(d)),e&#x26;&#x26;!e[u]&#x26;&#x26;(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||&#x22;*&#x22;,h.nodeType?[h]:h,[]),q=!a||!f&#x26;&#x26;b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&#x26;&#x26;c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&#x26;&#x26;(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&#x26;&#x26;j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&#x26;&#x26;(j=e?J(f,l):m[k])&#x3e;-1&#x26;&#x26;(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[&#x22; &#x22;],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)&#x3e;-1},h,!0),m=[function(a,c,d){var e=!g&#x26;&#x26;(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f&#x3e;i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f&#x3e;e;e++)if(d.relative[a[e].type])break;return wa(i&#x3e;1&#x26;&#x26;ta(m),i&#x3e;1&#x26;&#x26;ra(a.slice(0,i-1).concat({value:&#x22; &#x22;===a[i-2].type?&#x22;*&#x22;:&#x22;&#x22;})).replace(R,&#x22;$1&#x22;),c,e&#x3e;i&#x26;&#x26;xa(a.slice(i,e)),f&#x3e;e&#x26;&#x26;xa(a=a.slice(e)),f&#x3e;e&#x26;&#x26;ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length&#x3e;0,e=a.length&#x3e;0,f=function(f,g,h,i,k){var l,m,o,p=0,q=&#x22;0&#x22;,r=f&#x26;&#x26;[],s=[],t=j,u=f||e&#x26;&#x26;d.find.TAG(&#x22;*&#x22;,k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&#x26;&#x26;(j=g!==n&#x26;&#x26;g);q!==x&#x26;&#x26;null!=(l=u[q]);q++){if(e&#x26;&#x26;l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&#x26;&#x26;(w=v)}c&#x26;&#x26;((l=!o&#x26;&#x26;l)&#x26;&#x26;p--,f&#x26;&#x26;r.push(l))}if(p+=q,c&#x26;&#x26;q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p&#x3e;0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&#x26;&#x26;!f&#x26;&#x26;s.length&#x3e;0&#x26;&#x26;p+b.length&#x3e;1&#x26;&#x26;ga.uniqueSort(i)}return k&#x26;&#x26;(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+&#x22; &#x22;];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n=&#x22;function&#x22;==typeof a&#x26;&#x26;a,o=!f&#x26;&#x26;g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length&#x3e;2&#x26;&#x26;&#x22;ID&#x22;===(k=j[0]).type&#x26;&#x26;c.getById&#x26;&#x26;9===b.nodeType&#x26;&#x26;p&#x26;&#x26;d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&#x26;&#x26;(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&#x26;&#x26;(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&#x26;&#x26;pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&#x26;&#x26;ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&#x26;&#x26;pa(b.parentNode)||b),e},c.sortStable=u.split(&#x22;&#x22;).sort(B).join(&#x22;&#x22;)===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&#x26;a.compareDocumentPosition(n.createElement(&#x22;div&#x22;))}),ja(function(a){return a.innerHTML=&#x22;&#x3c;a href=&#x27;#&#x27;&#x3e;&#x3c;/a&#x3e;&#x22;,&#x22;#&#x22;===a.firstChild.getAttribute(&#x22;href&#x22;)})||ka(&#x22;type|href|height|width&#x22;,function(a,b,c){return c?void 0:a.getAttribute(b,&#x22;type&#x22;===b.toLowerCase()?1:2)}),c.attributes&#x26;&#x26;ja(function(a){return a.innerHTML=&#x22;&#x3c;input/&#x3e;&#x22;,a.firstChild.setAttribute(&#x22;value&#x22;,&#x22;&#x22;),&#x22;&#x22;===a.firstChild.getAttribute(&#x22;value&#x22;)})||ka(&#x22;value&#x22;,function(a,b,c){return c||&#x22;input&#x22;!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute(&#x22;disabled&#x22;)})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&#x26;&#x26;d.specified?d.value:null}),ga}(a);n.find=t,n.expr=t.selectors,n.expr[&#x22;:&#x22;]=n.expr.pseudos,n.unique=t.uniqueSort,n.text=t.getText,n.isXMLDoc=t.isXML,n.contains=t.contains;var u=n.expr.match.needsContext,v=/^&#x3c;(\w+)\s*\/?&#x3e;(?:&#x3c;\/\1&#x3e;|)$/,w=/^.[^:#\[\.,]*$/;function x(a,b,c){if(n.isFunction(b))return n.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return n.grep(a,function(a){return a===b!==c});if(&#x22;string&#x22;==typeof b){if(w.test(b))return n.filter(b,a,c);b=n.filter(b,a)}return n.grep(a,function(a){return g.call(b,a)&#x3e;=0!==c})}n.filter=function(a,b,c){var d=b[0];return c&#x26;&#x26;(a=&#x22;:not(&#x22;+a+&#x22;)&#x22;),1===b.length&#x26;&#x26;1===d.nodeType?n.find.matchesSelector(d,a)?[d]:[]:n.find.matches(a,n.grep(b,function(a){return 1===a.nodeType}))},n.fn.extend({find:function(a){var b,c=this.length,d=[],e=this;if(&#x22;string&#x22;!=typeof a)return this.pushStack(n(a).filter(function(){for(b=0;c&#x3e;b;b++)if(n.contains(e[b],this))return!0}));for(b=0;c&#x3e;b;b++)n.find(a,e[b],d);return d=this.pushStack(c&#x3e;1?n.unique(d):d),d.selector=this.selector?this.selector+&#x22; &#x22;+a:a,d},filter:function(a){return this.pushStack(x(this,a||[],!1))},not:function(a){return this.pushStack(x(this,a||[],!0))},is:function(a){return!!x(this,&#x22;string&#x22;==typeof a&#x26;&#x26;u.test(a)?n(a):a||[],!1).length}});var y,z=/^(?:\s*(&#x3c;[\w\W]+&#x3e;)[^&#x3e;]*|#([\w-]*))$/,A=n.fn.init=function(a,b){var c,d;if(!a)return this;if(&#x22;string&#x22;==typeof a){if(c=&#x22;&#x3c;&#x22;===a[0]&#x26;&#x26;&#x22;&#x3e;&#x22;===a[a.length-1]&#x26;&#x26;a.length&#x3e;=3?[null,a,null]:z.exec(a),!c||!c[1]&#x26;&#x26;b)return!b||b.jquery?(b||y).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof n?b[0]:b,n.merge(this,n.parseHTML(c[1],b&#x26;&#x26;b.nodeType?b.ownerDocument||b:l,!0)),v.test(c[1])&#x26;&#x26;n.isPlainObject(b))for(c in b)n.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}return d=l.getElementById(c[2]),d&#x26;&#x26;d.parentNode&#x26;&#x26;(this.length=1,this[0]=d),this.context=l,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):n.isFunction(a)?&#x22;undefined&#x22;!=typeof y.ready?y.ready(a):a(n):(void 0!==a.selector&#x26;&#x26;(this.selector=a.selector,this.context=a.context),n.makeArray(a,this))};A.prototype=n.fn,y=n(l);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};n.extend({dir:function(a,b,c){var d=[],e=void 0!==c;while((a=a[b])&#x26;&#x26;9!==a.nodeType)if(1===a.nodeType){if(e&#x26;&#x26;n(a).is(c))break;d.push(a)}return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&#x26;&#x26;a!==b&#x26;&#x26;c.push(a);return c}}),n.fn.extend({has:function(a){var b=n(a,this),c=b.length;return this.filter(function(){for(var a=0;c&#x3e;a;a++)if(n.contains(this,b[a]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=u.test(a)||&#x22;string&#x22;!=typeof a?n(a,b||this.context):0;e&#x3e;d;d++)for(c=this[d];c&#x26;&#x26;c!==b;c=c.parentNode)if(c.nodeType&#x3c;11&#x26;&#x26;(g?g.index(c)&#x3e;-1:1===c.nodeType&#x26;&#x26;n.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length&#x3e;1?n.unique(f):f)},index:function(a){return a?&#x22;string&#x22;==typeof a?g.call(n(a),this[0]):g.call(this,a.jquery?a[0]:a):this[0]&#x26;&#x26;this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(n.unique(n.merge(this.get(),n(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){while((a=a[b])&#x26;&#x26;1!==a.nodeType);return a}n.each({parent:function(a){var b=a.parentNode;return b&#x26;&#x26;11!==b.nodeType?b:null},parents:function(a){return n.dir(a,&#x22;parentNode&#x22;)},parentsUntil:function(a,b,c){return n.dir(a,&#x22;parentNode&#x22;,c)},next:function(a){return D(a,&#x22;nextSibling&#x22;)},prev:function(a){return D(a,&#x22;previousSibling&#x22;)},nextAll:function(a){return n.dir(a,&#x22;nextSibling&#x22;)},prevAll:function(a){return n.dir(a,&#x22;previousSibling&#x22;)},nextUntil:function(a,b,c){return n.dir(a,&#x22;nextSibling&#x22;,c)},prevUntil:function(a,b,c){return n.dir(a,&#x22;previousSibling&#x22;,c)},siblings:function(a){return n.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return n.sibling(a.firstChild)},contents:function(a){return a.contentDocument||n.merge([],a.childNodes)}},function(a,b){n.fn[a]=function(c,d){var e=n.map(this,b,c);return&#x22;Until&#x22;!==a.slice(-5)&#x26;&#x26;(d=c),d&#x26;&#x26;&#x22;string&#x22;==typeof d&#x26;&#x26;(e=n.filter(d,e)),this.length&#x3e;1&#x26;&#x26;(C[a]||n.unique(e),B.test(a)&#x26;&#x26;e.reverse()),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return n.each(a.match(E)||[],function(a,c){b[c]=!0}),b}n.Callbacks=function(a){a=&#x22;string&#x22;==typeof a?F[a]||G(a):n.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&#x26;&#x26;[],j=function(l){for(b=a.memory&#x26;&#x26;l,c=!0,g=e||0,e=0,f=h.length,d=!0;h&#x26;&#x26;f&#x3e;g;g++)if(h[g].apply(l[0],l[1])===!1&#x26;&#x26;a.stopOnFalse){b=!1;break}d=!1,h&#x26;&#x26;(i?i.length&#x26;&#x26;j(i.shift()):b?h=[]:k.disable())},k={add:function(){if(h){var c=h.length;!function g(b){n.each(b,function(b,c){var d=n.type(c);&#x22;function&#x22;===d?a.unique&#x26;&#x26;k.has(c)||h.push(c):c&#x26;&#x26;c.length&#x26;&#x26;&#x22;string&#x22;!==d&#x26;&#x26;g(c)})}(arguments),d?f=h.length:b&#x26;&#x26;(e=c,j(b))}return this},remove:function(){return h&#x26;&#x26;n.each(arguments,function(a,b){var c;while((c=n.inArray(b,h,c))&#x3e;-1)h.splice(c,1),d&#x26;&#x26;(f&#x3e;=c&#x26;&#x26;f--,g&#x3e;=c&#x26;&#x26;g--)}),this},has:function(a){return a?n.inArray(a,h)&#x3e;-1:!(!h||!h.length)},empty:function(){return h=[],f=0,this},disable:function(){return h=i=b=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,b||k.disable(),this},locked:function(){return!i},fireWith:function(a,b){return!h||c&#x26;&#x26;!i||(b=b||[],b=[a,b.slice?b.slice():b],d?i.push(b):j(b)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!c}};return k},n.extend({Deferred:function(a){var b=[[&#x22;resolve&#x22;,&#x22;done&#x22;,n.Callbacks(&#x22;once memory&#x22;),&#x22;resolved&#x22;],[&#x22;reject&#x22;,&#x22;fail&#x22;,n.Callbacks(&#x22;once memory&#x22;),&#x22;rejected&#x22;],[&#x22;notify&#x22;,&#x22;progress&#x22;,n.Callbacks(&#x22;memory&#x22;)]],c=&#x22;pending&#x22;,d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return n.Deferred(function(c){n.each(b,function(b,f){var g=n.isFunction(a[b])&#x26;&#x26;a[b];e[f[1]](function(){var a=g&#x26;&#x26;g.apply(this,arguments);a&#x26;&#x26;n.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+&#x22;With&#x22;](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?n.extend(a,d):d}},e={};return d.pipe=d.then,n.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&#x26;&#x26;g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+&#x22;With&#x22;](this===e?d:this,arguments),this},e[f[0]+&#x22;With&#x22;]=g.fireWith}),d.promise(e),a&#x26;&#x26;a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&#x26;&#x26;n.isFunction(a.promise)?e:0,g=1===f?a:n.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length&#x3e;1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e&#x3e;1)for(i=new Array(e),j=new Array(e),k=new Array(e);e&#x3e;b;b++)c[b]&#x26;&#x26;n.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;n.fn.ready=function(a){return n.ready.promise().done(a),this},n.extend({isReady:!1,readyWait:1,holdReady:function(a){a?n.readyWait++:n.ready(!0)},ready:function(a){(a===!0?--n.readyWait:n.isReady)||(n.isReady=!0,a!==!0&#x26;&#x26;--n.readyWait&#x3e;0||(H.resolveWith(l,[n]),n.fn.triggerHandler&#x26;&#x26;(n(l).triggerHandler(&#x22;ready&#x22;),n(l).off(&#x22;ready&#x22;))))}});function I(){l.removeEventListener(&#x22;DOMContentLoaded&#x22;,I,!1),a.removeEventListener(&#x22;load&#x22;,I,!1),n.ready()}n.ready.promise=function(b){return H||(H=n.Deferred(),&#x22;complete&#x22;===l.readyState?setTimeout(n.ready):(l.addEventListener(&#x22;DOMContentLoaded&#x22;,I,!1),a.addEventListener(&#x22;load&#x22;,I,!1))),H.promise(b)},n.ready.promise();var J=n.access=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if(&#x22;object&#x22;===n.type(c)){e=!0;for(h in c)n.access(a,b,h,c[h],!0,f,g)}else if(void 0!==d&#x26;&#x26;(e=!0,n.isFunction(d)||(g=!0),j&#x26;&#x26;(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(n(a),c)})),b))for(;i&#x3e;h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f};n.acceptData=function(a){return 1===a.nodeType||9===a.nodeType||!+a.nodeType};function K(){Object.defineProperty(this.cache={},0,{get:function(){return{}}}),this.expando=n.expando+K.uid++}K.uid=1,K.accepts=n.acceptData,K.prototype={key:function(a){if(!K.accepts(a))return 0;var b={},c=a[this.expando];if(!c){c=K.uid++;try{b[this.expando]={value:c},Object.defineProperties(a,b)}catch(d){b[this.expando]=c,n.extend(a,b)}}return this.cache[c]||(this.cache[c]={}),c},set:function(a,b,c){var d,e=this.key(a),f=this.cache[e];if(&#x22;string&#x22;==typeof b)f[b]=c;else if(n.isEmptyObject(f))n.extend(this.cache[e],b);else for(d in b)f[d]=b[d];return f},get:function(a,b){var c=this.cache[this.key(a)];return void 0===b?c:c[b]},access:function(a,b,c){var d;return void 0===b||b&#x26;&#x26;&#x22;string&#x22;==typeof b&#x26;&#x26;void 0===c?(d=this.get(a,b),void 0!==d?d:this.get(a,n.camelCase(b))):(this.set(a,b,c),void 0!==c?c:b)},remove:function(a,b){var c,d,e,f=this.key(a),g=this.cache[f];if(void 0===b)this.cache[f]={};else{n.isArray(b)?d=b.concat(b.map(n.camelCase)):(e=n.camelCase(b),b in g?d=[b,e]:(d=e,d=d in g?[d]:d.match(E)||[])),c=d.length;while(c--)delete g[d[c]]}},hasData:function(a){return!n.isEmptyObject(this.cache[a[this.expando]]||{})},discard:function(a){a[this.expando]&#x26;&#x26;delete this.cache[a[this.expando]]}};var L=new K,M=new K,N=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,O=/([A-Z])/g;function P(a,b,c){var d;if(void 0===c&#x26;&#x26;1===a.nodeType)if(d=&#x22;data-&#x22;+b.replace(O,&#x22;-$1&#x22;).toLowerCase(),c=a.getAttribute(d),&#x22;string&#x22;==typeof c){try{c=&#x22;true&#x22;===c?!0:&#x22;false&#x22;===c?!1:&#x22;null&#x22;===c?null:+c+&#x22;&#x22;===c?+c:N.test(c)?n.parseJSON(c):c}catch(e){}M.set(a,b,c)}else c=void 0;return c}n.extend({hasData:function(a){return M.hasData(a)||L.hasData(a)},data:function(a,b,c){
+return M.access(a,b,c)},removeData:function(a,b){M.remove(a,b)},_data:function(a,b,c){return L.access(a,b,c)},_removeData:function
+(a,b){L.remove(a,b)}}),n.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&#x26;&#x26;f.attributes;if(void 0===a){if(this.length
+&#x26;&#x26;(e=M.get(f),1===f.nodeType&#x26;&#x26;!L.get(f,&#x22;hasDataAttrs&#x22;))){c=g.length;while(c--)g[c]&#x26;&#x26;(d=g
+[c].name,0===d.indexOf(&#x22;data-&#x22;)&#x26;&#x26;(d=n.camelCase(d.slice(5)),P(f,d,e[d])));L.set(f,&#x22;hasDataAttrs&#x22;,!
+0)}return e}return&#x22;object&#x22;==typeof a?this.each(function(){M.set(this,a)}):J(this,function(b){var c,d=n.camelCase(a);if
+(f&#x26;&#x26;void 0===b){if(c=M.get(f,a),void 0!==c)return c;if(c=M.get(f,d),void 0!==c)return c;if(c=P(f,d,void 0),void 0!==c)
+return c}else this.each(function(){var c=M.get(this,d);M.set(this,d,b),-1!==a.indexOf(&#x22;-&#x22;)&#x26;&#x26;void 0!==c&#x26;&#
+x26;M.set(this,a,b)})},null,b,arguments.length&#x3e;1,null,!0)},removeData:function(a){return this.each(function(){M.remove(this
+,a)})}}),n.extend({queue:function(a,b,c){var d;return a?(b=(b||&#x22;fx&#x22;)+&#x22;queue&#x22;,d=L.get(a,b),c&#x26;&#x26;(!d||
+n.isArray(c)?d=L.access(a,b,n.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||&#x22;fx&#x22;;var c=n.queue(a,
+b),d=c.length,e=c.shift(),f=n._queueHooks(a,b),g=function(){n.dequeue(a,b)};&#x22;inprogress&#x22;===e&#x26;&#x26;(e=c.shift(),d
+--),e&#x26;&#x26;(&#x22;fx&#x22;===b&#x26;&#x26;c.unshift(&#x22;inprogress&#x22;),delete f.stop,e.call(a,g,f)),!d&#x26;&#x26;f&#
+x26;&#x26;f.empty.fire()},_queueHooks:function(a,b){var c=b+&#x22;queueHooks&#x22;;return L.get(a,c)||L.access(a,c,{empty:n.Callbacks
+(&#x22;once memory&#x22;).add(function(){L.remove(a,[b+&#x22;queue&#x22;,c])})})}}),n.fn.extend({queue:function(a,b){var c=2;return
+&#x22;string&#x22;!=typeof a&#x26;&#x26;(b=a,a=&#x22;fx&#x22;,c--),arguments.length&#x3c;c?n.queue(this[0],a):void 0===b?this:this
+.each(function(){var c=n.queue(this,a,b);n._queueHooks(this,a),&#x22;fx&#x22;===a&#x26;&#x26;&#x22;inprogress&#x22;!==c[0]&#x26;&#
+x26;n.dequeue(this,a)})},dequeue:function(a){return this.each(function(){n.dequeue(this,a)})},clearQueue:function(a){return this
+.queue(a||&#x22;fx&#x22;,[])},promise:function(a,b){var c,d=1,e=n.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith
+(f,[f])};&#x22;string&#x22;!=typeof a&#x26;&#x26;(b=a,a=void 0),a=a||&#x22;fx&#x22;;while(g--)c=L.get(f[g],a+&#x22;queueHooks&#x22
+;),c&#x26;&#x26;c.empty&#x26;&#x26;(d++,c.empty.add(h));return h(),e.promise(b)}});var Q=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,R=[&#x22;Top&#x22;,&#x22;Right&#x22;,&#x22;Bottom&#x22;,&#x22;Left&#x22;],S=function(a,b){return a=b||a,&#x22;none&#x22;===n.css(a,&#x22;display&#x22;)||!n.contains(a.ownerDocument,a)},T=/^(?:checkbox|radio)$/i;!function(){var a=l.createDocumentFragment(),b=a.appendChild(l.createElement(&#x22;div&#x22;)),c=l.createElement(&#x22;input&#x22;);c.setAttribute(&#x22;type&#x22;,&#x22;radio&#x22;),c.setAttribute(&#x22;checked&#x22;,&#x22;checked&#x22;),c.setAttribute(&#x22;name&#x22;,&#x22;t&#x22;),b.appendChild(c),k.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,b.innerHTML=&#x22;&#x3c;textarea&#x3e;x&#x3c;/textarea&#x3e;&#x22;,k.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue}();var U=&#x22;undefined&#x22;;k.focusinBubbles=&#x22;onfocusin&#x22;in a;var V=/^key/,W=/^(?:mouse|pointer|contextmenu)|click/,X=/^(?:focusinfocus|focusoutblur)$/,Y=/^([^.]*)(?:\.(.+)|)$/;function Z(){return!0}function $(){return!1}function _(){try{return l.activeElement}catch(a){}}n.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.get(a);if(r){c.handler&#x26;&#x26;(f=c,c=f.handler,e=f.selector),c.guid||(c.guid=n.guid++),(i=r.events)||(i=r.events={}),(g=r.handle)||(g=r.handle=function(b){return typeof n!==U&#x26;&#x26;n.event.triggered!==b.type?n.event.dispatch.apply(a,arguments):void 0}),b=(b||&#x22;&#x22;).match(E)||[&#x22;&#x22;],j=b.length;while(j--)h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||&#x22;&#x22;).split(&#x22;.&#x22;).sort(),o&#x26;&#x26;(l=n.event.special[o]||{},o=(e?l.delegateType:l.bindType)||o,l=n.event.special[o]||{},k=n.extend({type:o,origType:q,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&#x26;&#x26;n.expr.match.needsContext.test(e),namespace:p.join(&#x22;.&#x22;)},f),(m=i[o])||(m=i[o]=[],m.delegateCount=0,l.setup&#x26;&#x26;l.setup.call(a,d,p,g)!==!1||a.addEventListener&#x26;&#x26;a.addEventListener(o,g,!1)),l.add&#x26;&#x26;(l.add.call(a,k),k.handler.guid||(k.handler.guid=c.guid)),e?m.splice(m.delegateCount++,0,k):m.push(k),n.event.global[o]=!0)}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.hasData(a)&#x26;&#x26;L.get(a);if(r&#x26;&#x26;(i=r.events)){b=(b||&#x22;&#x22;).match(E)||[&#x22;&#x22;],j=b.length;while(j--)if(h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||&#x22;&#x22;).split(&#x22;.&#x22;).sort(),o){l=n.event.special[o]||{},o=(d?l.delegateType:l.bindType)||o,m=i[o]||[],h=h[2]&#x26;&#x26;new RegExp(&#x22;(^|\\.)&#x22;+p.join(&#x22;\\.(?:.*\\.|)&#x22;)+&#x22;(\\.|$)&#x22;),g=f=m.length;while(f--)k=m[f],!e&#x26;&#x26;q!==k.origType||c&#x26;&#x26;c.guid!==k.guid||h&#x26;&#x26;!h.test(k.namespace)||d&#x26;&#x26;d!==k.selector&#x26;&#x26;(&#x22;**&#x22;!==d||!k.selector)||(m.splice(f,1),k.selector&#x26;&#x26;m.delegateCount--,l.remove&#x26;&#x26;l.remove.call(a,k));g&#x26;&#x26;!m.length&#x26;&#x26;(l.teardown&#x26;&#x26;l.teardown.call(a,p,r.handle)!==!1||n.removeEvent(a,o,r.handle),delete i[o])}else for(o in i)n.event.remove(a,o+b[j],c,d,!0);n.isEmptyObject(i)&#x26;&#x26;(delete r.handle,L.remove(a,&#x22;events&#x22;))}},trigger:function(b,c,d,e){var f,g,h,i,k,m,o,p=[d||l],q=j.call(b,&#x22;type&#x22;)?b.type:b,r=j.call(b,&#x22;namespace&#x22;)?b.namespace.split(&#x22;.&#x22;):[];if(g=h=d=d||l,3!==d.nodeType&#x26;&#x26;8!==d.nodeType&#x26;&#x26;!X.test(q+n.event.triggered)&#x26;&#x26;(q.indexOf(&#x22;.&#x22;)&#x3e;=0&#x26;&#x26;(r=q.split(&#x22;.&#x22;),q=r.shift(),r.sort()),k=q.indexOf(&#x22;:&#x22;)&#x3c;0&#x26;&#x26;&#x22;on&#x22;+q,b=b[n.expando]?b:new n.Event(q,&#x22;object&#x22;==typeof b&#x26;&#x26;b),b.isTrigger=e?2:3,b.namespace=r.join(&#x22;.&#x22;),b.namespace_re=b.namespace?new RegExp(&#x22;(^|\\.)&#x22;+r.join(&#x22;\\.(?:.*\\.|)&#x22;)+&#x22;(\\.|$)&#x22;):null,b.result=void 0,b.target||(b.target=d),c=null==c?[b]:n.makeArray(c,[b]),o=n.event.special[q]||{},e||!o.trigger||o.trigger.apply(d,c)!==!1)){if(!e&#x26;&#x26;!o.noBubble&#x26;&#x26;!n.isWindow(d)){for(i=o.delegateType||q,X.test(i+q)||(g=g.parentNode);g;g=g.parentNode)p.push(g),h=g;h===(d.ownerDocument||l)&#x26;&#x26;p.push(h.defaultView||h.parentWindow||a)}f=0;while((g=p[f++])&#x26;&#x26;!b.isPropagationStopped())b.type=f&#x3e;1?i:o.bindType||q,m=(L.get(g,&#x22;events&#x22;)||{})[b.type]&#x26;&#x26;L.get(g,&#x22;handle&#x22;),m&#x26;&#x26;m.apply(g,c),m=k&#x26;&#x26;g[k],m&#x26;&#x26;m.apply&#x26;&#x26;n.acceptData(g)&#x26;&#x26;(b.result=m.apply(g,c),b.result===!1&#x26;&#x26;b.preventDefault());return b.type=q,e||b.isDefaultPrevented()||o._default&#x26;&#x26;o._default.apply(p.pop(),c)!==!1||!n.acceptData(d)||k&#x26;&#x26;n.isFunction(d[q])&#x26;&#x26;!n.isWindow(d)&#x26;&#x26;(h=d[k],h&#x26;&#x26;(d[k]=null),n.event.triggered=q,d[q](),n.event.triggered=void 0,h&#x26;&#x26;(d[k]=h)),b.result}},dispatch:function(a){a=n.event.fix(a);var b,c,e,f,g,h=[],i=d.call(arguments),j=(L.get(this,&#x22;events&#x22;)||{})[a.type]||[],k=n.event.special[a.type]||{};if(i[0]=a,a.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,a)!==!1){h=n.event.handlers.call(this,a,j),b=0;while((f=h[b++])&#x26;&#x26;!a.isPropagationStopped()){a.currentTarget=f.elem,c=0;while((g=f.handlers[c++])&#x26;&#x26;!a.isImmediatePropagationStopped())(!a.namespace_re||a.namespace_re.test(g.namespace))&#x26;&#x26;(a.handleObj=g,a.data=g.data,e=((n.event.special[g.origType]||{}).handle||g.handler).apply(f.elem,i),void 0!==e&#x26;&#x26;(a.result=e)===!1&#x26;&#x26;(a.preventDefault(),a.stopPropagation()))}return k.postDispatch&#x26;&#x26;k.postDispatch.call(this,a),a.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&#x26;&#x26;i.nodeType&#x26;&#x26;(!a.button||&#x22;click&#x22;!==a.type))for(;i!==this;i=i.parentNode||this)if(i.disabled!==!0||&#x22;click&#x22;!==a.type){for(d=[],c=0;h&#x3e;c;c++)f=b[c],e=f.selector+&#x22; &#x22;,void 0===d[e]&#x26;&#x26;(d[e]=f.needsContext?n(e,this).index(i)&#x3e;=0:n.find(e,this,null,[i]).length),d[e]&#x26;&#x26;d.push(f);d.length&#x26;&#x26;g.push({elem:i,handlers:d})}return h&#x3c;b.length&#x26;&#x26;g.push({elem:this,handlers:b.slice(h)}),g},props:&#x22;altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which&#x22;.split(&#x22; &#x22;),fixHooks:{},keyHooks:{props:&#x22;char charCode key keyCode&#x22;.split(&#x22; &#x22;),filter:function(a,b){return null==a.which&#x26;&#x26;(a.which=null!=b.charCode?b.charCode:b.keyCode),a}},mouseHooks:{props:&#x22;button buttons clientX clientY offsetX offsetY pageX pageY screenX screenY toElement&#x22;.split(&#x22; &#x22;),filter:function(a,b){var c,d,e,f=b.button;return null==a.pageX&#x26;&#x26;null!=b.clientX&#x26;&#x26;(c=a.target.ownerDocument||l,d=c.documentElement,e=c.body,a.pageX=b.clientX+(d&#x26;&#x26;d.scrollLeft||e&#x26;&#x26;e.scrollLeft||0)-(d&#x26;&#x26;d.clientLeft||e&#x26;&#x26;e.clientLeft||0),a.pageY=b.clientY+(d&#x26;&#x26;d.scrollTop||e&#x26;&#x26;e.scrollTop||0)-(d&#x26;&#x26;d.clientTop||e&#x26;&#x26;e.clientTop||0)),a.which||void 0===f||(a.which=1&#x26;f?1:2&#x26;f?3:4&#x26;f?2:0),a}},fix:function(a){if(a[n.expando])return a;var b,c,d,e=a.type,f=a,g=this.fixHooks[e];g||(this.fixHooks[e]=g=W.test(e)?this.mouseHooks:V.test(e)?this.keyHooks:{}),d=g.props?this.props.concat(g.props):this.props,a=new n.Event(f),b=d.length;while(b--)c=d[b],a[c]=f[c];return a.target||(a.target=l),3===a.target.nodeType&#x26;&#x26;(a.target=a.target.parentNode),g.filter?g.filter(a,f):a},special:{load:{noBubble:!0},focus:{trigger:function(){return this!==_()&#x26;&#x26;this.focus?(this.focus(),!1):void 0},delegateType:&#x22;focusin&#x22;},blur:{trigger:function(){return this===_()&#x26;&#x26;this.blur?(this.blur(),!1):void 0},delegateType:&#x22;focusout&#x22;},click:{trigger:function(){return&#x22;checkbox&#x22;===this.type&#x26;&#x26;this.click&#x26;&#x26;n.nodeName(this,&#x22;input&#x22;)?(this.click(),!1):void 0},_default:function(a){return n.nodeName(a.target,&#x22;a&#x22;)}},beforeunload:{postDispatch:function(a){void 0!==a.result&#x26;&#x26;a.originalEvent&#x26;&#x26;(a.originalEvent.returnValue=a.result)}}},simulate:function(a,b,c,d){var e=n.extend(new n.Event,c,{type:a,isSimulated:!0,originalEvent:{}});d?n.event.trigger(e,null,b):n.event.dispatch.call(b,e),e.isDefaultPrevented()&#x26;&#x26;c.preventDefault()}},n.removeEvent=function(a,b,c){a.removeEventListener&#x26;&#x26;a.removeEventListener(b,c,!1)},n.Event=function(a,b){return this instanceof n.Event?(a&#x26;&#x26;a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&#x26;&#x26;a.returnValue===!1?Z:$):this.type=a,b&#x26;&#x26;n.extend(this,b),this.timeStamp=a&#x26;&#x26;a.timeStamp||n.now(),void(this[n.expando]=!0)):new n.Event(a,b)},n.Event.prototype={isDefaultPrevented:$,isPropagationStopped:$,isImmediatePropagationStopped:$,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=Z,a&#x26;&#x26;a.preventDefault&#x26;&#x26;a.preventDefault()},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=Z,a&#x26;&#x26;a.stopPropagation&#x26;&#x26;a.stopPropagation()},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=Z,a&#x26;&#x26;a.stopImmediatePropagation&#x26;&#x26;a.stopImmediatePropagation(),this.stopPropagation()}},n.each({mouseenter:&#x22;mouseover&#x22;,mouseleave:&#x22;mouseout&#x22;,pointerenter:&#x22;pointerover&#x22;,pointerleave:&#x22;pointerout&#x22;},function(a,b){n.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return(!e||e!==d&#x26;&#x26;!n.contains(d,e))&#x26;&#x26;(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),k.focusinBubbles||n.each({focus:&#x22;focusin&#x22;,blur:&#x22;focusout&#x22;},function(a,b){var c=function(a){n.event.simulate(b,a.target,n.event.fix(a),!0)};n.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=L.access(d,b);e||d.addEventListener(a,c,!0),L.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=L.access(d,b)-1;e?L.access(d,b,e):(d.removeEventListener(a,c,!0),L.remove(d,b))}}}),n.fn.extend({on:function(a,b,c,d,e){var f,g;if(&#x22;object&#x22;==typeof a){&#x22;string&#x22;!=typeof b&#x26;&#x26;(c=c||b,b=void 0);for(g in a)this.on(g,b,c,a[g],e);return this}if(null==c&#x26;&#x26;null==d?(d=b,c=b=void 0):null==d&#x26;&#x26;(&#x22;string&#x22;==typeof b?(d=c,c=void 0):(d=c,c=b,b=void 0)),d===!1)d=$;else if(!d)return this;return 1===e&#x26;&#x26;(f=d,d=function(a){return n().off(a),f.apply(this,arguments)},d.guid=f.guid||(f.guid=n.guid++)),this.each(function(){n.event.add(this,a,d,c,b)})},one:function(a,b,c,d){return this.on(a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&#x26;&#x26;a.preventDefault&#x26;&#x26;a.handleObj)return d=a.handleObj,n(a.delegateTarget).off(d.namespace?d.origType+&#x22;.&#x22;+d.namespace:d.origType,d.selector,d.handler),this;if(&#x22;object&#x22;==typeof a){for(e in a)this.off(e,b,a[e]);return this}return(b===!1||&#x22;function&#x22;==typeof b)&#x26;&#x26;(c=b,b=void 0),c===!1&#x26;&#x26;(c=$),this.each(function(){n.event.remove(this,a,c,b)})},trigger:function(a,b){return this.each(function(){n.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?n.event.trigger(a,b,c,!0):void 0}});var aa=/&#x3c;(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^&#x3e;]*)\/&#x3e;/gi,ba=/&#x3c;([\w:]+)/,ca=/&#x3c;|&#x26;#?\w+;/,da=/&#x3c;(?:script|style|link)/i,ea=/checked\s*(?:[^=]|=\s*.checked.)/i,fa=/^$|\/(?:java|ecma)script/i,ga=/^true\/(.*)/,ha=/^\s*&#x3c;!(?:\[CDATA\[|--)|(?:\]\]|--)&#x3e;\s*$/g,ia={option:[1,&#x22;&#x3c;select multiple=&#x27;multiple&#x27;&#x3e;&#x22;,&#x22;&#x3c;/select&#x3e;&#x22;],thead:[1,&#x22;&#x3c;table&#x3e;&#x22;,&#x22;&#x3c;/table&#x3e;&#x22;],col:[2,&#x22;&#x3c;table&#x3e;&#x3c;colgroup&#x3e;&#x22;,&#x22;&#x3c;/colgroup&#x3e;&#x3c;/table&#x3e;&#x22;],tr:[2,&#x22;&#x3c;table&#x3e;&#x3c;tbody&#x3e;&#x22;,&#x22;&#x3c;/tbody&#x3e;&#x3c;/table&#x3e;&#x22;],td:[3,&#x22;&#x3c;table&#x3e;&#x3c;tbody&#x3e;&#x3c;tr&#x3e;&#x22;,&#x22;&#x3c;/tr&#x3e;&#x3c;/tbody&#x3e;&#x3c;/table&#x3e;&#x22;],_default:[0,&#x22;&#x22;,&#x22;&#x22;]};ia.optgroup=ia.option,ia.tbody=ia.tfoot=ia.colgroup=ia.caption=ia.thead,ia.th=ia.td;function ja(a,b){return n.nodeName(a,&#x22;table&#x22;)&#x26;&#x26;n.nodeName(11!==b.nodeType?b:b.firstChild,&#x22;tr&#x22;)?a.getElementsByTagName(&#x22;tbody&#x22;)[0]||a.appendChild(a.ownerDocument.createElement(&#x22;tbody&#x22;)):a}function ka(a){return a.type=(null!==a.getAttribute(&#x22;type&#x22;))+&#x22;/&#x22;+a.type,a}function la(a){var b=ga.exec(a.type);return b?a.type=b[1]:a.removeAttribute(&#x22;type&#x22;),a}function ma(a,b){for(var c=0,d=a.length;d&#x3e;c;c++)L.set(a[c],&#x22;globalEval&#x22;,!b||L.get(b[c],&#x22;globalEval&#x22;))}function na(a,b){var c,d,e,f,g,h,i,j;if(1===b.nodeType){if(L.hasData(a)&#x26;&#x26;(f=L.access(a),g=L.set(b,f),j=f.events)){delete g.handle,g.events={};for(e in j)for(c=0,d=j[e].length;d&#x3e;c;c++)n.event.add(b,e,j[e][c])}M.hasData(a)&#x26;&#x26;(h=M.access(a),i=n.extend({},h),M.set(b,i))}}function oa(a,b){var c=a.getElementsByTagName?a.getElementsByTagName(b||&#x22;*&#x22;):a.querySelectorAll?a.querySelectorAll(b||&#x22;*&#x22;):[];return void 0===b||b&#x26;&#x26;n.nodeName(a,b)?n.merge([a],c):c}function pa(a,b){var c=b.nodeName.toLowerCase();&#x22;input&#x22;===c&#x26;&#x26;T.test(a.type)?b.checked=a.checked:(&#x22;input&#x22;===c||&#x22;textarea&#x22;===c)&#x26;&#x26;(b.defaultValue=a.defaultValue)}n.extend({clone:function(a,b,c){var d,e,f,g,h=a.cloneNode(!0),i=n.contains(a.ownerDocument,a);if(!(k.noCloneChecked||1!==a.nodeType&#x26;&#x26;11!==a.nodeType||n.isXMLDoc(a)))for(g=oa(h),f=oa(a),d=0,e=f.length;e&#x3e;d;d++)pa(f[d],g[d]);if(b)if(c)for(f=f||oa(a),g=g||oa(h),d=0,e=f.length;e&#x3e;d;d++)na(f[d],g[d]);else na(a,h);return g=oa(h,&#x22;script&#x22;),g.length&#x3e;0&#x26;&#x26;ma(g,!i&#x26;&#x26;oa(a,&#x22;script&#x22;)),h},buildFragment:function(a,b,c,d){for(var e,f,g,h,i,j,k=b.createDocumentFragment(),l=[],m=0,o=a.length;o&#x3e;m;m++)if(e=a[m],e||0===e)if(&#x22;object&#x22;===n.type(e))n.merge(l,e.nodeType?[e]:e);else if(ca.test(e)){f=f||k.appendChild(b.createElement(&#x22;div&#x22;)),g=(ba.exec(e)||[&#x22;&#x22;,&#x22;&#x22;])[1].toLowerCase(),h=ia[g]||ia._default,f.innerHTML=h[1]+e.replace(aa,&#x22;&#x3c;$1&#x3e;&#x3c;/$2&#x3e;&#x22;)+h[2],j=h[0];while(j--)f=f.lastChild;n.merge(l,f.childNodes),f=k.firstChild,f.textContent=&#x22;&#x22;}else l.push(b.createTextNode(e));k.textContent=&#x22;&#x22;,m=0;while(e=l[m++])if((!d||-1===n.inArray(e,d))&#x26;&#x26;(i=n.contains(e.ownerDocument,e),f=oa(k.appendChild(e),&#x22;script&#x22;),i&#x26;&#x26;ma(f),c)){j=0;while(e=f[j++])fa.test(e.type||&#x22;&#x22;)&#x26;&#x26;c.push(e)}return k},cleanData:function(a){for(var b,c,d,e,f=n.event.special,g=0;void 0!==(c=a[g]);g++){if(n.acceptData(c)&#x26;&#x26;(e=c[L.expando],e&#x26;&#x26;(b=L.cache[e]))){if(b.events)for(d in b.events)f[d]?n.event.remove(c,d):n.removeEvent(c,d,b.handle);L.cache[e]&#x26;&#x26;delete L.cache[e]}delete M.cache[c[M.expando]]}}}),n.fn.extend({text:function(a){return J(this,function(a){return void 0===a?n.text(this):this.empty().each(function(){(1===this.nodeType||11===this.nodeType||9===this.nodeType)&#x26;&#x26;(this.textContent=a)})},null,a,arguments.length)},append:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=ja(this,a);b.appendChild(a)}})},prepend:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=ja(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return this.domManip(arguments,function(a){this.parentNode&#x26;&#x26;this.parentNode.insertBefore(a,this)})},after:function(){return this.domManip(arguments,function(a){this.parentNode&#x26;&#x26;this.parentNode.insertBefore(a,this.nextSibling)})},remove:function(a,b){for(var c,d=a?n.filter(a,this):this,e=0;null!=(c=d[e]);e++)b||1!==c.nodeType||n.cleanData(oa(c)),c.parentNode&#x26;&#x26;(b&#x26;&#x26;n.contains(c.ownerDocument,c)&#x26;&#x26;ma(oa(c,&#x22;script&#x22;)),c.parentNode.removeChild(c));return this},empty:function(){for(var a,b=0;null!=(a=this[b]);b++)1===a.nodeType&#x26;&#x26;(n.cleanData(oa(a,!1)),a.textContent=&#x22;&#x22;);return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return n.clone(this,a,b)})},html:function(a){return J(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a&#x26;&#x26;1===b.nodeType)return b.innerHTML;if(&#x22;string&#x22;==typeof a&#x26;&#x26;!da.test(a)&#x26;&#x26;!ia[(ba.exec(a)||[&#x22;&#x22;,&#x22;&#x22;])[1].toLowerCase()]){a=a.replace(aa,&#x22;&#x3c;$1&#x3e;&#x3c;/$2&#x3e;&#x22;);try{for(;d&#x3e;c;c++)b=this[c]||{},1===b.nodeType&#x26;&#x26;(n.cleanData(oa(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&#x26;&#x26;this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=arguments[0];return this.domManip(arguments,function(b){a=this.parentNode,n.cleanData(oa(this)),a&#x26;&#x26;a.replaceChild(b,this)}),a&#x26;&#x26;(a.length||a.nodeType)?this:this.remove()},detach:function(a){return this.remove(a,!0)},domManip:function(a,b){a=e.apply([],a);var c,d,f,g,h,i,j=0,l=this.length,m=this,o=l-1,p=a[0],q=n.isFunction(p);if(q||l&#x3e;1&#x26;&#x26;&#x22;string&#x22;==typeof p&#x26;&#x26;!k.checkClone&#x26;&#x26;ea.test(p))return this.each(function(c){var d=m.eq(c);q&#x26;&#x26;(a[0]=p.call(this,c,d.html())),d.domManip(a,b)});if(l&#x26;&#x26;(c=n.buildFragment(a,this[0].ownerDocument,!1,this),d=c.firstChild,1===c.childNodes.length&#x26;&#x26;(c=d),d)){for(f=n.map(oa(c,&#x22;script&#x22;),ka),g=f.length;l&#x3e;j;j++)h=c,j!==o&#x26;&#x26;(h=n.clone(h,!0,!0),g&#x26;&#x26;n.merge(f,oa(h,&#x22;script&#x22;))),b.call(this[j],h,j);if(g)for(i=f[f.length-1].ownerDocument,n.map(f,la),j=0;g&#x3e;j;j++)h=f[j],fa.test(h.type||&#x22;&#x22;)&#x26;&#x26;!L.access(h,&#x22;globalEval&#x22;)&#x26;&#x26;n.contains(i,h)&#x26;&#x26;(h.src?n._evalUrl&#x26;&#x26;n._evalUrl(h.src):n.globalEval(h.textContent.replace(ha,&#x22;&#x22;)))}return this}}),n.each({appendTo:&#x22;append&#x22;,prependTo:&#x22;prepend&#x22;,insertBefore:&#x22;before&#x22;,insertAfter:&#x22;after&#x22;,replaceAll:&#x22;replaceWith&#x22;},function(a,b){n.fn[a]=function(a){for(var c,d=[],e=n(a),g=e.length-1,h=0;g&#x3e;=h;h++)c=h===g?this:this.clone(!0),n(e[h])[b](c),f.apply(d,c.get());return this.pushStack(d)}});var qa,ra={};function sa(b,c){var d,e=n(c.createElement(b)).appendTo(c.body),f=a.getDefaultComputedStyle&#x26;&#x26;(d=a.getDefaultComputedStyle(e[0]))?d.display:n.css(e[0],&#x22;display&#x22;);return e.detach(),f}function ta(a){var b=l,c=ra[a];return c||(c=sa(a,b),&#x22;none&#x22;!==c&#x26;&#x26;c||(qa=(qa||n(&#x22;&#x3c;iframe frameborder=&#x27;0&#x27; width=&#x27;0&#x27; height=&#x27;0&#x27;/&#x3e;&#x22;)).appendTo(b.documentElement),b=qa[0].contentDocument,b.write(),b.close(),c=sa(a,b),qa.detach()),ra[a]=c),c}var ua=/^margin/,va=new RegExp(&#x22;^(&#x22;+Q+&#x22;)(?!px)[a-z%]+$&#x22;,&#x22;i&#x22;),wa=function(b){return b.ownerDocument.defaultView.opener?b.ownerDocument.defaultView.getComputedStyle(b,null):a.getComputedStyle(b,null)};function xa(a,b,c){var d,e,f,g,h=a.style;return c=c||wa(a),c&#x26;&#x26;(g=c.getPropertyValue(b)||c[b]),c&#x26;&#x26;(&#x22;&#x22;!==g||n.contains(a.ownerDocument,a)||(g=n.style(a,b)),va.test(g)&#x26;&#x26;ua.test(b)&#x26;&#x26;(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0!==g?g+&#x22;&#x22;:g}function ya(a,b){return{get:function(){return a()?void delete this.get:(this.get=b).apply(this,arguments)}}}!function(){var b,c,d=l.documentElement,e=l.createElement(&#x22;div&#x22;),f=l.createElement(&#x22;div&#x22;);if(f.style){f.style.backgroundClip=&#x22;content-box&#x22;,f.cloneNode(!0).style.backgroundClip=&#x22;&#x22;,k.clearCloneStyle=&#x22;content-box&#x22;===f.style.backgroundClip,e.style.cssText=&#x22;border:0;width:0;height:0;top:0;left:-9999px;margin-top:1px;position:absolute&#x22;,e.appendChild(f);function g(){f.style.cssText=&#x22;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;margin-top:1%;top:1%;border:1px;padding:1px;width:4px;position:absolute&#x22;,f.innerHTML=&#x22;&#x22;,d.appendChild(e);var g=a.getComputedStyle(f,null);b=&#x22;1%&#x22;!==g.top,c=&#x22;4px&#x22;===g.width,d.removeChild(e)}a.getComputedStyle&#x26;&#x26;n.extend(k,{pixelPosition:function(){return g(),b},boxSizingReliable:function(){return null==c&#x26;&#x26;g(),c},reliableMarginRight:function(){var b,c=f.appendChild(l.createElement(&#x22;div&#x22;));return c.style.cssText=f.style.cssText=&#x22;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:0&#x22;,c.style.marginRight=c.style.width=&#x22;0&#x22;,f.style.width=&#x22;1px&#x22;,d.appendChild(e),b=!parseFloat(a.getComputedStyle(c,null).marginRight),d.removeChild(e),f.removeChild(c),b}})}}(),n.swap=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};var za=/^(none|table(?!-c[ea]).+)/,Aa=new RegExp(&#x22;^(&#x22;+Q+&#x22;)(.*)$&#x22;,&#x22;i&#x22;),Ba=new RegExp(&#x22;^([+-])=(&#x22;+Q+&#x22;)&#x22;,&#x22;i&#x22;),Ca={position:&#x22;absolute&#x22;,visibility:&#x22;hidden&#x22;,display:&#x22;block&#x22;},Da={letterSpacing:&#x22;0&#x22;,fontWeight:&#x22;400&#x22;},Ea=[&#x22;Webkit&#x22;,&#x22;O&#x22;,&#x22;Moz&#x22;,&#x22;ms&#x22;];function Fa(a,b){if(b in a)return b;var c=b[0].toUpperCase()+b.slice(1),d=b,e=Ea.length;while(e--)if(b=Ea[e]+c,b in a)return b;return d}function Ga(a,b,c){var d=Aa.exec(b);return d?Math.max(0,d[1]-(c||0))+(d[2]||&#x22;px&#x22;):b}function Ha(a,b,c,d,e){for(var f=c===(d?&#x22;border&#x22;:&#x22;content&#x22;)?4:&#x22;width&#x22;===b?1:0,g=0;4&#x3e;f;f+=2)&#x22;margin&#x22;===c&#x26;&#x26;(g+=n.css(a,c+R[f],!0,e)),d?(&#x22;content&#x22;===c&#x26;&#x26;(g-=n.css(a,&#x22;padding&#x22;+R[f],!0,e)),&#x22;margin&#x22;!==c&#x26;&#x26;(g-=n.css(a,&#x22;border&#x22;+R[f]+&#x22;Width&#x22;,!0,e))):(g+=n.css(a,&#x22;padding&#x22;+R[f],!0,e),&#x22;padding&#x22;!==c&#x26;&#x26;(g+=n.css(a,&#x22;border&#x22;+R[f]+&#x22;Width&#x22;,!0,e)));return g}function Ia(a,b,c){var d=!0,e=&#x22;width&#x22;===b?a.offsetWidth:a.offsetHeight,f=wa(a),g=&#x22;border-box&#x22;===n.css(a,&#x22;boxSizing&#x22;,!1,f);if(0&#x3e;=e||null==e){if(e=xa(a,b,f),(0&#x3e;e||null==e)&#x26;&#x26;(e=a.style[b]),va.test(e))return e;d=g&#x26;&#x26;(k.boxSizingReliable()||e===a.style[b]),e=parseFloat(e)||0}return e+Ha(a,b,c||(g?&#x22;border&#x22;:&#x22;content&#x22;),d,f)+&#x22;px&#x22;}function Ja(a,b){for(var c,d,e,f=[],g=0,h=a.length;h&#x3e;g;g++)d=a[g],d.style&#x26;&#x26;(f[g]=L.get(d,&#x22;olddisplay&#x22;),c=d.style.display,b?(f[g]||&#x22;none&#x22;!==c||(d.style.display=&#x22;&#x22;),&#x22;&#x22;===d.style.display&#x26;&#x26;S(d)&#x26;&#x26;(f[g]=L.access(d,&#x22;olddisplay&#x22;,ta(d.nodeName)))):(e=S(d),&#x22;none&#x22;===c&#x26;&#x26;e||L.set(d,&#x22;olddisplay&#x22;,e?c:n.css(d,&#x22;display&#x22;))));for(g=0;h&#x3e;g;g++)d=a[g],d.style&#x26;&#x26;(b&#x26;&#x26;&#x22;none&#x22;!==d.style.display&#x26;&#x26;&#x22;&#x22;!==d.style.display||(d.style.display=b?f[g]||&#x22;&#x22;:&#x22;none&#x22;));return a}n.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=xa(a,&#x22;opacity&#x22;);return&#x22;&#x22;===c?&#x22;1&#x22;:c}}}},cssNumber:{columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{&#x22;float&#x22;:&#x22;cssFloat&#x22;},style:function(a,b,c,d){if(a&#x26;&#x26;3!==a.nodeType&#x26;&#x26;8!==a.nodeType&#x26;&#x26;a.style){var e,f,g,h=n.camelCase(b),i=a.style;return b=n.cssProps[h]||(n.cssProps[h]=Fa(i,h)),g=n.cssHooks[b]||n.cssHooks[h],void 0===c?g&#x26;&#x26;&#x22;get&#x22;in g&#x26;&#x26;void 0!==(e=g.get(a,!1,d))?e:i[b]:(f=typeof c,&#x22;string&#x22;===f&#x26;&#x26;(e=Ba.exec(c))&#x26;&#x26;(c=(e[1]+1)*e[2]+parseFloat(n.css(a,b)),f=&#x22;number&#x22;),null!=c&#x26;&#x26;c===c&#x26;&#x26;(&#x22;number&#x22;!==f||n.cssNumber[h]||(c+=&#x22;px&#x22;),k.clearCloneStyle||&#x22;&#x22;!==c||0!==b.indexOf(&#x22;background&#x22;)||(i[b]=&#x22;inherit&#x22;),g&#x26;&#x26;&#x22;set&#x22;in g&#x26;&#x26;void 0===(c=g.set(a,c,d))||(i[b]=c)),void 0)}},css:function(a,b,c,d){var e,f,g,h=n.camelCase(b);return b=n.cssProps[h]||(n.cssProps[h]=Fa(a.style,h)),g=n.cssHooks[b]||n.cssHooks[h],g&#x26;&#x26;&#x22;get&#x22;in g&#x26;&#x26;(e=g.get(a,!0,c)),void 0===e&#x26;&#x26;(e=xa(a,b,d)),&#x22;normal&#x22;===e&#x26;&#x26;b in Da&#x26;&#x26;(e=Da[b]),&#x22;&#x22;===c||c?(f=parseFloat(e),c===!0||n.isNumeric(f)?f||0:e):e}}),n.each([&#x22;height&#x22;,&#x22;width&#x22;],function(a,b){n.cssHooks[b]={get:function(a,c,d){return c?za.test(n.css(a,&#x22;display&#x22;))&#x26;&#x26;0===a.offsetWidth?n.swap(a,Ca,function(){return Ia(a,b,d)}):Ia(a,b,d):void 0},set:function(a,c,d){var e=d&#x26;&#x26;wa(a);return Ga(a,c,d?Ha(a,b,d,&#x22;border-box&#x22;===n.css(a,&#x22;boxSizing&#x22;,!1,e),e):0)}}}),n.cssHooks.marginRight=ya(k.reliableMarginRight,function(a,b){return b?n.swap(a,{display:&#x22;inline-block&#x22;},xa,[a,&#x22;marginRight&#x22;]):void 0}),n.each({margin:&#x22;&#x22;,padding:&#x22;&#x22;,border:&#x22;Width&#x22;},function(a,b){n.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f=&#x22;string&#x22;==typeof c?c.split(&#x22; &#x22;):[c];4&#x3e;d;d++)e[a+R[d]+b]=f[d]||f[d-2]||f[0];return e}},ua.test(a)||(n.cssHooks[a+b].set=Ga)}),n.fn.extend({css:function(a,b){return J(this,function(a,b,c){var d,e,f={},g=0;if(n.isArray(b)){for(d=wa(a),e=b.length;e&#x3e;g;g++)f[b[g]]=n.css(a,b[g],!1,d);return f}return void 0!==c?n.style(a,b,c):n.css(a,b)},a,b,arguments.length&#x3e;1)},show:function(){return Ja(this,!0)},hide:function(){return Ja(this)},toggle:function(a){return&#x22;boolean&#x22;==typeof a?a?this.show():this.hide():this.each(function(){S(this)?n(this).show():n(this).hide()})}});function Ka(a,b,c,d,e){return new Ka.prototype.init(a,b,c,d,e)}n.Tween=Ka,Ka.prototype={constructor:Ka,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||&#x22;swing&#x22;,this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(n.cssNumber[c]?&#x22;&#x22;:&#x22;px&#x22;)},cur:function(){var a=Ka.propHooks[this.prop];return a&#x26;&#x26;a.get?a.get(this):Ka.propHooks._default.get(this)},run:function(a){var b,c=Ka.propHooks[this.prop];return this.options.duration?this.pos=b=n.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):this.pos=b=a,this.now=(this.end-this.start)*b+this.start,this.options.step&#x26;&#x26;this.options.step.call(this.elem,this.now,this),c&#x26;&#x26;c.set?c.set(this):Ka.propHooks._default.set(this),this}},Ka.prototype.init.prototype=Ka.prototype,Ka.propHooks={_default:{get:function(a){var b;return null==a.elem[a.prop]||a.elem.style&#x26;&#x26;null!=a.elem.style[a.prop]?(b=n.css(a.elem,a.prop,&#x22;&#x22;),b&#x26;&#x26;&#x22;auto&#x22;!==b?b:0):a.elem[a.prop]},set:function(a){n.fx.step[a.prop]?n.fx.step[a.prop](a):a.elem.style&#x26;&#x26;(null!=a.elem.style[n.cssProps[a.prop]]||n.cssHooks[a.prop])?n.style(a.elem,a.prop,a.now+a.unit):a.elem[a.prop]=a.now}}},Ka.propHooks.scrollTop=Ka.propHooks.scrollLeft={set:function(a){a.elem.nodeType&#x26;&#x26;a.elem.parentNode&#x26;&#x26;(a.elem[a.prop]=a.now)}},n.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2}},n.fx=Ka.prototype.init,n.fx.step={};var La,Ma,Na=/^(?:toggle|show|hide)$/,Oa=new RegExp(&#x22;^(?:([+-])=|)(&#x22;+Q+&#x22;)([a-z%]*)$&#x22;,&#x22;i&#x22;),Pa=/queueHooks$/,Qa=[Va],Ra={&#x22;*&#x22;:[function(a,b){var c=this.createTween(a,b),d=c.cur(),e=Oa.exec(b),f=e&#x26;&#x26;e[3]||(n.cssNumber[a]?&#x22;&#x22;:&#x22;px&#x22;),g=(n.cssNumber[a]||&#x22;px&#x22;!==f&#x26;&#x26;+d)&#x26;&#x26;Oa.exec(n.css(c.elem,a)),h=1,i=20;if(g&#x26;&#x26;g[3]!==f){f=f||g[3],e=e||[],g=+d||1;do h=h||&#x22;.5&#x22;,g/=h,n.style(c.elem,a,g+f);while(h!==(h=c.cur()/d)&#x26;&#x26;1!==h&#x26;&#x26;--i)}return e&#x26;&#x26;(g=c.start=+g||+d||0,c.unit=f,c.end=e[1]?g+(e[1]+1)*e[2]:+e[2]),c}]};function Sa(){return setTimeout(function(){La=void 0}),La=n.now()}function Ta(a,b){var c,d=0,e={height:a};for(b=b?1:0;4&#x3e;d;d+=2-b)c=R[d],e[&#x22;margin&#x22;+c]=e[&#x22;padding&#x22;+c]=a;return b&#x26;&#x26;(e.opacity=e.width=a),e}function Ua(a,b,c){for(var d,e=(Ra[b]||[]).concat(Ra[&#x22;*&#x22;]),f=0,g=e.length;g&#x3e;f;f++)if(d=e[f].call(c,b,a))return d}function Va(a,b,c){var d,e,f,g,h,i,j,k,l=this,m={},o=a.style,p=a.nodeType&#x26;&#x26;S(a),q=L.get(a,&#x22;fxshow&#x22;);c.queue||(h=n._queueHooks(a,&#x22;fx&#x22;),null==h.unqueued&#x26;&#x26;(h.unqueued=0,i=h.empty.fire,h.empty.fire=function(){h.unqueued||i()}),h.unqueued++,l.always(function(){l.always(function(){h.unqueued--,n.queue(a,&#x22;fx&#x22;).length||h.empty.fire()})})),1===a.nodeType&#x26;&#x26;(&#x22;height&#x22;in b||&#x22;width&#x22;in b)&#x26;&#x26;(c.overflow=[o.overflow,o.overflowX,o.overflowY],j=n.css(a,&#x22;display&#x22;),k=&#x22;none&#x22;===j?L.get(a,&#x22;olddisplay&#x22;)||ta(a.nodeName):j,&#x22;inline&#x22;===k&#x26;&#x26;&#x22;none&#x22;===n.css(a,&#x22;float&#x22;)&#x26;&#x26;(o.display=&#x22;inline-block&#x22;)),c.overflow&#x26;&#x26;(o.overflow=&#x22;hidden&#x22;,l.always(function(){o.overflow=c.overflow[0],o.overflowX=c.overflow[1],o.overflowY=c.overflow[2]}));for(d in b)if(e=b[d],Na.exec(e)){if(delete b[d],f=f||&#x22;toggle&#x22;===e,e===(p?&#x22;hide&#x22;:&#x22;show&#x22;)){if(&#x22;show&#x22;!==e||!q||void 0===q[d])continue;p=!0}m[d]=q&#x26;&#x26;q[d]||n.style(a,d)}else j=void 0;if(n.isEmptyObject(m))&#x22;inline&#x22;===(&#x22;none&#x22;===j?ta(a.nodeName):j)&#x26;&#x26;(o.display=j);else{q?&#x22;hidden&#x22;in q&#x26;&#x26;(p=q.hidden):q=L.access(a,&#x22;fxshow&#x22;,{}),f&#x26;&#x26;(q.hidden=!p),p?n(a).show():l.done(function(){n(a).hide()}),l.done(function(){var b;L.remove(a,&#x22;fxshow&#x22;);for(b in m)n.style(a,b,m[b])});for(d in m)g=Ua(p?q[d]:0,d,l),d in q||(q[d]=g.start,p&#x26;&#x26;(g.end=g.start,g.start=&#x22;width&#x22;===d||&#x22;height&#x22;===d?1:0))}}function Wa(a,b){var c,d,e,f,g;for(c in a)if(d=n.camelCase(c),e=b[d],f=a[c],n.isArray(f)&#x26;&#x26;(e=f[1],f=a[c]=f[0]),c!==d&#x26;&#x26;(a[d]=f,delete a[c]),g=n.cssHooks[d],g&#x26;&#x26;&#x22;expand&#x22;in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function Xa(a,b,c){var d,e,f=0,g=Qa.length,h=n.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=La||Sa(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i&#x3e;g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1&#x3e;f&#x26;&#x26;i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:n.extend({},b),opts:n.extend(!0,{specialEasing:{}},c),originalProperties:b,originalOptions:c,startTime:La||Sa(),duration:c.duration,tweens:[],createTween:function(b,c){var d=n.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d&#x3e;c;c++)j.tweens[c].run(1);return b?h.resolveWith(a,[j,b]):h.rejectWith(a,[j,b]),this}}),k=j.props;for(Wa(k,j.opts.specialEasing);g&#x3e;f;f++)if(d=Qa[f].call(j,a,k,j.opts))return d;return n.map(k,Ua,j),n.isFunction(j.opts.start)&#x26;&#x26;j.opts.start.call(a,j),n.fx.timer(n.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}n.Animation=n.extend(Xa,{tweener:function(a,b){n.isFunction(a)?(b=a,a=[&#x22;*&#x22;]):a=a.split(&#x22; &#x22;);for(var c,d=0,e=a.length;e&#x3e;d;d++)c=a[d],Ra[c]=Ra[c]||[],Ra[c].unshift(b)},prefilter:function(a,b){b?Qa.unshift(a):Qa.push(a)}}),n.speed=function(a,b,c){var d=a&#x26;&#x26;&#x22;object&#x22;==typeof a?n.extend({},a):{complete:c||!c&#x26;&#x26;b||n.isFunction(a)&#x26;&#x26;a,duration:a,easing:c&#x26;&#x26;b||b&#x26;&#x26;!n.isFunction(b)&#x26;&#x26;b};return d.duration=n.fx.off?0:&#x22;number&#x22;==typeof d.duration?d.duration:d.duration in n.fx.speeds?n.fx.speeds[d.duration]:n.fx.speeds._default,(null==d.queue||d.queue===!0)&#x26;&#x26;(d.queue=&#x22;fx&#x22;),d.old=d.complete,d.complete=function(){n.isFunction(d.old)&#x26;&#x26;d.old.call(this),d.queue&#x26;&#x26;n.dequeue(this,d.queue)},d},n.fn.extend({fadeTo:function(a,b,c,d){return this.filter(S).css(&#x22;opacity&#x22;,0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=n.isEmptyObject(a),f=n.speed(b,c,d),g=function(){var b=Xa(this,n.extend({},a),f);(e||L.get(this,&#x22;finish&#x22;))&#x26;&#x26;b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return&#x22;string&#x22;!=typeof a&#x26;&#x26;(c=b,b=a,a=void 0),b&#x26;&#x26;a!==!1&#x26;&#x26;this.queue(a||&#x22;fx&#x22;,[]),this.each(function(){var b=!0,e=null!=a&#x26;&#x26;a+&#x22;queueHooks&#x22;,f=n.timers,g=L.get(this);if(e)g[e]&#x26;&#x26;g[e].stop&#x26;&#x26;d(g[e]);else for(e in g)g[e]&#x26;&#x26;g[e].stop&#x26;&#x26;Pa.test(e)&#x26;&#x26;d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&#x26;&#x26;f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));(b||!c)&#x26;&#x26;n.dequeue(this,a)})},finish:function(a){return a!==!1&#x26;&#x26;(a=a||&#x22;fx&#x22;),this.each(function(){var b,c=L.get(this),d=c[a+&#x22;queue&#x22;],e=c[a+&#x22;queueHooks&#x22;],f=n.timers,g=d?d.length:0;for(c.finish=!0,n.queue(this,a,[]),e&#x26;&#x26;e.stop&#x26;&#x26;e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&#x26;&#x26;f[b].queue===a&#x26;&#x26;(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g&#x3e;b;b++)d[b]&#x26;&#x26;d[b].finish&#x26;&#x26;d[b].finish.call(this);delete c.finish})}}),n.each([&#x22;toggle&#x22;,&#x22;show&#x22;,&#x22;hide&#x22;],function(a,b){var c=n.fn[b];n.fn[b]=function(a,d,e){return null==a||&#x22;boolean&#x22;==typeof a?c.apply(this,arguments):this.animate(Ta(b,!0),a,d,e)}}),n.each({slideDown:Ta(&#x22;show&#x22;),slideUp:Ta(&#x22;hide&#x22;),slideToggle:Ta(&#x22;toggle&#x22;),fadeIn:{opacity:&#x22;show&#x22;},fadeOut:{opacity:&#x22;hide&#x22;},fadeToggle:{opacity:&#x22;toggle&#x22;}},function(a,b){n.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),n.timers=[],n.fx.tick=function(){var a,b=0,c=n.timers;for(La=n.now();b&#x3c;c.length;b++)a=c[b],a()||c[b]!==a||c.splice(b--,1);c.length||n.fx.stop(),La=void 0},n.fx.timer=function(a){n.timers.push(a),a()?n.fx.start():n.timers.pop()},n.fx.interval=13,n.fx.start=function(){Ma||(Ma=setInterval(n.fx.tick,n.fx.interval))},n.fx.stop=function(){clearInterval(Ma),Ma=null},n.fx.speeds={slow:600,fast:200,_default:400},n.fn.delay=function(a,b){return a=n.fx?n.fx.speeds[a]||a:a,b=b||&#x22;fx&#x22;,this.queue(b,function(b,c){var d=setTimeout(b,a);c.stop=function(){clearTimeout(d)}})},function(){var a=l.createElement(&#x22;input&#x22;),b=l.createElement(&#x22;select&#x22;),c=b.appendChild(l.createElement(&#x22;option&#x22;));a.type=&#x22;checkbox&#x22;,k.checkOn=&#x22;&#x22;!==a.value,k.optSelected=c.selected,b.disabled=!0,k.optDisabled=!c.disabled,a=l.createElement(&#x22;input&#x22;),a.value=&#x22;t&#x22;,a.type=&#x22;radio&#x22;,k.radioValue=&#x22;t&#x22;===a.value}();var Ya,Za,$a=n.expr.attrHandle;n.fn.extend({attr:function(a,b){return J(this,n.attr,a,b,arguments.length&#x3e;1)},removeAttr:function(a){return this.each(function(){n.removeAttr(this,a)})}}),n.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(a&#x26;&#x26;3!==f&#x26;&#x26;8!==f&#x26;&#x26;2!==f)return typeof a.getAttribute===U?n.prop(a,b,c):(1===f&#x26;&#x26;n.isXMLDoc(a)||(b=b.toLowerCase(),d=n.attrHooks[b]||(n.expr.match.bool.test(b)?Za:Ya)),
+void 0===c?d&#x26;&#x26;&#x22;get&#x22;in d&#x26;&#x26;null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?void 0:e):null!==c?d&#
+x26;&#x26;&#x22;set&#x22;in d&#x26;&#x26;void 0!==(e=d.set(a,c,b))?e:(a.setAttribute(b,c+&#x22;&#x22;),c):void n.removeAttr(a,b))},
+removeAttr:function(a,b){var c,d,e=0,f=b&#x26;&#x26;b.match(E);if(f&#x26;&#x26;1===a.nodeType)while(c=f[e++])d=n.propFix[c]||c,n
+.expr.match.bool.test(c)&#x26;&#x26;(a[d]=!1),a.removeAttribute(c)},attrHooks:{type:{set:function(a,b){if(!k.radioValue&#x26;&#x26
+;&#x22;radio&#x22;===b&#x26;&#x26;n.nodeName(a,&#x22;input&#x22;)){var c=a.value;return a.setAttribute(&#x22;type&#x22;,b),c&#x26
+;&#x26;(a.value=c),b}}}}}),Za={set:function(a,b,c){return b===!1?n.removeAttr(a,c):a.setAttribute(c,c),c}},n.each(n.expr.match.bool
+.source.match(/\w+/g),function(a,b){var c=$a[b]||n.find.attr;$a[b]=function(a,b,d){var e,f;return d||(f=$a[b],$a[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$a[b]=f),e}});var _a=/^(?:input|select|textarea|button)$/i;n.fn.extend({prop:function(a,b){return J(this,n.prop,a,b,arguments.length&#x3e;1)},removeProp:function(a){return this.each(function(){delete this[n.propFix[a]||a]})}}),n.extend({propFix:{&#x22;for&#x22;:&#x22;htmlFor&#x22;,&#x22;class&#x22;:&#x22;className&#x22;},prop:function(a,b,c){var d,e,f,g=a.nodeType;if(a&#x26;&#x26;3!==g&#x26;&#x26;8!==g&#x26;&#x26;2!==g)return f=1!==g||!n.isXMLDoc(a),f&#x26;&#x26;(b=n.propFix[b]||b,e=n.propHooks[b]),void 0!==c?e&#x26;&#x26;&#x22;set&#x22;in e&#x26;&#x26;void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&#x26;&#x26;&#x22;get&#x22;in e&#x26;&#x26;null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){return a.hasAttribute(&#x22;tabindex&#x22;)||_a.test(a.nodeName)||a.href?a.tabIndex:-1}}}}),k.optSelected||(n.propHooks.selected={get:function(a){var b=a.parentNode;return b&#x26;&#x26;b.parentNode&#x26;&#x26;b.parentNode.selectedIndex,null}}),n.each([&#x22;tabIndex&#x22;,&#x22;readOnly&#x22;,&#x22;maxLength&#x22;,&#x22;cellSpacing&#x22;,&#x22;cellPadding&#x22;,&#x22;rowSpan&#x22;,&#x22;colSpan&#x22;,&#x22;useMap&#x22;,&#x22;frameBorder&#x22;,&#x22;contentEditable&#x22;],function(){n.propFix[this.toLowerCase()]=this});var ab=/[\t\r\n\f]/g;n.fn.extend({addClass:function(a){var b,c,d,e,f,g,h=&#x22;string&#x22;==typeof a&#x26;&#x26;a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).addClass(a.call(this,b,this.className))});if(h)for(b=(a||&#x22;&#x22;).match(E)||[];j&#x3e;i;i++)if(c=this[i],d=1===c.nodeType&#x26;&#x26;(c.className?(&#x22; &#x22;+c.className+&#x22; &#x22;).replace(ab,&#x22; &#x22;):&#x22; &#x22;)){f=0;while(e=b[f++])d.indexOf(&#x22; &#x22;+e+&#x22; &#x22;)&#x3c;0&#x26;&#x26;(d+=e+&#x22; &#x22;);g=n.trim(d),c.className!==g&#x26;&#x26;(c.className=g)}return this},removeClass:function(a){var b,c,d,e,f,g,h=0===arguments.length||&#x22;string&#x22;==typeof a&#x26;&#x26;a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).removeClass(a.call(this,b,this.className))});if(h)for(b=(a||&#x22;&#x22;).match(E)||[];j&#x3e;i;i++)if(c=this[i],d=1===c.nodeType&#x26;&#x26;(c.className?(&#x22; &#x22;+c.className+&#x22; &#x22;).replace(ab,&#x22; &#x22;):&#x22;&#x22;)){f=0;while(e=b[f++])while(d.indexOf(&#x22; &#x22;+e+&#x22; &#x22;)&#x3e;=0)d=d.replace(&#x22; &#x22;+e+&#x22; &#x22;,&#x22; &#x22;);g=a?n.trim(d):&#x22;&#x22;,c.className!==g&#x26;&#x26;(c.className=g)}return this},toggleClass:function(a,b){var c=typeof a;return&#x22;boolean&#x22;==typeof b&#x26;&#x26;&#x22;string&#x22;===c?b?this.addClass(a):this.removeClass(a):this.each(n.isFunction(a)?function(c){n(this).toggleClass(a.call(this,c,this.className,b),b)}:function(){if(&#x22;string&#x22;===c){var b,d=0,e=n(this),f=a.match(E)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else(c===U||&#x22;boolean&#x22;===c)&#x26;&#x26;(this.className&#x26;&#x26;L.set(this,&#x22;__className__&#x22;,this.className),this.className=this.className||a===!1?&#x22;&#x22;:L.get(this,&#x22;__className__&#x22;)||&#x22;&#x22;)})},hasClass:function(a){for(var b=&#x22; &#x22;+a+&#x22; &#x22;,c=0,d=this.length;d&#x3e;c;c++)if(1===this[c].nodeType&#x26;&#x26;(&#x22; &#x22;+this[c].className+&#x22; &#x22;).replace(ab,&#x22; &#x22;).indexOf(b)&#x3e;=0)return!0;return!1}});var bb=/\r/g;n.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=n.isFunction(a),this.each(function(c){var e;1===this.nodeType&#x26;&#x26;(e=d?a.call(this,c,n(this).val()):a,null==e?e=&#x22;&#x22;:&#x22;number&#x22;==typeof e?e+=&#x22;&#x22;:n.isArray(e)&#x26;&#x26;(e=n.map(e,function(a){return null==a?&#x22;&#x22;:a+&#x22;&#x22;})),b=n.valHooks[this.type]||n.valHooks[this.nodeName.toLowerCase()],b&#x26;&#x26;&#x22;set&#x22;in b&#x26;&#x26;void 0!==b.set(this,e,&#x22;value&#x22;)||(this.value=e))});if(e)return b=n.valHooks[e.type]||n.valHooks[e.nodeName.toLowerCase()],b&#x26;&#x26;&#x22;get&#x22;in b&#x26;&#x26;void 0!==(c=b.get(e,&#x22;value&#x22;))?c:(c=e.value,&#x22;string&#x22;==typeof c?c.replace(bb,&#x22;&#x22;):null==c?&#x22;&#x22;:c)}}}),n.extend({valHooks:{option:{get:function(a){var b=n.find.attr(a,&#x22;value&#x22;);return null!=b?b:n.trim(n.text(a))}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f=&#x22;select-one&#x22;===a.type||0&#x3e;e,g=f?null:[],h=f?e+1:d.length,i=0&#x3e;e?h:f?e:0;h&#x3e;i;i++)if(c=d[i],!(!c.selected&#x26;&#x26;i!==e||(k.optDisabled?c.disabled:null!==c.getAttribute(&#x22;disabled&#x22;))||c.parentNode.disabled&#x26;&#x26;n.nodeName(c.parentNode,&#x22;optgroup&#x22;))){if(b=n(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=n.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=n.inArray(d.value,f)&#x3e;=0)&#x26;&#x26;(c=!0);return c||(a.selectedIndex=-1),f}}}}),n.each([&#x22;radio&#x22;,&#x22;checkbox&#x22;],function(){n.valHooks[this]={set:function(a,b){return n.isArray(b)?a.checked=n.inArray(n(a).val(),b)&#x3e;=0:void 0}},k.checkOn||(n.valHooks[this].get=function(a){return null===a.getAttribute(&#x22;value&#x22;)?&#x22;on&#x22;:a.value})}),n.each(&#x22;blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu&#x22;.split(&#x22; &#x22;),function(a,b){n.fn[b]=function(a,c){return arguments.length&#x3e;0?this.on(b,null,a,c):this.trigger(b)}}),n.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)},bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,&#x22;**&#x22;):this.off(b,a||&#x22;**&#x22;,c)}});var cb=n.now(),db=/\?/;n.parseJSON=function(a){return JSON.parse(a+&#x22;&#x22;)},n.parseXML=function(a){var b,c;if(!a||&#x22;string&#x22;!=typeof a)return null;try{c=new DOMParser,b=c.parseFromString(a,&#x22;text/xml&#x22;)}catch(d){b=void 0}return(!b||b.getElementsByTagName(&#x22;parsererror&#x22;).length)&#x26;&#x26;n.error(&#x22;Invalid XML: &#x22;+a),b};var eb=/#.*$/,fb=/([?&#x26;])_=[^&#x26;]*/,gb=/^(.*?):[ \t]*([^\r\n]*)$/gm,hb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,ib=/^(?:GET|HEAD)$/,jb=/^\/\//,kb=/^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,lb={},mb={},nb=&#x22;*/&#x22;.concat(&#x22;*&#x22;),ob=a.location.href,pb=kb.exec(ob.toLowerCase())||[];function qb(a){return function(b,c){&#x22;string&#x22;!=typeof b&#x26;&#x26;(c=b,b=&#x22;*&#x22;);var d,e=0,f=b.toLowerCase().match(E)||[];if(n.isFunction(c))while(d=f[e++])&#x22;+&#x22;===d[0]?(d=d.slice(1)||&#x22;*&#x22;,(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function rb(a,b,c,d){var e={},f=a===mb;function g(h){var i;return e[h]=!0,n.each(a[h]||[],function(a,h){var j=h(b,c,d);return&#x22;string&#x22;!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e[&#x22;*&#x22;]&#x26;&#x26;g(&#x22;*&#x22;)}function sb(a,b){var c,d,e=n.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&#x26;&#x26;((e[c]?a:d||(d={}))[c]=b[c]);return d&#x26;&#x26;n.extend(!0,a,d),a}function tb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while(&#x22;*&#x22;===i[0])i.shift(),void 0===d&#x26;&#x26;(d=a.mimeType||b.getResponseHeader(&#x22;Content-Type&#x22;));if(d)for(e in h)if(h[e]&#x26;&#x26;h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+&#x22; &#x22;+i[0]]){f=e;break}g||(g=e)}f=f||g}return f?(f!==i[0]&#x26;&#x26;i.unshift(f),c[f]):void 0}function ub(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&#x26;&#x26;(c[a.responseFields[f]]=b),!i&#x26;&#x26;d&#x26;&#x26;a.dataFilter&#x26;&#x26;(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if(&#x22;*&#x22;===f)f=i;else if(&#x22;*&#x22;!==i&#x26;&#x26;i!==f){if(g=j[i+&#x22; &#x22;+f]||j[&#x22;* &#x22;+f],!g)for(e in j)if(h=e.split(&#x22; &#x22;),h[1]===f&#x26;&#x26;(g=j[i+&#x22; &#x22;+h[0]]||j[&#x22;* &#x22;+h[0]])){g===!0?g=j[e]:j[e]!==!0&#x26;&#x26;(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&#x26;&#x26;a[&#x22;throws&#x22;])b=g(b);else try{b=g(b)}catch(l){return{state:&#x22;parsererror&#x22;,error:g?l:&#x22;No conversion from &#x22;+i+&#x22; to &#x22;+f}}}return{state:&#x22;success&#x22;,data:b}}n.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:ob,type:&#x22;GET&#x22;,isLocal:hb.test(pb[1]),global:!0,processData:!0,async:!0,contentType:&#x22;application/x-www-form-urlencoded; charset=UTF-8&#x22;,accepts:{&#x22;*&#x22;:nb,text:&#x22;text/plain&#x22;,html:&#x22;text/html&#x22;,xml:&#x22;application/xml, text/xml&#x22;,json:&#x22;application/json, text/javascript&#x22;},contents:{xml:/xml/,html:/html/,json:/json/},responseFields:{xml:&#x22;responseXML&#x22;,text:&#x22;responseText&#x22;,json:&#x22;responseJSON&#x22;},converters:{&#x22;* text&#x22;:String,&#x22;text html&#x22;:!0,&#x22;text json&#x22;:n.parseJSON,&#x22;text xml&#x22;:n.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?sb(sb(a,n.ajaxSettings),b):sb(n.ajaxSettings,a)},ajaxPrefilter:qb(lb),ajaxTransport:qb(mb),ajax:function(a,b){&#x22;object&#x22;==typeof a&#x26;&#x26;(b=a,a=void 0),b=b||{};var c,d,e,f,g,h,i,j,k=n.ajaxSetup({},b),l=k.context||k,m=k.context&#x26;&#x26;(l.nodeType||l.jquery)?n(l):n.event,o=n.Deferred(),p=n.Callbacks(&#x22;once memory&#x22;),q=k.statusCode||{},r={},s={},t=0,u=&#x22;canceled&#x22;,v={readyState:0,getResponseHeader:function(a){var b;if(2===t){if(!f){f={};while(b=gb.exec(e))f[b[1].toLowerCase()]=b[2]}b=f[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return 2===t?e:null},setRequestHeader:function(a,b){var c=a.toLowerCase();return t||(a=s[c]=s[c]||a,r[a]=b),this},overrideMimeType:function(a){return t||(k.mimeType=a),this},statusCode:function(a){var b;if(a)if(2&#x3e;t)for(b in a)q[b]=[q[b],a[b]];else v.always(a[v.status]);return this},abort:function(a){var b=a||u;return c&#x26;&#x26;c.abort(b),x(0,b),this}};if(o.promise(v).complete=p.add,v.success=v.done,v.error=v.fail,k.url=((a||k.url||ob)+&#x22;&#x22;).replace(eb,&#x22;&#x22;).replace(jb,pb[1]+&#x22;//&#x22;),k.type=b.method||b.type||k.method||k.type,k.dataTypes=n.trim(k.dataType||&#x22;*&#x22;).toLowerCase().match(E)||[&#x22;&#x22;],null==k.crossDomain&#x26;&#x26;(h=kb.exec(k.url.toLowerCase()),k.crossDomain=!(!h||h[1]===pb[1]&#x26;&#x26;h[2]===pb[2]&#x26;&#x26;(h[3]||(&#x22;http:&#x22;===h[1]?&#x22;80&#x22;:&#x22;443&#x22;))===(pb[3]||(&#x22;http:&#x22;===pb[1]?&#x22;80&#x22;:&#x22;443&#x22;)))),k.data&#x26;&#x26;k.processData&#x26;&#x26;&#x22;string&#x22;!=typeof k.data&#x26;&#x26;(k.data=n.param(k.data,k.traditional)),rb(lb,k,b,v),2===t)return v;i=n.event&#x26;&#x26;k.global,i&#x26;&#x26;0===n.active++&#x26;&#x26;n.event.trigger(&#x22;ajaxStart&#x22;),k.type=k.type.toUpperCase(),k.hasContent=!ib.test(k.type),d=k.url,k.hasContent||(k.data&#x26;&#x26;(d=k.url+=(db.test(d)?&#x22;&#x26;&#x22;:&#x22;?&#x22;)+k.data,delete k.data),k.cache===!1&#x26;&#x26;(k.url=fb.test(d)?d.replace(fb,&#x22;$1_=&#x22;+cb++):d+(db.test(d)?&#x22;&#x26;&#x22;:&#x22;?&#x22;)+&#x22;_=&#x22;+cb++)),k.ifModified&#x26;&#x26;(n.lastModified[d]&#x26;&#x26;v.setRequestHeader(&#x22;If-Modified-Since&#x22;,n.lastModified[d]),n.etag[d]&#x26;&#x26;v.setRequestHeader(&#x22;If-None-Match&#x22;,n.etag[d])),(k.data&#x26;&#x26;k.hasContent&#x26;&#x26;k.contentType!==!1||b.contentType)&#x26;&#x26;v.setRequestHeader(&#x22;Content-Type&#x22;,k.contentType),v.setRequestHeader(&#x22;Accept&#x22;,k.dataTypes[0]&#x26;&#x26;k.accepts[k.dataTypes[0]]?k.accepts[k.dataTypes[0]]+(&#x22;*&#x22;!==k.dataTypes[0]?&#x22;, &#x22;+nb+&#x22;; q=0.01&#x22;:&#x22;&#x22;):k.accepts[&#x22;*&#x22;]);for(j in k.headers)v.setRequestHeader(j,k.headers[j]);if(k.beforeSend&#x26;&#x26;(k.beforeSend.call(l,v,k)===!1||2===t))return v.abort();u=&#x22;abort&#x22;;for(j in{success:1,error:1,complete:1})v[j](k[j]);if(c=rb(mb,k,b,v)){v.readyState=1,i&#x26;&#x26;m.trigger(&#x22;ajaxSend&#x22;,[v,k]),k.async&#x26;&#x26;k.timeout&#x3e;0&#x26;&#x26;(g=setTimeout(function(){v.abort(&#x22;timeout&#x22;)},k.timeout));try{t=1,c.send(r,x)}catch(w){if(!(2&#x3e;t))throw w;x(-1,w)}}else x(-1,&#x22;No Transport&#x22;);function x(a,b,f,h){var j,r,s,u,w,x=b;2!==t&#x26;&#x26;(t=2,g&#x26;&#x26;clearTimeout(g),c=void 0,e=h||&#x22;&#x22;,v.readyState=a&#x3e;0?4:0,j=a&#x3e;=200&#x26;&#x26;300&#x3e;a||304===a,f&#x26;&#x26;(u=tb(k,v,f)),u=ub(k,u,v,j),j?(k.ifModified&#x26;&#x26;(w=v.getResponseHeader(&#x22;Last-Modified&#x22;),w&#x26;&#x26;(n.lastModified[d]=w),w=v.getResponseHeader(&#x22;etag&#x22;),w&#x26;&#x26;(n.etag[d]=w)),204===a||&#x22;HEAD&#x22;===k.type?x=&#x22;nocontent&#x22;:304===a?x=&#x22;notmodified&#x22;:(x=u.state,r=u.data,s=u.error,j=!s)):(s=x,(a||!x)&#x26;&#x26;(x=&#x22;error&#x22;,0&#x3e;a&#x26;&#x26;(a=0))),v.status=a,v.statusText=(b||x)+&#x22;&#x22;,j?o.resolveWith(l,[r,x,v]):o.rejectWith(l,[v,x,s]),v.statusCode(q),q=void 0,i&#x26;&#x26;m.trigger(j?&#x22;ajaxSuccess&#x22;:&#x22;ajaxError&#x22;,[v,k,j?r:s]),p.fireWith(l,[v,x]),i&#x26;&#x26;(m.trigger(&#x22;ajaxComplete&#x22;,[v,k]),--n.active||n.event.trigger(&#x22;ajaxStop&#x22;)))}return v},getJSON:function(a,b,c){return n.get(a,b,c,&#x22;json&#x22;)},getScript:function(a,b){return n.get(a,void 0,b,&#x22;script&#x22;)}}),n.each([&#x22;get&#x22;,&#x22;post&#x22;],function(a,b){n[b]=function(a,c,d,e){return n.isFunction(c)&#x26;&#x26;(e=e||d,d=c,c=void 0),n.ajax({url:a,type:b,dataType:e,data:c,success:d})}}),n._evalUrl=function(a){return n.ajax({url:a,type:&#x22;GET&#x22;,dataType:&#x22;script&#x22;,async:!1,global:!1,&#x22;throws&#x22;:!0})},n.fn.extend({wrapAll:function(a){var b;return n.isFunction(a)?this.each(function(b){n(this).wrapAll(a.call(this,b))}):(this[0]&#x26;&#x26;(b=n(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&#x26;&#x26;b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this)},wrapInner:function(a){return this.each(n.isFunction(a)?function(b){n(this).wrapInner(a.call(this,b))}:function(){var b=n(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=n.isFunction(a);return this.each(function(c){n(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(){return this.parent().each(function(){n.nodeName(this,&#x22;body&#x22;)||n(this).replaceWith(this.childNodes)}).end()}}),n.expr.filters.hidden=function(a){return a.offsetWidth&#x3c;=0&#x26;&#x26;a.offsetHeight&#x3c;=0},n.expr.filters.visible=function(a){return!n.expr.filters.hidden(a)};var vb=/%20/g,wb=/\[\]$/,xb=/\r?\n/g,yb=/^(?:submit|button|image|reset|file)$/i,zb=/^(?:input|select|textarea|keygen)/i;function Ab(a,b,c,d){var e;if(n.isArray(b))n.each(b,function(b,e){c||wb.test(a)?d(a,e):Ab(a+&#x22;[&#x22;+(&#x22;object&#x22;==typeof e?b:&#x22;&#x22;)+&#x22;]&#x22;,e,c,d)});else if(c||&#x22;object&#x22;!==n.type(b))d(a,b);else for(e in b)Ab(a+&#x22;[&#x22;+e+&#x22;]&#x22;,b[e],c,d)}n.param=function(a,b){var c,d=[],e=function(a,b){b=n.isFunction(b)?b():null==b?&#x22;&#x22;:b,d[d.length]=encodeURIComponent(a)+&#x22;=&#x22;+encodeURIComponent(b)};if(void 0===b&#x26;&#x26;(b=n.ajaxSettings&#x26;&#x26;n.ajaxSettings.traditional),n.isArray(a)||a.jquery&#x26;&#x26;!n.isPlainObject(a))n.each(a,function(){e(this.name,this.value)});else for(c in a)Ab(c,a[c],b,e);return d.join(&#x22;&#x26;&#x22;).replace(vb,&#x22;+&#x22;)},n.fn.extend({serialize:function(){return n.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=n.prop(this,&#x22;elements&#x22;);return a?n.makeArray(a):this}).filter(function(){var a=this.type;return this.name&#x26;&#x26;!n(this).is(&#x22;:disabled&#x22;)&#x26;&#x26;zb.test(this.nodeName)&#x26;&#x26;!yb.test(a)&#x26;&#x26;(this.checked||!T.test(a))}).map(function(a,b){var c=n(this).val();return null==c?null:n.isArray(c)?n.map(c,function(a){return{name:b.name,value:a.replace(xb,&#x22;\r\n&#x22;)}}):{name:b.name,value:c.replace(xb,&#x22;\r\n&#x22;)}}).get()}}),n.ajaxSettings.xhr=function(){try{return new XMLHttpRequest}catch(a){}};var Bb=0,Cb={},Db={0:200,1223:204},Eb=n.ajaxSettings.xhr();a.attachEvent&#x26;&#x26;a.attachEvent(&#x22;onunload&#x22;,function(){for(var a in Cb)Cb[a]()}),k.cors=!!Eb&#x26;&#x26;&#x22;withCredentials&#x22;in Eb,k.ajax=Eb=!!Eb,n.ajaxTransport(function(a){var b;return k.cors||Eb&#x26;&#x26;!a.crossDomain?{send:function(c,d){var e,f=a.xhr(),g=++Bb;if(f.open(a.type,a.url,a.async,a.username,a.password),a.xhrFields)for(e in a.xhrFields)f[e]=a.xhrFields[e];a.mimeType&#x26;&#x26;f.overrideMimeType&#x26;&#x26;f.overrideMimeType(a.mimeType),a.crossDomain||c[&#x22;X-Requested-With&#x22;]||(c[&#x22;X-Requested-With&#x22;]=&#x22;XMLHttpRequest&#x22;);for(e in c)f.setRequestHeader(e,c[e]);b=function(a){return function(){b&#x26;&#x26;(delete Cb[g],b=f.onload=f.onerror=null,&#x22;abort&#x22;===a?f.abort():&#x22;error&#x22;===a?d(f.status,f.statusText):d(Db[f.status]||f.status,f.statusText,&#x22;string&#x22;==typeof f.responseText?{text:f.responseText}:void 0,f.getAllResponseHeaders()))}},f.onload=b(),f.onerror=b(&#x22;error&#x22;),b=Cb[g]=b(&#x22;abort&#x22;);try{f.send(a.hasContent&#x26;&#x26;a.data||null)}catch(h){if(b)throw h}},abort:function(){b&#x26;&#x26;b()}}:void 0}),n.ajaxSetup({accepts:{script:&#x22;text/javascript, application/javascript, application/ecmascript, application/x-ecmascript&#x22;},contents:{script:/(?:java|ecma)script/},converters:{&#x22;text script&#x22;:function(a){return n.globalEval(a),a}}}),n.ajaxPrefilter(&#x22;script&#x22;,function(a){void 0===a.cache&#x26;&#x26;(a.cache=!1),a.crossDomain&#x26;&#x26;(a.type=&#x22;GET&#x22;)}),n.ajaxTransport(&#x22;script&#x22;,function(a){if(a.crossDomain){var b,c;return{send:function(d,e){b=n(&#x22;&#x3c;script&#x3e;&#x22;).prop({async:!0,charset:a.scriptCharset,src:a.url}).on(&#x22;load error&#x22;,c=function(a){b.remove(),c=null,a&#x26;&#x26;e(&#x22;error&#x22;===a.type?404:200,a.type)}),l.head.appendChild(b[0])},abort:function(){c&#x26;&#x26;c()}}}});var Fb=[],Gb=/(=)\?(?=&#x26;|$)|\?\?/;n.ajaxSetup({jsonp:&#x22;callback&#x22;,jsonpCallback:function(){var a=Fb.pop()||n.expando+&#x22;_&#x22;+cb++;return this[a]=!0,a}}),n.ajaxPrefilter(&#x22;json jsonp&#x22;,function(b,c,d){var e,f,g,h=b.jsonp!==!1&#x26;&#x26;(Gb.test(b.url)?&#x22;url&#x22;:&#x22;string&#x22;==typeof b.data&#x26;&#x26;!(b.contentType||&#x22;&#x22;).indexOf(&#x22;application/x-www-form-urlencoded&#x22;)&#x26;&#x26;Gb.test(b.data)&#x26;&#x26;&#x22;data&#x22;);return h||&#x22;jsonp&#x22;===b.dataTypes[0]?(e=b.jsonpCallback=n.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Gb,&#x22;$1&#x22;+e):b.jsonp!==!1&#x26;&#x26;(b.url+=(db.test(b.url)?&#x22;&#x26;&#x22;:&#x22;?&#x22;)+b.jsonp+&#x22;=&#x22;+e),b.converters[&#x22;script json&#x22;]=function(){return g||n.error(e+&#x22; was not called&#x22;),g[0]},b.dataTypes[0]=&#x22;json&#x22;,f=a[e],a[e]=function(){g=arguments},d.always(function(){a[e]=f,b[e]&#x26;&#x26;(b.jsonpCallback=c.jsonpCallback,Fb.push(e)),g&#x26;&#x26;n.isFunction(f)&#x26;&#x26;f(g[0]),g=f=void 0}),&#x22;script&#x22;):void 0}),n.parseHTML=function(a,b,c){if(!a||&#x22;string&#x22;!=typeof a)return null;&#x22;boolean&#x22;==typeof b&#x26;&#x26;(c=b,b=!1),b=b||l;var d=v.exec(a),e=!c&#x26;&#x26;[];return d?[b.createElement(d[1])]:(d=n.buildFragment([a],b,e),e&#x26;&#x26;e.length&#x26;&#x26;n(e).remove(),n.merge([],d.childNodes))};var Hb=n.fn.load;n.fn.load=function(a,b,c){if(&#x22;string&#x22;!=typeof a&#x26;&#x26;Hb)return Hb.apply(this,arguments);var d,e,f,g=this,h=a.indexOf(&#x22; &#x22;);return h&#x3e;=0&#x26;&#x26;(d=n.trim(a.slice(h)),a=a.slice(0,h)),n.isFunction(b)?(c=b,b=void 0):b&#x26;&#x26;&#x22;object&#x22;==typeof b&#x26;&#x26;(e=&#x22;POST&#x22;),g.length&#x3e;0&#x26;&#x26;n.ajax({url:a,type:e,dataType:&#x22;html&#x22;,data:b}).done(function(a){f=arguments,g.html(d?n(&#x22;&#x3c;div&#x3e;&#x22;).append(n.parseHTML(a)).find(d):a)}).complete(c&#x26;&#x26;function(a,b){g.each(c,f||[a.responseText,b,a])}),this},n.each([&#x22;ajaxStart&#x22;,&#x22;ajaxStop&#x22;,&#x22;ajaxComplete&#x22;,&#x22;ajaxError&#x22;,&#x22;ajaxSuccess&#x22;,&#x22;ajaxSend&#x22;],function(a,b){n.fn[b]=function(a){return this.on(b,a)}}),n.expr.filters.animated=function(a){return n.grep(n.timers,function(b){return a===b.elem}).length};var Ib=a.document.documentElement;function Jb(a){return n.isWindow(a)?a:9===a.nodeType&#x26;&#x26;a.defaultView}n.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=n.css(a,&#x22;position&#x22;),l=n(a),m={};&#x22;static&#x22;===k&#x26;&#x26;(a.style.position=&#x22;relative&#x22;),h=l.offset(),f=n.css(a,&#x22;top&#x22;),i=n.css(a,&#x22;left&#x22;),j=(&#x22;absolute&#x22;===k||&#x22;fixed&#x22;===k)&#x26;&#x26;(f+i).indexOf(&#x22;auto&#x22;)&#x3e;-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),n.isFunction(b)&#x26;&#x26;(b=b.call(a,c,h)),null!=b.top&#x26;&#x26;(m.top=b.top-h.top+g),null!=b.left&#x26;&#x26;(m.left=b.left-h.left+e),&#x22;using&#x22;in b?b.using.call(a,m):l.css(m)}},n.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){n.offset.setOffset(this,a,b)});var b,c,d=this[0],e={top:0,left:0},f=d&#x26;&#x26;d.ownerDocument;if(f)return b=f.documentElement,n.contains(b,d)?(typeof d.getBoundingClientRect!==U&#x26;&#x26;(e=d.getBoundingClientRect()),c=Jb(f),{top:e.top+c.pageYOffset-b.clientTop,left:e.left+c.pageXOffset-b.clientLeft}):e},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return&#x22;fixed&#x22;===n.css(c,&#x22;position&#x22;)?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),n.nodeName(a[0],&#x22;html&#x22;)||(d=a.offset()),d.top+=n.css(a[0],&#x22;borderTopWidth&#x22;,!0),d.left+=n.css(a[0],&#x22;borderLeftWidth&#x22;,!0)),{top:b.top-d.top-n.css(c,&#x22;marginTop&#x22;,!0),left:b.left-d.left-n.css(c,&#x22;marginLeft&#x22;,!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent||Ib;while(a&#x26;&#x26;!n.nodeName(a,&#x22;html&#x22;)&#x26;&#x26;&#x22;static&#x22;===n.css(a,&#x22;position&#x22;))a=a.offsetParent;return a||Ib})}}),n.each({scrollLeft:&#x22;pageXOffset&#x22;,scrollTop:&#x22;pageYOffset&#x22;},function(b,c){var d=&#x22;pageYOffset&#x22;===c;n.fn[b]=function(e){return J(this,function(b,e,f){var g=Jb(b);return void 0===f?g?g[c]:b[e]:void(g?g.scrollTo(d?a.pageXOffset:f,d?f:a.pageYOffset):b[e]=f)},b,e,arguments.length,null)}}),n.each([&#x22;top&#x22;,&#x22;left&#x22;],function(a,b){n.cssHooks[b]=ya(k.pixelPosition,function(a,c){return c?(c=xa(a,b),va.test(c)?n(a).position()[b]+&#x22;px&#x22;:c):void 0})}),n.each({Height:&#x22;height&#x22;,Width:&#x22;width&#x22;},function(a,b){n.each({padding:&#x22;inner&#x22;+a,content:b,&#x22;&#x22;:&#x22;outer&#x22;+a},function(c,d){n.fn[d]=function(d,e){var f=arguments.length&#x26;&#x26;(c||&#x22;boolean&#x22;!=typeof d),g=c||(d===!0||e===!0?&#x22;margin&#x22;:&#x22;border&#x22;);return J(this,function(b,c,d){var e;return n.isWindow(b)?b.document.documentElement[&#x22;client&#x22;+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body[&#x22;scroll&#x22;+a],e[&#x22;scroll&#x22;+a],b.body[&#x22;offset&#x22;+a],e[&#x22;offset&#x22;+a],e[&#x22;client&#x22;+a])):void 0===d?n.css(b,c,g):n.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),n.fn.size=function(){return this.length},n.fn.andSelf=n.fn.addBack,&#x22;function&#x22;==typeof define&#x26;&#x26;define.amd&#x26;&#x26;define(&#x22;jquery&#x22;,[],function(){return n});var Kb=a.jQuery,Lb=a.$;return n.noConflict=function(b){return a.$===n&#x26;&#x26;(a.$=Lb),b&#x26;&#x26;a.jQuery===n&#x26;&#x26;(a.jQuery=Kb),n},typeof b===U&#x26;&#x26;(a.jQuery=a.$=n),n});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.createFactory" id="apidoc.element.anyproxy.react.createFactory">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>createFactory
+        <span class="apidocSignatureSpan">(type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createFactory = function (type) {
+  var validatedFactory = ReactElementValidator.createElement.bind(
+    null,
+    type
+  );
+  // Legacy hook TODO: Warn if this is accessed
+  validatedFactory.type = type;
+
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    try {
+      Object.defineProperty(
+        validatedFactory,
+        &#x27;type&#x27;,
+        {
+          enumerable: false,
+          get: function() {
+            (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+              false,
+              &#x27;Factory.type is deprecated. Access the class directly &#x27; +
+              &#x27;before passing it to createFactory.&#x27;
+            ) : null);
+            Object.defineProperty(this, &#x27;type&#x27;, {
+              value: type
+            });
+            return type;
+          }
+        }
+      );
+    } catch (x) {
+      // IE will fail on defineProperty (es5-shim/sham too)
+    }
+  }
+
+
+  return validatedFactory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Create a factory that creates HTML tag elements.
+*
+* @param {string} tag Tag name (e.g. `div`).
+* @private
+*/
+function createDOMFactory(tag) {
+ if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+   return ReactElementValidator.<span class="apidocCodeKeywordSpan">createFactory</span>(tag);
+ }
+ return ReactElement.createFactory(tag);
+}
+
+/**
+* Creates a mapping from supported HTML tags to `ReactDOMComponent` classes.
+* This is also accessible via `React.DOM`.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.createMixin" id="apidoc.element.anyproxy.react.createMixin">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>createMixin
+        <span class="apidocSignatureSpan">(mixin)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createMixin = function (mixin) {
+  // Currently a noop. Will be used to validate and trace mixins.
+  return mixin;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.findDOMNode" id="apidoc.element.anyproxy.react.findDOMNode">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>findDOMNode
+        <span class="apidocSignatureSpan">(componentOrElement)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findDOMNode(componentOrElement) {
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    var owner = ReactCurrentOwner.current;
+    if (owner !== null) {
+      (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+        owner._warnedAboutRefsInRender,
+        &#x27;%s is accessing getDOMNode or findDOMNode inside its render(). &#x27; +
+        &#x27;render() should be a pure function of props and state. It should &#x27; +
+        &#x27;never access something that requires stale data from the previous &#x27; +
+        &#x27;render, such as refs. Move this logic to componentDidMount and &#x27; +
+        &#x27;componentDidUpdate instead.&#x27;,
+        owner.getName() || &#x27;A component&#x27;
+      ) : null);
+      owner._warnedAboutRefsInRender = true;
+    }
+  }
+  if (componentOrElement == null) {
+    return null;
+  }
+  if (isNode(componentOrElement)) {
+    return componentOrElement;
+  }
+  if (ReactInstanceMap.has(componentOrElement)) {
+    return ReactMount.getNodeFromInstance(componentOrElement);
+  }
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    componentOrElement.render == null ||
+    typeof componentOrElement.render !== &#x27;function&#x27;,
+    &#x27;Component (with keys: %s) contains `render` method &#x27; +
+    &#x27;but is not mounted in the DOM&#x27;,
+    Object.keys(componentOrElement)
+  ) : invariant(componentOrElement.render == null ||
+  typeof componentOrElement.render !== &#x27;function&#x27;));
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    false,
+    &#x27;Element appears to be neither ReactComponent nor DOMNode (keys: %s)&#x27;,
+    Object.keys(componentOrElement)
+  ) : invariant(false));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * we would like to deprecate them, we&#x27;re not going to move them over to this
+ * modern base class. Instead, we define a getter that warns if it&#x27;s accessed.
+ */
+if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+var deprecatedAPIs = {
+  getDOMNode: [
+    &#x27;getDOMNode&#x27;,
+    &#x27;Use React.<span class="apidocCodeKeywordSpan">findDOMNode</span>(component) instead.&#x27;
+  ],
+  isMounted: [
+    &#x27;isMounted&#x27;,
+    &#x27;Instead, make sure to clean up subscriptions and pending requests in &#x27; +
+    &#x27;componentWillUnmount to prevent memory leaks.&#x27;
+  ],
+  replaceProps: [
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.initializeTouchEvents" id="apidoc.element.anyproxy.react.initializeTouchEvents">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>initializeTouchEvents
+        <span class="apidocSignatureSpan">(shouldUseTouch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initializeTouchEvents = function (shouldUseTouch) {
+  EventPluginUtils.useTouchEvents = shouldUseTouch;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.isValidElement" id="apidoc.element.anyproxy.react.isValidElement">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>isValidElement
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isValidElement = function (object) {
+  // ReactTestUtils is often used outside of beforeEach where as React is
+  // within it. This leads to two different instances of React on the same
+  // page. To identify a element from a different React instance we use
+  // a flag instead of an instanceof check.
+  var isElement = !!(object &#x26;&#x26; object._isReactElement);
+  // if (isElement &#x26;&#x26; !(object instanceof ReactElement)) {
+  // This is an indicator that you&#x27;re using multiple versions of React at the
+  // same time. This will screw with ownership and stuff. Fix it, please.
+  // TODO: We could possibly warn here.
+  // }
+  return isElement;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+(&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+  typeof spec !== &#x27;function&#x27;,
+  &#x27;ReactClass: You\&#x27;re attempting to &#x27; +
+  &#x27;use a component class as a mixin. Instead, just use a regular object.&#x27;
+) : invariant(typeof spec !== &#x27;function&#x27;));
+(&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+  !ReactElement.<span class="apidocCodeKeywordSpan">isValidElement</span>(spec),
+  &#x27;ReactClass: You\&#x27;re attempting to &#x27; +
+  &#x27;use a component as a mixin. Instead, just use a regular object.&#x27;
+) : invariant(!ReactElement.isValidElement(spec)));
+
+var proto = Constructor.prototype;
+
+// By handling mixins before any other properties, we ensure the same
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.render" id="apidoc.element.anyproxy.react.render">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function () {
+  if (ReactPerf.enableMeasure) {
+    if (!measuredFunc) {
+      measuredFunc = ReactPerf.storedMeasure(objName, fnName, func);
+    }
+    return measuredFunc.apply(this, arguments);
+  }
+  return func.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+
+/**
+ * @protected
+ */
+_renderValidatedComponentWithoutOwnerOrContext: function() {
+  var inst = this._instance;
+  var renderedComponent = inst.<span class="apidocCodeKeywordSpan">render</span>();
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (typeof renderedComponent === &#x27;undefined&#x27; &#x26;&#x26;
+        inst.render._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      renderedComponent = null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.renderToStaticMarkup" id="apidoc.element.anyproxy.react.renderToStaticMarkup">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>renderToStaticMarkup
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderToStaticMarkup(element) {
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    ReactElement.isValidElement(element),
+    &#x27;renderToStaticMarkup(): You must pass a valid ReactElement.&#x27;
+  ) : invariant(ReactElement.isValidElement(element)));
+
+  var transaction;
+  try {
+    var id = ReactInstanceHandles.createReactRootID();
+    transaction = ReactServerRenderingTransaction.getPooled(true);
+
+    return transaction.perform(function() {
+      var componentInstance = instantiateReactComponent(element, null);
+      return componentInstance.mountComponent(id, transaction, emptyObject);
+    }, null);
+  } finally {
+    ReactServerRenderingTransaction.release(transaction);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.renderToString" id="apidoc.element.anyproxy.react.renderToString">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>renderToString
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderToString(element) {
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    ReactElement.isValidElement(element),
+    &#x27;renderToString(): You must pass a valid ReactElement.&#x27;
+  ) : invariant(ReactElement.isValidElement(element)));
+
+  var transaction;
+  try {
+    var id = ReactInstanceHandles.createReactRootID();
+    transaction = ReactServerRenderingTransaction.getPooled(false);
+
+    return transaction.perform(function() {
+      var componentInstance = instantiateReactComponent(element, null);
+      var markup =
+        componentInstance.mountComponent(id, transaction, emptyObject);
+      return ReactMarkupChecksum.addChecksumToMarkup(markup);
+    }, null);
+  } finally {
+    ReactServerRenderingTransaction.release(transaction);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    ) : invariant(ExecutionEnvironment.canUseDOM));
+    (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(markup, &#x27;dangerouslyReplaceNodeWithMarkup(...): Missing
+ markup.&#x27;) : invariant(markup));
+    (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+      oldChild.tagName.toLowerCase() !== &#x27;html&#x27;,
+      &#x27;dangerouslyReplaceNodeWithMarkup(...): Cannot replace markup of the &#x27; +
+      &#x27;&#x3c;html&#x3e; node. This is because browser quirks make this unreliable &#x27; +
+      &#x27;and/or slow. If you want to render to the root you must use &#x27; +
+      &#x27;server rendering. See React.<span class="apidocCodeKeywordSpan">renderToString</span>().&#x27;
+    ) : invariant(oldChild.tagName.toLowerCase() !== &#x27;html&#x27;));
+
+    var newChild = createNodesFromMarkup(markup, emptyFunction)[0];
+    oldChild.parentNode.replaceChild(newChild, oldChild);
+  }
+
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.unmountComponentAtNode" id="apidoc.element.anyproxy.react.unmountComponentAtNode">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>unmountComponentAtNode
+        <span class="apidocSignatureSpan">(container)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unmountComponentAtNode = function (container) {
+  // Various parts of our code (such as ReactCompositeComponent&#x27;s
+  // _renderValidatedComponent) assume that calls to render aren&#x27;t nested;
+  // verify that that&#x27;s the case. (Strictly speaking, unmounting won&#x27;t cause a
+  // render but we still don&#x27;t expect to be in a render call here.)
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+    ReactCurrentOwner.current == null,
+    &#x27;unmountComponentAtNode(): Render methods should be a pure function of &#x27; +
+    &#x27;props and state; triggering nested component updates from render is &#x27; +
+    &#x27;not allowed. If necessary, trigger nested updates in &#x27; +
+    &#x27;componentDidUpdate.&#x27;
+  ) : null);
+
+  (&#x22;production&#x22; !== &#x22;development&#x22; ? invariant(
+    container &#x26;&#x26; (
+      (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE)
+    ),
+    &#x27;unmountComponentAtNode(...): Target container is not a DOM element.&#x27;
+  ) : invariant(container &#x26;&#x26; (
+    (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE)
+  )));
+
+  var reactRootID = getReactRootID(container);
+  var component = instancesByReactRootID[reactRootID];
+  if (!component) {
+    return false;
+  }
+  ReactMount.unmountComponentFromNode(component, container);
+  delete instancesByReactRootID[reactRootID];
+  delete containersByReactRootID[reactRootID];
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    delete rootElementsByReactRootID[reactRootID];
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return ReactMount._updateRootComponent(
+      prevComponent,
+      nextElement,
+      container,
+      callback
+    ).getPublicInstance();
+  } else {
+    ReactMount.<span class="apidocCodeKeywordSpan">unmountComponentAtNode</span>(container);
+  }
+}
+
+var reactRootElement = getReactRootElementInContainer(container);
+var containerHasReactMarkup =
+  reactRootElement &#x26;&#x26; ReactMount.isRenderedByReact(reactRootElement);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.anyproxy.react.withContext" id="apidoc.element.anyproxy.react.withContext">
+        function <span class="apidocSignatureSpan">anyproxy.react.</span>withContext
+        <span class="apidocSignatureSpan">(newContext, scopedCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">withContext = function (newContext, scopedCallback) {
+  if (&#x22;production&#x22; !== &#x22;development&#x22;) {
+    (&#x22;production&#x22; !== &#x22;development&#x22; ? warning(
+      didWarn,
+      &#x27;withContext is deprecated and will be removed in a future version. &#x27; +
+      &#x27;Use a wrapper component with getChildContext instead.&#x27;
+    ) : null);
+
+    didWarn = true;
+  }
+
+  var result;
+  var previousContext = ReactContext.current;
+  ReactContext.current = assign({}, previousContext, newContext);
+  try {
+    result = scopedCallback();
+  } finally {
+    ReactContext.current = previousContext;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  /**
+* Temporarily extends the current context while executing scopedCallback.
+*
+* A typical use case might look like
+*
+*  render: function() {
+*    var children = ReactContext.<span class="apidocCodeKeywordSpan">withContext</span>({foo: &#x27;foo&#x27;}, () =&#x3e; (
+*
+*    ));
+*    return &#x3c;div&#x3e;{children}&#x3c;/div&#x3e;;
+*  }
+*
+* @param {object} newContext New context to merge into the existing context
+* @param {function} scopedCallback Callback to run with the new context
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
 
 
 </div>
@@ -4435,21 +5884,21 @@ if(option.filename &#x26;&#x26; typeof option.filename == &#x22;string&#x22;){
     return home;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    interceptFlag      = false;
-
-//e.g. [ { keyword: &#x27;aaa&#x27;, local: &#x27;/Users/Stella/061739.pdf&#x27; } ]
-var mapConfig = [],
-    configFile = &#x22;mapConfig.json&#x22;;
-function saveMapConfig(content,cb){
-    new Promise(function(resolve,reject){
-var anyproxyHome = utils.<span class="apidocCodeKeywordSpan">getAnyProxyHome</span>(),
-    mapCfgPath   = path.join(anyproxyHome,configFile);
-
-if(typeof content == &#x22;object&#x22;){
-    content = JSON.stringify(content);
-}
-resolve({
-    path    :mapCfgPath,
+        logUtil.printLog(&#x22;failed to load rule file :&#x22; + e.toString(), logUtil.T_ERR);
+    }
+}else{
+    //a feature for donghua.yan
+    //read rule file from a specific position
+    (function(){
+        try{
+            var anyproxyHome = path.join(util.<span class="apidocCodeKeywordSpan">getAnyProxyHome</span>());
+            if(fs.existsSync(path.join(anyproxyHome,&#x22;rule_default.js&#x22;))){
+                ruleModule = require(path.join(anyproxyHome,&#x22;rule_default&#x22;));
+            }
+            if(fs.existsSync(path.join(process.cwd(),&#x27;rule.js&#x27;))){
+                ruleModule = require(path.join(process.cwd(),&#x27;rule&#x27;));
+            }
+        }catch(e){}
 ...</pre></li>
     </ul>
 
