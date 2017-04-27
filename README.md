@@ -1,6 +1,6 @@
 # npmdoc-anyproxy
 
-#### api documentation for  anyproxy (v3.10.4)  [![npm package](https://img.shields.io/npm/v/npmdoc-anyproxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-anyproxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-anyproxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-anyproxy)
+#### basic api documentation for  [anyproxy (v3.10.4)](https://github.com/alibaba/anyproxy#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-anyproxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-anyproxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-anyproxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-anyproxy)
 
 #### A fully configurable proxy in NodeJS, which can handle HTTPS requests perfectly.
 
@@ -72,10 +72,30 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/alibaba/anyproxy"
+        "url": "git+https://github.com/alibaba/anyproxy.git"
     },
-    "author": "ottomao@gmail.com",
-    "license": "ISC"
+    "author": {
+        "name": "ottomao@gmail.com"
+    },
+    "license": "ISC",
+    "gitHead": "26a05e8c5c7b6173811320e3dc20ac9aed61b494",
+    "bugs": {
+        "url": "https://github.com/alibaba/anyproxy/issues"
+    },
+    "homepage": "https://github.com/alibaba/anyproxy#readme",
+    "dist": {
+        "shasum": "930d286ca071515c19787086cc036f64d9667376",
+        "tarball": "https://registry.npmjs.org/anyproxy/-/anyproxy-3.10.4.tgz"
+    },
+    "maintainers": [
+        {
+            "name": "ottomao"
+        },
+        {
+            "name": "alexyan"
+        }
+    ],
+    "directories": {}
 }
 ```
 
